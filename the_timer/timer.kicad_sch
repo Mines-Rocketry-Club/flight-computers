@@ -1813,6 +1813,231 @@
 				)
 			)
 		)
+		(symbol "Memory_Flash:W25Q128JVS"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -8.89 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "W25Q128JVS"
+				(at 7.62 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "128Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flash memory SPI QPI DTR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*5.23x5.23mm*P1.27mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "W25Q128JVS_0_1"
+				(rectangle
+					(start -7.62 10.16)
+					(end 7.62 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "W25Q128JVS_1_1"
+				(pin input line
+					(at -10.16 7.62 0)
+					(length 2.54)
+					(name "~{CS}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "DO(IO1)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "IO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "DI(IO0)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "CLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "IO3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 12.7 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Transistor_FET:2N7002"
 			(pin_names hide)
 			(exclude_from_sim no)
@@ -2897,9 +3122,31 @@
 		)
 		(uuid "ef008acb-17d8-4b62-b283-0ed217eb1276")
 	)
+	(global_label "FCS"
+		(shape input)
+		(at 49.53 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0eceafa9-8b02-4244-9054-cbd4d4d46b2b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 56.0833 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "t3"
 		(shape input)
-		(at 50.8 160.655 0)
+		(at 49.53 161.29 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2909,12 +3156,34 @@
 		)
 		(uuid "104ad865-6d65-4b10-8ac0-0d13f9072339")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.7204 160.655 0)
+			(at 54.4504 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "FCS"
+		(shape input)
+		(at 109.22 113.03 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1307bf8b-e3a7-4851-9d38-e668513dbdf6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 102.6667 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3009,7 +3278,7 @@
 	)
 	(global_label "V_{reg}"
 		(shape input)
-		(at 35.56 86.995 90)
+		(at 34.29 87.63 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3019,7 +3288,7 @@
 		)
 		(uuid "3d9b0452-71cc-4791-9063-bbd79196bd59")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.56 80.4513 90)
+			(at 34.29 81.0863 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3073,6 +3342,28 @@
 			)
 		)
 	)
+	(global_label "MOSI"
+		(shape input)
+		(at 109.22 118.11 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4d05ab22-bd89-4cba-8f71-9491dac30a4e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.6386 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "c1"
 		(shape input)
 		(at 229.235 60.96 180)
@@ -3117,9 +3408,31 @@
 			)
 		)
 	)
+	(global_label "SCK"
+		(shape input)
+		(at 109.22 115.57 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "57f4693a-421b-435a-b438-c7a3f5460fe5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 102.4853 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "MISO"
 		(shape input)
-		(at 50.8 117.475 0)
+		(at 49.53 118.11 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3129,7 +3442,7 @@
 		)
 		(uuid "5ea4956f-555b-49f5-aa9b-19a2ffea23b4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 58.3814 117.475 0)
+			(at 57.1114 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3185,7 +3498,7 @@
 	)
 	(global_label "t0"
 		(shape input)
-		(at 50.8 153.035 0)
+		(at 49.53 153.67 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3195,7 +3508,7 @@
 		)
 		(uuid "7583bac9-453f-4a37-8e0d-a67d2ad33ea0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.7204 153.035 0)
+			(at 54.4504 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3205,9 +3518,31 @@
 			)
 		)
 	)
+	(global_label "MISO"
+		(shape input)
+		(at 109.22 120.65 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7aa2210e-9a20-481d-b206-c79c47c31dc5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.6386 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "MOSI"
 		(shape input)
-		(at 50.8 114.935 0)
+		(at 49.53 115.57 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3217,7 +3552,7 @@
 		)
 		(uuid "7bee7b5c-6d56-491a-925e-b6a8931feddf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 58.3814 114.935 0)
+			(at 57.1114 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3427,7 +3762,7 @@
 	)
 	(global_label "SCK"
 		(shape input)
-		(at 50.8 120.015 0)
+		(at 49.53 120.65 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3437,7 +3772,7 @@
 		)
 		(uuid "91e03de7-0678-49a7-b0aa-d0fdc710ebc6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 57.5347 120.015 0)
+			(at 56.2647 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3449,7 +3784,7 @@
 	)
 	(global_label "V_{reg}"
 		(shape input)
-		(at 38.1 86.995 90)
+		(at 36.83 87.63 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3459,7 +3794,7 @@
 		)
 		(uuid "9997e7b5-afed-4376-aff7-c944b41c7975")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 38.1 80.4513 90)
+			(at 36.83 81.0863 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3515,7 +3850,7 @@
 	)
 	(global_label "t1"
 		(shape input)
-		(at 50.8 155.575 0)
+		(at 49.53 156.21 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3525,7 +3860,7 @@
 		)
 		(uuid "a8bbdac6-1d0f-4588-a6e8-7744a6073910")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.7204 155.575 0)
+			(at 54.4504 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3581,7 +3916,7 @@
 	)
 	(global_label "SDA"
 		(shape input)
-		(at 50.8 122.555 0)
+		(at 49.53 123.19 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3591,7 +3926,7 @@
 		)
 		(uuid "b08b332c-0ea7-44d8-a2f2-bd66ddc80a93")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 57.3533 122.555 0)
+			(at 56.0833 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3669,7 +4004,7 @@
 	)
 	(global_label "t2"
 		(shape input)
-		(at 50.8 158.115 0)
+		(at 49.53 158.75 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3679,7 +4014,7 @@
 		)
 		(uuid "cd0b4f85-5c46-4d67-a938-db87f82de379")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.7204 158.115 0)
+			(at 54.4504 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3691,7 +4026,7 @@
 	)
 	(global_label "SCL"
 		(shape input)
-		(at 50.8 125.095 0)
+		(at 49.53 125.73 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3701,7 +4036,7 @@
 		)
 		(uuid "cf4ba08e-7e5b-4d78-b904-f3062ee8a185")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 57.2928 125.095 0)
+			(at 56.0228 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3757,7 +4092,7 @@
 	)
 	(global_label "~{RESET}"
 		(shape input)
-		(at 50.8 145.415 0)
+		(at 49.53 146.05 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3767,7 +4102,7 @@
 		)
 		(uuid "f14a9c17-219b-429d-8f5c-65a0ced595c5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 59.5303 145.415 0)
+			(at 58.2603 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3795,6 +4130,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V_{reg}"
+		(shape input)
+		(at 119.38 107.95 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fa87666b-af10-4a51-b368-7b8f4e70f67b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 119.38 101.4063 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -4344,7 +4701,7 @@
 	)
 	(symbol
 		(lib_id "MCU_Microchip_ATtiny:ATtiny48-A")
-		(at 35.56 132.715 0)
+		(at 34.29 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4352,7 +4709,7 @@
 		(dnp no)
 		(uuid "2c7d74e3-1132-456f-a542-018e1ab10ef9")
 		(property "Reference" "U1"
-			(at 21.59 130.175 90)
+			(at 20.32 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4361,7 +4718,7 @@
 			)
 		)
 		(property "Value" "ATtiny48-A"
-			(at 21.59 133.985 90)
+			(at 20.32 134.62 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4370,7 +4727,7 @@
 			)
 		)
 		(property "Footprint" "Package_QFP:TQFP-32_7x7mm_P0.8mm"
-			(at 35.56 132.715 0)
+			(at 34.29 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4380,7 +4737,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8008.pdf"
-			(at 35.56 132.715 0)
+			(at 34.29 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4389,7 +4746,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 35.56 132.715 0)
+			(at 34.29 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4398,7 +4755,7 @@
 			)
 		)
 		(property "DKPN" "ATTINY48-AURCT-ND"
-			(at 35.56 132.715 0)
+			(at 34.29 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4663,6 +5020,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 119.38 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "609b1c75-40ad-455a-9d74-40d183a4be7b")
+		(property "Reference" "#PWR08"
+			(at 119.38 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 119.38 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3dda067-ee08-4ca7-b20b-a7d6a648b2ee")
+		)
+		(instances
+			(project "timer"
+				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 27.305 35.56 0)
 		(unit 1)
@@ -4843,6 +5266,94 @@
 			(project "Ping"
 				(path "/fd9615be-e2a3-47ef-8586-c415f6857bc8"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Memory_Flash:W25Q128JVS")
+		(at 119.38 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73dbcdb2-3872-4af7-90c0-be5def1e6bc1")
+		(property "Reference" "U4"
+			(at 128.27 119.3799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "W25Q128JVS"
+			(at 128.27 121.9199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm"
+			(at 119.38 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf"
+			(at 119.38 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "128Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8"
+			(at 119.38 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "fc030e85-b82e-4d79-b49c-a7d1c220e8c6")
+		)
+		(pin "8"
+			(uuid "04d31248-c834-43f8-a1fb-c3813062c1df")
+		)
+		(pin "5"
+			(uuid "d1bbcf55-80ea-4eb1-9947-5e1d3d5f181e")
+		)
+		(pin "4"
+			(uuid "b9da9a43-2ca9-4dae-bcee-51a1134eca00")
+		)
+		(pin "7"
+			(uuid "f8f4cc0d-47e2-46b2-aa1a-19909445a01d")
+		)
+		(pin "1"
+			(uuid "9fbd4c5b-3ab0-4b67-a81e-ff82db4e95ba")
+		)
+		(pin "3"
+			(uuid "185e9aa3-e4a6-4d3e-b077-3aa9aaa5c709")
+		)
+		(pin "2"
+			(uuid "c1c58b92-c8ca-4e2c-8056-1fe952c892cb")
+		)
+		(instances
+			(project "timer"
+				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -5362,7 +5873,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 35.56 178.435 0)
+		(at 34.29 179.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5371,7 +5882,7 @@
 		(fields_autoplaced yes)
 		(uuid "dc61acf6-4aad-4e25-a032-9ea445a23eb7")
 		(property "Reference" "#PWR02"
-			(at 35.56 184.785 0)
+			(at 34.29 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5380,7 +5891,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 35.56 183.515 0)
+			(at 34.29 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5388,7 +5899,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 178.435 0)
+			(at 34.29 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5397,7 +5908,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 178.435 0)
+			(at 34.29 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5406,7 +5917,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 35.56 178.435 0)
+			(at 34.29 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5450,7 +5961,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R_Small_US"
+		(property "Value" "0"
 			(at 106.045 88.265 0)
 			(effects
 				(font
@@ -5543,7 +6054,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0201_0603Metric"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 85.725 73.025 0)
 			(effects
 				(font
