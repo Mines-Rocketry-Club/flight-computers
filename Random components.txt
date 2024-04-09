@@ -1,0 +1,52 @@
+Thinking rocks: 
+	[insert thinking rocks here]
+
+
+Power stuff:
+	TC2185-3.3 (The same one as TeleMetrum) - Screamer(?), Timer, Guesser, Knower
+	https://www.digikey.com/en/products/detail/microchip-technology/TC2185-3-3VCTTR/443217
+
+
+Battery connector: 
+	1775469-2 (Right angle JST connector) - Screamer, Timer, Guesser, Knower
+	https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/1775469-2/2077982
+
+
+Accelerometers: 
+	H3LIS100DLTR (3-axis accelerometer) - Timer, Guesser
+	https://www.digikey.com/en/products/detail/stmicroelectronics/H3LIS100DLTR/5268009
+
+	BNO055 (9-axis IMU) - Knower
+	https://www.digikey.com/en/products/detail/bosch-sensortec/BNO055/6136301
+
+
+Barometers: 
+	[insert barometers here]
+
+
+GPS: 
+	MAX-10S - Guesser, Knower(?) (Possibly a better one on the Knower?)
+	https://www.digikey.com/en/products/detail/u-blox/MAX-M10S-00B/15712906
+
+
+RF transciever:
+	CC1200RHBR - Timer, Guesser, Knower
+	https://www.digikey.com/en/products/detail/texas-instruments/CC1200RHBR/4251536
+
+
+Terminal blocks: 
+	1-2834019-4 (The short ones) - Timer, Guesser, Knower(?)
+	https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/1-2834019-4/5872958
+
+	2601-1104 (The wago ones) - Knower(?)
+	https://www.digikey.com/en/products/detail/wago-corporation/2601-1104/17123797
+
+
+Memory chip: 
+	THGAMVG7T13BAIL (128 GBit) - Guesser(?), Knower
+	https://www.digikey.com/en/products/detail/kioxia-america-inc/THGAMVG7T13BAIL/15995175
+
+
+Micro SD slot:
+	DM3CS - Timer, Guesser, Knower
+	https://www.digikey.com/en/products/detail/hirose-electric-co-ltd/DM3CS-SF/2602739
