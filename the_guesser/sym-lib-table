@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "local")(type "KiCad")(uri "../resources/locals")(options "")(descr ""))
+  (lib (name "locals")(type "KiCad")(uri "/home/tompowell/flight-computers/resources/locals/locals.kicad_sym")(options "")(descr ""))
+)
