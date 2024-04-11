@@ -565,6 +565,199 @@
 				)
 			)
 		)
+<<<<<<< Updated upstream
+=======
+		(symbol "RF_Amplifier:BGA2870"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 2.54 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BGA2870"
+				(at 3.81 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+				(at -1.27 -16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/BGA2870.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "MMIC wideband amplifier, DC-2.2GHz, +31.1dB @ 500MHz, 2.5V, SOT-363"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "RF GAIN BLOCK"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT*363*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BGA2870_0_1"
+				(polyline
+					(pts
+						(xy 5.08 0) (xy -5.08 5.08) (xy -5.08 -5.08) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "BGA2870_1_1"
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "Vcc"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -7.62 90)
+					(length 3.81) hide
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -7.62 90)
+					(length 3.81) hide
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+>>>>>>> Stashed changes
 		(symbol "Regulator_Linear:TC2185-3.3VxCTTR"
 			(pin_names
 				(offset 0.254)
@@ -951,7 +1144,11 @@
 	)
 	(symbol
 		(lib_id "Regulator_Linear:TC2185-3.3VxCTTR")
+<<<<<<< Updated upstream
 		(at 71.12 34.29 0)
+=======
+		(at 87.63 34.29 0)
+>>>>>>> Stashed changes
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -960,7 +1157,11 @@
 		(fields_autoplaced yes)
 		(uuid "3b6457cf-00a3-4481-9f59-ebd250297583")
 		(property "Reference" "U1"
+<<<<<<< Updated upstream
 			(at 71.12 25.4 0)
+=======
+			(at 87.63 25.4 0)
+>>>>>>> Stashed changes
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -968,7 +1169,11 @@
 			)
 		)
 		(property "Value" "TC2185-3.3VxCTTR"
+<<<<<<< Updated upstream
 			(at 71.12 27.94 0)
+=======
+			(at 87.63 27.94 0)
+>>>>>>> Stashed changes
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -976,7 +1181,11 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+<<<<<<< Updated upstream
 			(at 71.12 26.035 0)
+=======
+			(at 87.63 26.035 0)
+>>>>>>> Stashed changes
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -985,7 +1194,11 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21662F.pdf"
+<<<<<<< Updated upstream
 			(at 71.12 34.29 0)
+=======
+			(at 87.63 34.29 0)
+>>>>>>> Stashed changes
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -994,7 +1207,11 @@
 			)
 		)
 		(property "Description" "3.3V 150mA CMOS LDO with Shutdown and Vref Bypass, SOT-23-5"
+<<<<<<< Updated upstream
 			(at 71.12 34.29 0)
+=======
+			(at 87.63 34.29 0)
+>>>>>>> Stashed changes
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1097,8 +1314,93 @@
 		)
 	)
 	(symbol
+<<<<<<< Updated upstream
 		(lib_id "Device:Antenna")
 		(at 171.45 29.21 0)
+=======
+		(lib_id "RF_Amplifier:BGA2870")
+		(at 191.77 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "91c759fd-8a69-45d5-b5bc-453bd04a1c12")
+		(property "Reference" "U2"
+			(at 203.2 30.5114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BGA2870"
+			(at 203.2 33.0514 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+			(at 190.5 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/BGA2870.pdf"
+			(at 191.77 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "MMIC wideband amplifier, DC-2.2GHz, +31.1dB @ 500MHz, 2.5V, SOT-363"
+			(at 191.77 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d881c7a7-6e71-4301-8bb7-fd8423a592a5")
+		)
+		(pin "1"
+			(uuid "fb527ebc-8fe4-4c7b-84fb-6f63434ea18a")
+		)
+		(pin "5"
+			(uuid "9d6a0e51-e6b8-4e66-897f-e9fa8bfaf63f")
+		)
+		(pin "6"
+			(uuid "7ce4ea03-886b-4852-9ba7-f5748531dd84")
+		)
+		(pin "3"
+			(uuid "cc6ef827-185b-44d7-a509-5b5ee13ce5e4")
+		)
+		(pin "4"
+			(uuid "0ee4af11-97e3-45dd-80e1-6e421eada37d")
+		)
+		(instances
+			(project "screamer"
+				(path "/2e60cbe6-be85-4859-bc44-cf74ef803e12"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Antenna")
+		(at 231.14 27.94 0)
+>>>>>>> Stashed changes
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1107,7 +1409,11 @@
 		(fields_autoplaced yes)
 		(uuid "9b1b1a9f-9d9d-4d35-a5cb-771753c814ad")
 		(property "Reference" "AE1"
+<<<<<<< Updated upstream
 			(at 173.99 28.5749 0)
+=======
+			(at 233.68 27.3049 0)
+>>>>>>> Stashed changes
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1116,7 +1422,11 @@
 			)
 		)
 		(property "Value" "Antenna"
+<<<<<<< Updated upstream
 			(at 173.99 31.1149 0)
+=======
+			(at 233.68 29.8449 0)
+>>>>>>> Stashed changes
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1125,7 +1435,11 @@
 			)
 		)
 		(property "Footprint" ""
+<<<<<<< Updated upstream
 			(at 171.45 29.21 0)
+=======
+			(at 231.14 27.94 0)
+>>>>>>> Stashed changes
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1134,7 +1448,11 @@
 			)
 		)
 		(property "Datasheet" "~"
+<<<<<<< Updated upstream
 			(at 171.45 29.21 0)
+=======
+			(at 231.14 27.94 0)
+>>>>>>> Stashed changes
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1143,7 +1461,11 @@
 			)
 		)
 		(property "Description" "Antenna"
+<<<<<<< Updated upstream
 			(at 171.45 29.21 0)
+=======
+			(at 231.14 27.94 0)
+>>>>>>> Stashed changes
 			(effects
 				(font
 					(size 1.27 1.27)
