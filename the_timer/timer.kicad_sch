@@ -4,6 +4,13 @@
 	(generator_version "8.0")
 	(uuid "e2b0a296-fcac-4dcc-93f1-26b3dc1147d1")
 	(paper "A4")
+	(title_block
+		(title "Timer")
+		(date "2024-04-12")
+		(rev "0.0.1")
+		(company "Mines Rocket Club")
+		(comment 1 "William Layne")
+	)
 	(lib_symbols
 		(symbol "Connector:AVR-ISP-6"
 			(pin_names
