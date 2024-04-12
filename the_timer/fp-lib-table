@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "locals")(type "KiCad")(uri "C:/Users/willl/Documents/GitHub/flight-computers/resources/locals.pretty")(options "")(descr ""))
+)
