@@ -41,3 +41,6 @@ Due to the extremley low power consumption of the system, it can be powered para
 #### Design
 ### The Guesser
 ### The Knower
+## License
+All hardware contained within this repository is under the TAPR Open Hardware License (OHL), which can be found, in full, in `HW_LICENSE`.
+All software contained within this repository is under the GPL, which can be found, in full, in `FW_LICENSE`.
