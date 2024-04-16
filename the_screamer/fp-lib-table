@@ -1,4 +1,6 @@
 (fp_lib_table
   (version 7)
   (lib (name "locals")(type "KiCad")(uri "/home/tompowell/flight-computers/resources/locals.pretty")(options "")(descr ""))
+  (lib (name "locals but working PLEASE")(type "KiCad")(uri "C:/Users/atwu4/Documents/GitHub/flight-computers/resources/locals but working PLEASE.pretty")(options "")(descr ""))
+  (lib (name "locals_but_working_PLEASE")(type "KiCad")(uri "C:/Users/atwu4/Documents/GitHub/flight-computers/resources/locals_but_working_PLEASE.pretty")(options "")(descr ""))
 )

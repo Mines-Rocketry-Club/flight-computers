@@ -968,6 +968,88 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "Regulator_Linear:TC2185-3.3VxCTTR"
 			(pin_names
 				(offset 0.254)
@@ -1447,7 +1529,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 46.99) (xy 44.45 46.99)
+			(xy 39.37 50.8) (xy 44.45 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1457,7 +1539,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 46.99) (xy 26.67 27.94)
+			(xy 26.67 27.94) (xy 26.67 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1597,16 +1679,6 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 27.94) (xy 27.94 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d3fd613-fedd-467b-b406-dbac55c03dc7")
-	)
-	(wire
-		(pts
 			(xy 184.15 38.1) (xy 198.12 38.1)
 		)
 		(stroke
@@ -1614,16 +1686,6 @@
 			(type default)
 		)
 		(uuid "602354b5-e12c-4273-98ec-bfc862d2b38a")
-	)
-	(wire
-		(pts
-			(xy 31.75 46.99) (xy 26.67 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63556e9e-f39a-452b-bd18-444e039b8f85")
 	)
 	(wire
 		(pts
@@ -1654,6 +1716,16 @@
 			(type default)
 		)
 		(uuid "747bf649-98d2-4e3e-be60-f0096987a63d")
+	)
+	(wire
+		(pts
+			(xy 26.67 27.94) (xy 27.94 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74c89b78-4f89-4ce3-b027-c4956f27bd3e")
 	)
 	(wire
 		(pts
@@ -1707,7 +1779,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 46.99) (xy 44.45 27.94)
+			(xy 44.45 27.94) (xy 44.45 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1754,6 +1826,16 @@
 			(type default)
 		)
 		(uuid "cb6a63b9-f40b-42e4-a476-f1a922f2ba1f")
+	)
+	(wire
+		(pts
+			(xy 26.67 50.8) (xy 31.75 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6b3994e-6e97-4ad1-923a-c65edf32d0ba")
 	)
 	(wire
 		(pts
@@ -1834,6 +1916,28 @@
 			(type default)
 		)
 		(uuid "fad37fed-b87c-494e-b647-57b71f6deeee")
+	)
+	(label "RF+"
+		(at 222.25 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "68490567-de31-4d6b-b96c-af0aaf4ad949")
+	)
+	(label "RF-"
+		(at 222.25 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "efbc3d87-2444-4419-863d-b3c66087269d")
 	)
 	(global_label "V_{CC}"
 		(shape input)
@@ -2171,7 +2275,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 36.83 46.99 90)
+		(at 34.29 50.8 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2180,7 +2284,7 @@
 		(dnp no)
 		(uuid "266fa5a2-e02b-49b0-9ec6-bad9954b40fb")
 		(property "Reference" "BT1"
-			(at 34.9885 54.61 90)
+			(at 36.1315 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2188,15 +2292,15 @@
 			)
 		)
 		(property "Value" "Battery_Cell"
-			(at 34.9885 52.07 90)
+			(at 36.1315 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "locals:TE Right Angle JST"
-			(at 35.306 46.99 90)
+		(property "Footprint" "locals_but_working_PLEASE:JST_CONN2_1775469-2_TEC"
+			(at 35.814 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2205,7 +2309,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 35.306 46.99 90)
+			(at 35.814 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2214,7 +2318,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 36.83 46.99 0)
+			(at 34.29 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2223,7 +2327,7 @@
 			)
 		)
 		(property "DKPN" "NA"
-			(at 36.83 46.99 0)
+			(at 34.29 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2273,7 +2377,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 199.39 26.67 0)
 			(effects
 				(font
@@ -2562,6 +2666,70 @@
 			(project "screamer"
 				(path "/2e60cbe6-be85-4859-bc44-cf74ef803e12"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 71.12 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b5c4908-c747-4b5d-8cff-e868bfc93420")
+		(property "Reference" "H1"
+			(at 73.66 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 73.66 66.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 71.12 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 71.12 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 71.12 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "screamer"
+				(path "/2e60cbe6-be85-4859-bc44-cf74ef803e12"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -3013,6 +3181,70 @@
 			(project "screamer"
 				(path "/2e60cbe6-be85-4859-bc44-cf74ef803e12"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 71.12 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a94ef21d-bb0d-4a4d-951e-229579226252")
+		(property "Reference" "H2"
+			(at 73.66 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 73.66 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 71.12 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 71.12 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 71.12 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "screamer"
+				(path "/2e60cbe6-be85-4859-bc44-cf74ef803e12"
+					(reference "H2")
 					(unit 1)
 				)
 			)
