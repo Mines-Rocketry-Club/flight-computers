@@ -1917,6 +1917,28 @@
 		)
 		(uuid "fad37fed-b87c-494e-b647-57b71f6deeee")
 	)
+	(label "RF+"
+		(at 222.25 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "68490567-de31-4d6b-b96c-af0aaf4ad949")
+	)
+	(label "RF-"
+		(at 222.25 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "efbc3d87-2444-4419-863d-b3c66087269d")
+	)
 	(global_label "V_{CC}"
 		(shape input)
 		(at 121.92 30.48 0)
