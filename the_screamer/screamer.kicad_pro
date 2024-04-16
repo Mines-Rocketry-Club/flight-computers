@@ -14,6 +14,7 @@
         "copper_text_thickness": 0.3,
         "copper_text_upright": false,
         "courtyard_line_width": 0.05,
+
         "dimension_precision": 4,
         "dimension_units": 3,
         "dimensions": {
@@ -30,6 +31,7 @@
         "fab_text_size_v": 1.0,
         "fab_text_thickness": 0.15,
         "fab_text_upright": false,
+
         "other_line_width": 0.1,
         "other_text_italic": false,
         "other_text_size_h": 1.0,

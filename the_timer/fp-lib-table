@@ -1,4 +1,12 @@
 (fp_lib_table
   (version 7)
+<<<<<<< HEAD
   (lib (name "locals")(type "KiCad")(uri "C:/Users/atwu4/Documents/GitHub/flight-computers/resources/locals.pretty")(options "")(descr ""))
+=======
+<<<<<<< HEAD
+  (lib (name "locals")(type "KiCad")(uri "C:/Users/willl/Documents/GitHub/flight-computers/resources/locals.pretty")(options "")(descr ""))
+=======
+  (lib (name "locals")(type "KiCad")(uri "C:/Users/atwu4/Documents/GitHub/flight-computers/resources/locals.pretty")(options "")(descr ""))
+>>>>>>> 32ba55f (Finished rerouting timer)
+>>>>>>> guesser-schematics
 )
