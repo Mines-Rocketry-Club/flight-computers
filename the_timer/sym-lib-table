@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "locals")(type "KiCad")(uri "C:/Users/willl/Documents/GitHub/flight-computers/resources/locals/locals.kicad_sym")(options "")(descr ""))
+  (lib (name "ESP32-S3R8")(type "KiCad")(uri "C:/Users/willl/Documents/GitHub/flight-computers/resources/locals/ESP32-S3R8.kicad_sym")(options "")(descr ""))
+)
