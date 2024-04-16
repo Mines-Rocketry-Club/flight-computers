@@ -272,22 +272,35 @@
 				)
 			)
 		)
+<<<<<<< HEAD
 		(symbol "Connector:Conn_01x02_Socket"
+=======
+		(symbol "Connector:Conn_01x04_Socket"
+>>>>>>> 32ba55f (Finished rerouting timer)
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
+<<<<<<< HEAD
 				(at 0 2.54 0)
+=======
+				(at 0 5.08 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
+<<<<<<< HEAD
 			(property "Value" "Conn_01x02_Socket"
 				(at 0 -5.08 0)
+=======
+			(property "Value" "Conn_01x04_Socket"
+				(at 0 -7.62 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -312,7 +325,11 @@
 					(hide yes)
 				)
 			)
+<<<<<<< HEAD
 			(property "Description" "Generic connector, single row, 01x02, script generated"
+=======
+			(property "Description" "Generic connector, single row, 01x04, script generated"
+>>>>>>> 32ba55f (Finished rerouting timer)
 				(at 0 0 0)
 				(effects
 					(font
@@ -347,6 +364,7 @@
 					(hide yes)
 				)
 			)
+<<<<<<< HEAD
 			(symbol "Conn_01x02_Socket_1_1"
 				(arc
 					(start 0 -2.032)
@@ -509,6 +527,8 @@
 					(hide yes)
 				)
 			)
+=======
+>>>>>>> 32ba55f (Finished rerouting timer)
 			(symbol "Conn_01x04_Socket_1_1"
 				(arc
 					(start 0 -4.572)
@@ -3985,7 +4005,11 @@
 		)
 		(uuid "0eceafa9-8b02-4244-9054-cbd4d4d46b2b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+<<<<<<< HEAD
 			(at 57.3533 110.49 0)
+=======
+			(at 56.0833 113.03 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4195,7 +4219,11 @@
 	)
 	(global_label "c1"
 		(shape input)
+<<<<<<< HEAD
 		(at 179.07 92.71 180)
+=======
+		(at 229.87 63.5 180)
+>>>>>>> 32ba55f (Finished rerouting timer)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4205,6 +4233,7 @@
 		)
 		(uuid "51d1f901-2928-432b-89bb-13d4635ff70f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+<<<<<<< HEAD
 			(at 173.7867 92.71 0)
 			(effects
 				(font
@@ -4228,6 +4257,9 @@
 		(uuid "528d086e-6a7c-4369-8144-1208b44270e8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 123.0472 113.03 0)
+=======
+			(at 224.5867 63.5 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4811,7 +4843,11 @@
 	)
 	(global_label "c2"
 		(shape input)
+<<<<<<< HEAD
 		(at 179.07 95.25 180)
+=======
+		(at 229.87 66.04 180)
+>>>>>>> 32ba55f (Finished rerouting timer)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4821,7 +4857,11 @@
 		)
 		(uuid "aeda6d89-b364-4389-9580-ae95979004cf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+<<<<<<< HEAD
 			(at 173.7867 95.25 0)
+=======
+			(at 224.5867 66.04 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5053,7 +5093,11 @@
 	)
 	(global_label "c0"
 		(shape input)
+<<<<<<< HEAD
 		(at 179.07 90.17 180)
+=======
+		(at 229.87 60.96 180)
+>>>>>>> 32ba55f (Finished rerouting timer)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5063,7 +5107,11 @@
 		)
 		(uuid "f1d763d9-1b59-44d4-922e-a8cf2be58885")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+<<<<<<< HEAD
 			(at 173.7867 90.17 0)
+=======
+			(at 224.5867 60.96 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5095,6 +5143,94 @@
 			)
 		)
 	)
+<<<<<<< HEAD
+=======
+	(symbol
+		(lib_id "Device:C")
+		(at 22.225 35.56 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1761e4f4-1d2b-4709-862e-db3cc2e85e1d")
+		(property "Reference" "C2"
+			(at 19.05 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220u"
+			(at 19.05 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+			(at 21.2598 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 22.225 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 22.225 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" ""
+			(at 22.225 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "afd9474d-d4d7-4ab3-85e6-3a8fafb2b3cd")
+		)
+		(pin "2"
+			(uuid "56d88da7-b9db-443d-9d50-adfc6af3adfb")
+		)
+		(instances
+			(project "timer"
+				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+			(project "Ping"
+				(path "/fd9615be-e2a3-47ef-8586-c415f6857bc8"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+>>>>>>> 32ba55f (Finished rerouting timer)
 	(symbol
 		(lib_id "globals:MC3416")
 		(at 135.255 34.925 0)
@@ -5454,7 +5590,11 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Socket")
+<<<<<<< HEAD
 		(at 184.15 92.71 0)
+=======
+		(at 234.95 63.5 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5463,7 +5603,11 @@
 		(fields_autoplaced yes)
 		(uuid "2b029f0c-5282-472b-96a7-c69c9eb47a71")
 		(property "Reference" "J2"
+<<<<<<< HEAD
 			(at 185.42 92.7099 0)
+=======
+			(at 236.22 63.4999 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5472,7 +5616,11 @@
 			)
 		)
 		(property "Value" "Conn_01x04_Socket"
+<<<<<<< HEAD
 			(at 185.42 95.2499 0)
+=======
+			(at 236.22 66.0399 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5481,7 +5629,11 @@
 			)
 		)
 		(property "Footprint" "locals:TE_1-2834019-4"
+<<<<<<< HEAD
 			(at 184.15 92.71 0)
+=======
+			(at 234.95 63.5 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5490,7 +5642,11 @@
 			)
 		)
 		(property "Datasheet" "~"
+<<<<<<< HEAD
 			(at 184.15 92.71 0)
+=======
+			(at 234.95 63.5 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5499,7 +5655,11 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
+<<<<<<< HEAD
 			(at 184.15 92.71 0)
+=======
+			(at 234.95 63.5 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6630,7 +6790,11 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+<<<<<<< HEAD
 		(at 179.07 97.79 0)
+=======
+		(at 229.87 68.58 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6639,7 +6803,11 @@
 		(fields_autoplaced yes)
 		(uuid "9d1a2a0c-18b6-4fb9-a8fa-71c392f16027")
 		(property "Reference" "#PWR03"
+<<<<<<< HEAD
 			(at 179.07 104.14 0)
+=======
+			(at 229.87 74.93 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6648,7 +6816,11 @@
 			)
 		)
 		(property "Value" "GND"
+<<<<<<< HEAD
 			(at 179.07 102.235 0)
+=======
+			(at 229.87 73.025 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6656,7 +6828,11 @@
 			)
 		)
 		(property "Footprint" ""
+<<<<<<< HEAD
 			(at 179.07 97.79 0)
+=======
+			(at 229.87 68.58 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6665,7 +6841,11 @@
 			)
 		)
 		(property "Datasheet" ""
+<<<<<<< HEAD
 			(at 179.07 97.79 0)
+=======
+			(at 229.87 68.58 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6674,7 +6854,11 @@
 			)
 		)
 		(property "Description" ""
+<<<<<<< HEAD
 			(at 179.07 97.79 0)
+=======
+			(at 229.87 68.58 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6701,6 +6885,7 @@
 		)
 	)
 	(symbol
+<<<<<<< HEAD
 		(lib_id "Mechanical:MountingHole")
 		(at 82.55 149.86 0)
 		(unit 1)
@@ -6712,6 +6897,19 @@
 		(uuid "ae49f5ef-199c-4b17-bdff-47f5d3915a14")
 		(property "Reference" "H1"
 			(at 85.09 148.5899 0)
+=======
+		(lib_id "Device:Battery_Cell")
+		(at 40.005 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5043fdf-1b83-4bf6-a9f2-03d90a4fa6ba")
+		(property "Reference" "BT1"
+			(at 43.815 33.7185 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6719,8 +6917,13 @@
 				(justify left)
 			)
 		)
+<<<<<<< HEAD
 		(property "Value" "MountingHole"
 			(at 85.09 151.1299 0)
+=======
+		(property "Value" "External"
+			(at 43.815 36.2585 0)
+>>>>>>> 32ba55f (Finished rerouting timer)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6728,8 +6931,13 @@
 				(justify left)
 			)
 		)
+<<<<<<< HEAD
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 82.55 149.86 0)
+=======
+		(property "Footprint" "locals:TE Right Angle JST"
+			(at 40.005 35.306 90)
+>>>>>>> 32ba55f (Finished rerouting timer)
 			(effects
 				(font
 					(size 1.27 1.27)
