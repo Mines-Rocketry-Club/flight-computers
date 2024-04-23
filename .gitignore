@@ -32,5 +32,8 @@ fp-info-cache
 *.zip
 .Rproj.user
 
-#NO FUCKING ARDUINO LIBRARIES
+# No platformio please
 **\.pio\**
+
+# No VS Code
+**\.vscode\**
