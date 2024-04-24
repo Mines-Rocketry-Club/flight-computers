@@ -1,6 +1,6 @@
 /**
  * @file PyroCharge.cpp
- * @author William Layne (will.layne@outlook.com)
+ * @author William Layne
  * @brief Handles the state and firing of the pyro charges.
  * @version 0.1
  * @date 2024-04-23
@@ -10,22 +10,10 @@
  */
 
 #include <Arduino.h>
+#include <PyroCharge.h>
 
-#ifndef PYROCHARGE_H
-#define PYROCHARGE_H
-
-class PyroCharge {
-public:
-    PyroCharge(uint8_t channel, float value, p_triggerType triggerType);
-    void setActivationEvent();
-    void tryFiring(float altitudeMeters, float timeSeconds, fc_states fc_state);
-    
-private:
-    p_activationEvents _activationEvent = p_activationEvents::APOGEE;
-    p_triggerType _triggerType;
-    bool _isActive = false;
-    uint8_t _channel;
-    float _value;
-};
-
-#endif
+PyroCharge::PyroCharge(int8_t channel, pc_triggerType triggerType, float value) {
+    m_channel = channel;
+    m_triggerType = triggerType;
+    m_value = value;
+}
