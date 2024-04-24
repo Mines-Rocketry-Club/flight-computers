@@ -37,3 +37,7 @@ fp-info-cache
 
 # No VS Code
 **\.vscode\**
+
+# No target dir from rust
+**\target\**
+Cargo.lock
