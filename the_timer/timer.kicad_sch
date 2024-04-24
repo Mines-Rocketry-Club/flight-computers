@@ -3773,13 +3773,13 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 57.15) (xy 31.75 57.15)
+			(xy 27.94 57.15) (xy 27.94 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4411a8b5-c7b8-4944-8bcd-78dd18582a94")
+		(uuid "2bd35bcc-0913-45fa-b027-0446bf5cf932")
 	)
 	(wire
 		(pts
@@ -3813,16 +3813,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 57.15) (xy 43.18 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6abcc7c8-db52-4f50-b181-7d36a8ac1096")
-	)
-	(wire
-		(pts
 			(xy 35.56 30.48) (xy 35.56 27.94)
 		)
 		(stroke
@@ -3850,6 +3840,26 @@
 			(type default)
 		)
 		(uuid "79f53dd7-59a2-40bd-931f-559b226bb48e")
+	)
+	(wire
+		(pts
+			(xy 39.37 57.15) (xy 43.18 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1c14764-56e6-4b08-bf94-0408d686ba51")
+	)
+	(wire
+		(pts
+			(xy 43.18 38.1) (xy 43.18 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2af8f72-1998-4a27-a8df-a8f7f461d645")
 	)
 	(wire
 		(pts
@@ -3883,16 +3893,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 38.1) (xy 27.94 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c58aa081-40fe-49c3-ba1c-212a87103bca")
-	)
-	(wire
-		(pts
 			(xy 90.17 63.5) (xy 99.06 63.5)
 		)
 		(stroke
@@ -3903,6 +3903,16 @@
 	)
 	(wire
 		(pts
+			(xy 31.75 57.15) (xy 27.94 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2da365f-1ac6-4b77-9069-5c93d00a83ff")
+	)
+	(wire
+		(pts
 			(xy 107.95 80.01) (xy 107.95 78.74)
 		)
 		(stroke
@@ -3910,16 +3920,6 @@
 			(type default)
 		)
 		(uuid "d87a0a93-0cd4-47b9-8a9a-4c2ae956fbb9")
-	)
-	(wire
-		(pts
-			(xy 43.18 38.1) (xy 43.18 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3228abf-3608-4bf8-b8ec-03e375acd5d5")
 	)
 	(wire
 		(pts
@@ -4371,22 +4371,22 @@
 	)
 	(global_label "VB+"
 		(shape input)
-		(at 43.18 57.15 0)
+		(at 27.94 57.15 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "70f87e3b-0b22-4bf9-b600-db1bf02d3153")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 50.0962 57.15 0)
+			(at 21.0238 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -4701,22 +4701,22 @@
 	)
 	(global_label "VB-"
 		(shape input)
-		(at 27.94 57.15 180)
+		(at 43.18 57.15 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "9910fc54-99e8-4378-8e6f-5a81118cb690")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.0238 57.15 0)
+			(at 50.0962 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -6766,7 +6766,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 34.29 57.15 270)
+		(at 36.83 57.15 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6774,7 +6774,7 @@
 		(dnp no)
 		(uuid "c5043fdf-1b83-4bf6-a9f2-03d90a4fa6ba")
 		(property "Reference" "BT1"
-			(at 34.036 50.546 90)
+			(at 37.084 53.086 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6783,7 +6783,7 @@
 			)
 		)
 		(property "Value" "External"
-			(at 31.496 52.832 90)
+			(at 39.624 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6791,8 +6791,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "locals:CONN2_1775469-2_TEC"
-			(at 35.814 57.15 90)
+		(property "Footprint" "locals:TE Right Angle JST"
+			(at 35.306 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6801,7 +6801,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 35.814 57.15 90)
+			(at 35.306 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6810,7 +6810,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 34.29 57.15 0)
+			(at 36.83 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6819,7 +6819,7 @@
 			)
 		)
 		(property "DKPN" "A100080CT-ND"
-			(at 34.29 57.15 0)
+			(at 36.83 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6828,7 +6828,7 @@
 			)
 		)
 		(property "Field5" ""
-			(at 34.29 57.15 0)
+			(at 36.83 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
