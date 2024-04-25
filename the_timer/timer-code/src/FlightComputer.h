@@ -22,14 +22,16 @@ enum fc_state {
 
 class FlightComputer {
 public:
-    // Needs to initialize all 3 pyro charges to channels 0, 1, 2 and set them all as inactive
-    // This is so when the flight computer goes to fire each charge, it doesn't run into nothing
     FlightComputer();
     void createCharge(uint8_t channel, pc_triggerType triggerType, float value);
-    void tryFiringCharges();
-    void update();
+    void updatePyroCharges();
+    void updateReadings();
+    void storeReadings(); // IMPLIMENT LATER
 
 private:
+    const uint8_t m_numCharges = 3;
+    const uint8_t m_pyroPins[3] = {0, 1, 2};    // TRANSLATE "CHANNEL" TO PIN NUMBER ON THE CHIP. MIGHT BE A BAD IDEA
+    float m_startingAltitudeMeters;
     float m_metersAboveGround;
     float m_secondsSinceApogee;
     fc_state m_state;

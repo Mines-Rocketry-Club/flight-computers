@@ -21,15 +21,18 @@ enum pc_triggerType {
 
 class PyroCharge {
 public:
-    PyroCharge(bool isActive, int8_t channel, pc_triggerType triggerType, float value);
-    bool canChargeFire(float secondsSinceApogee, float metersAboveGround) const;
+    PyroCharge();
+    void setupCharge(int8_t pin, pc_triggerType triggerType, float value);
+    bool canFire(float secondsSinceApogee, float metersAboveGround) const;
     void fire();
+    //void update(); BAD
 private:
     bool m_isActive;
-    const uint8_t m_channel;
-    const pc_triggerType m_triggerType;
-    const float m_value;
-    uint32_t m_timeOfFiring;
+    bool m_hasFired;
+    uint8_t m_pin;
+    pc_triggerType m_triggerType;
+    float m_value;
+    uint32_t m_timeOfFiring;   // WHAT UNIT IS THIS NUMBER?? CURRENTLY MILLISECONDS. FASTER TO KEEP IN MILLIS SO WE DON'T NEED DIVISION
 };
 
 #endif

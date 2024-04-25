@@ -11,22 +11,28 @@
 
 #include <Arduino.h>
 #include <PyroCharge.h>
+#include <FlightComputer.h>
 
 FlightComputer::FlightComputer() {
     m_state = IDLE;
-    for(int i = 0; i < 3; i++) {
-        createCharge(i, ALTITUDE, -10000);
-    }
+    m_metersAboveGround = 0;
+    m_secondsSinceApogee = 0;
+    //m_startingAltitudeMeters = getAltimiterData();
 }
 
 void FlightComputer::createCharge(uint8_t channel, pc_triggerType triggerType, float value) {
-    m_charges[channel] = PyroCharge(channel, triggerType, value);
+    m_charges[channel].setupCharge(m_pyroPins[channel], triggerType, value);    // PLEASE DOUBLE TRIPLE CHECK THAT THE THING TRANSLATING PYRO CHANNEL TO PIN NUMBER WORKS
+                                                                                // DO WE EVEN NEED IT? SHOULD WE JUST SPECIFY IT DIRECTLY IN THE IFDEFS?
 }
 
-void FlightComputer::tryFiringCharges() {
-    for(int i = 0; i < 3; i++) {
+void FlightComputer::updatePyroCharges() {
+    for(uint8_t i = 0; i < m_numCharges; i++) {
         if(m_charges[i].canFire(m_metersAboveGround, m_secondsSinceApogee)) {
             m_charges[i].fire();
         }
     }
+}
+
+void FlightComputer::updateReadings() {
+    // GET DATA HERE
 }
