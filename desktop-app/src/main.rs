@@ -1,10 +1,12 @@
+mod interface;
+mod types;
+mod computers;
 use log::{warn, info, error};
 use egui::{self, Options};
 use eframe::{self, App};
-mod types;
-mod hw_interface;
-
+use computers::{timer, guesser, knower};
 fn main() -> Result<(), eframe::Error> {
+    env_logger::init();
     info!("Starting Application");
     let options = eframe::NativeOptions {
         viewport: egui::ViewportBuilder::default().with_inner_size([720.0,480.0]),
@@ -35,7 +37,7 @@ impl Default for Application {
             window_x: 720.0,
             window_y: 480.0,
             current_computer:types::FlightComputerModel::Timer,
-            avalible_ports: hw_interface::get_avalible_ports(),
+            avalible_ports: interface::get_avalible_ports(),
             current_port: types::PortSelectorValues::None,
         }
     }
@@ -49,14 +51,14 @@ impl eframe::App for Application {
 
             }
             // processing the ports for the port selector
-            let c_port = self.current_port;
+            let c_port = &self.current_port.to_string();
             egui::ComboBox::from_label("Select Port...")
-            .selected_text(format!("{c_port:?}"))
+            .selected_text(format!("{c_port}"))
             .show_ui(ui, |ui|{
-                for p in self.avalible_ports {
-                    ui.selectable_value(self.current_port, p, p);
+                for p in &self.avalible_ports {
+                    ui.selectable_value(&mut self.current_port, types::PortSelectorValues::Port(p.to_string() ), p.to_string());
                 }
-                ui.selectable_value(self.current_port, selected_value, "None")
+                ui.selectable_value(&mut self.current_port, types::PortSelectorValues::None, "None")
             })
         });
     }

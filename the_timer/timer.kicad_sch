@@ -5419,6 +5419,15 @@
 				(hide yes)
 			)
 		)
+		(property "DKPN" "CONN"
+			(at 85.725 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fb25f61b-e4f2-41db-9205-b74bcb6c37f8")
 		)
@@ -5499,6 +5508,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 184.15 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "CONN"
 			(at 184.15 92.71 0)
 			(effects
 				(font
@@ -5831,6 +5849,15 @@
 				(hide yes)
 			)
 		)
+		(property "DKPN" "CONN"
+			(at 109.22 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "timer"
 				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
@@ -6039,6 +6066,15 @@
 				(hide yes)
 			)
 		)
+		(property "DKPN" "CONN"
+			(at 185.42 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "df5582ea-4093-44f7-999c-4bf420dad7fd")
 		)
@@ -6109,7 +6145,7 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" ""
+		(property "DKPN" "STOCK"
 			(at 48.26 36.83 0)
 			(effects
 				(font
@@ -6362,6 +6398,15 @@
 				(hide yes)
 			)
 		)
+		(property "DKPN" "W25Q128JVSIQ-ND"
+			(at 87.63 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "fc030e85-b82e-4d79-b49c-a7d1c220e8c6")
 		)
@@ -6440,6 +6485,15 @@
 			)
 		)
 		(property "Description" "Miniature Glass Passivated Single-Phase Surface Mount Bridge Rectifiers, 700V Vrms, 1.0A If, DFS SMD package"
+			(at 35.56 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "MB6SCT-ND"
 			(at 35.56 38.1 0)
 			(effects
 				(font
@@ -6747,6 +6801,15 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 82.55 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "CONN"
 			(at 82.55 149.86 0)
 			(effects
 				(font
@@ -7358,6 +7421,15 @@
 				(hide yes)
 			)
 		)
+		(property "DKPN" "CONN"
+			(at 137.16 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "timer"
 				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
@@ -7414,6 +7486,15 @@
 			)
 		)
 		(property "Description" "Barometric pressure sensor, 20cm resolution, 10 to 1200 mbar, I2C and SPI interface up to 20MHz, LGA-8"
+			(at 139.7 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "223-1198-1-ND"
 			(at 139.7 110.49 0)
 			(effects
 				(font

@@ -1,4 +1,4 @@
-use std::vec;
+use std::{fmt, vec};
 /// Standard, 3-place semantic versioning version number.
 pub type Version = (u8,u8,u8);
 /// Compatible flight computer implementations.
@@ -17,7 +17,16 @@ pub struct FlightData {
 pub struct HwError {
     why: &'static str,
 }
+#[derive(PartialEq)]
 pub enum PortSelectorValues{
     Port(String),
     None,
+}
+impl std::fmt::Display for PortSelectorValues {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        match self {
+            PortSelectorValues::Port(p) => write!(f, "{}",p),
+            PortSelectorValues::None => write!(f, "{}", "None"),
+        }
+    }
 }

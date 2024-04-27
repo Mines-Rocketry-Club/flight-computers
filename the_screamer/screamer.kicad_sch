@@ -2548,7 +2548,7 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "NA"
+		(property "DKPN" "CONN"
 			(at 34.29 50.8 0)
 			(effects
 				(font
@@ -2626,7 +2626,7 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" ""
+		(property "DKPN" "CW161009A-13NJCT-ND"
 			(at 199.39 26.67 0)
 			(effects
 				(font
@@ -2783,7 +2783,7 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" ""
+		(property "DKPN" "STOCK"
 			(at 184.15 41.91 0)
 			(effects
 				(font
@@ -2940,6 +2940,15 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 71.12 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "STOCK"
 			(at 71.12 64.77 0)
 			(effects
 				(font
@@ -3318,7 +3327,7 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" ""
+		(property "DKPN" "STOCK"
 			(at 184.15 34.29 0)
 			(effects
 				(font
@@ -3463,6 +3472,15 @@
 				(hide yes)
 			)
 		)
+		(property "DKPN" "STOCK"
+			(at 71.12 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "screamer"
 				(path "/2e60cbe6-be85-4859-bc44-cf74ef803e12"
@@ -3593,7 +3611,7 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "NA"
+		(property "DKPN" "CONN"
 			(at 229.87 33.02 0)
 			(effects
 				(font
@@ -3740,6 +3758,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 33.02 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "STOCK"
 			(at 33.02 62.23 0)
 			(effects
 				(font
