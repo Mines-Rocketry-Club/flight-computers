@@ -17,7 +17,7 @@ FlightComputer::FlightComputer() {
     m_state = IDLE;
     m_metersAboveGround = 0;
     m_secondsSinceApogee = 0;
-    //m_startingAltitudeMeters = getAltimiterData();
+    //m_startingAltitudeMeters = getAltimiterData(); IMPLIMENT ME
 }
 
 void FlightComputer::createCharge(uint8_t channel, pc_triggerType triggerType, float value) {

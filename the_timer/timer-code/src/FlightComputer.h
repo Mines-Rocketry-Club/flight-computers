@@ -12,6 +12,9 @@
 #include <Arduino.h>
 #include <PyroCharge.h>
 
+#ifndef FLIGHTCOMPUTER_H
+#define FLIGHTCOMPUTER_H
+
 enum fc_state {
     IDLE, 
     PREFLIGHT, 
@@ -27,6 +30,8 @@ public:
     void updatePyroCharges();
     void updateReadings();
     void storeReadings(); // IMPLIMENT LATER
+    //Detecting launch needs to be a function that keeps a rolling average over a small timespan of acceleration and altitude data
+    //and only if those go above background levels by some threshold is a launch detected 
 
 private:
     const uint8_t m_numCharges = 3;
@@ -38,3 +43,4 @@ private:
     PyroCharge m_charges[3];
 };
 
+#endif

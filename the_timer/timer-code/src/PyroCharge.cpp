@@ -29,9 +29,9 @@ bool PyroCharge::canFire(float secondsSinceApogee, float metersAboveGround) cons
 }
 
 /**
- * THIS FUNCTION IS CRINGE
+ * @brief THIS FUNCTION IS CRINGE
  * IT'S UNCLEAR THAT IT NEEDS TO BE CALLED EVERY TICK THAT YOU WANT THE CHARGE TO BE ACTIVE IF IT IS TO EVER TURN OFF
- * whatever this needs to be running Saturday
+ * 
  */
 void PyroCharge::fire() {
     if(!m_hasFired) {
