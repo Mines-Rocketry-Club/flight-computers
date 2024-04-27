@@ -33,11 +33,11 @@ fp-info-cache
 .Rproj.user
 
 # No platformio please
-**\.pio\**
+.pio/
 
 # No VS Code
-**\.vscode\**
+.vscode/
 
 # No target dir from rust
-**\target\**
+target/
 Cargo.lock
