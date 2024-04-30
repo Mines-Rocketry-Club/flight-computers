@@ -14,10 +14,9 @@
 #include <FlightComputer.h>
 
 FlightComputer::FlightComputer() {
-    m_state = IDLE;
+    m_state = PREFLIGHT;
     m_metersAboveGround = 0;
     m_secondsSinceApogee = 0;
-    //m_startingAltitudeMeters = getAltimiterData(); IMPLIMENT ME
 }
 
 void FlightComputer::createCharge(uint8_t channel, pc_triggerType triggerType, float value) {
@@ -26,13 +25,73 @@ void FlightComputer::createCharge(uint8_t channel, pc_triggerType triggerType, f
 }
 
 void FlightComputer::updatePyroCharges() {
-    for(uint8_t i = 0; i < m_numCharges; i++) {
-        if(m_charges[i].canFire(m_metersAboveGround, m_secondsSinceApogee)) {
-            m_charges[i].fire();
-        }
+    for(int i = 0; i < m_numCharges; i++) {
+        m_charges[i].update(m_secondsSinceApogee, m_metersAboveGround, m_currentTime);
     }
 }
 
 void FlightComputer::updateReadings() {
-    // GET DATA HERE
+    altimeter.update(m_currentTime);
+    accelerometer.update();
+}
+
+void FlightComputer::setState(fc_state newState) {
+    switch(newState) {
+        case PREFLIGHT:
+            altimeter.setZero();
+            accelerometer.setZero(m_currentTime);
+            m_state = PREFLIGHT;
+            break;
+    }
+}
+
+void FlightComputer::checkForLaunch() {
+    // basically need to set state to ascending if we see acceleration down greater than background by some amount, say 4 gees
+    // and also see some largeish velocity from the altimeter. say, >8 m/s
+    // maybe we make these values configurable in the future
+
+    // if high gees and velocity are detected
+    // schedule a check for 100ms from now
+    // if they're still high, set state to ascending
+    if(altimeter.getVelocity() > 8 && accelerometer.getAcceleration() > 4 && !m_possibleLaunch) {
+        m_possibleLaunch = true;
+        m_scheduledCheck = m_currentTime + 100;
+    }
+
+    if(m_currentTime > m_scheduledCheck) {
+        m_possibleLaunch = false;
+        if(altimeter.getVelocity() > 8 && accelerometer.getAcceleration() > 4) {
+            setState(ASCENDING);
+        }
+    }
+}
+
+void FlightComputer::checkForApogee() {
+    if(abs(altimeter.getAvgVelocity()) <= 0.5 && altimeter.getVelocity() < 0) {
+        setState(DESCENDING);
+    }
+}
+
+// this should probably be changed so this whole sequence gets handled in main
+void FlightComputer::update() {
+    m_currentTime = millis();
+    switch(m_state) {
+        case PREFLIGHT:
+            updateReadings();
+            checkForLaunch();
+            break;
+        case ASCENDING:
+            updateReadings();
+            //storeReadings();
+            checkForApogee();
+            break;
+        case DESCENDING:
+            updateReadings();
+            //storeReadings();
+            updatePyroCharges();
+            //checkForGroundHit();
+            break;
+        case POSTFLIGHT:
+            break;
+    }
 }

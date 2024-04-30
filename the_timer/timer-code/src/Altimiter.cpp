@@ -1,13 +1,17 @@
 #include <Altimeter.h>
 
 Altimeter::Altimeter() {
-    m_startingAltitude = -1;
+    m_startingAltitude = 0;
     m_currentAltitude = 0;
-    m_velocity = 0;
+    m_avgVelocity = 0;
+    m_stepsSinceLastAvg = 0;
+    for(int i = 0; i < m_numValuesToAvg; i++) {
+        m_rollingVelocity[i] = 0;
+    }
     //set up I2C here
 }
 
-void Altimeter::update(uint32_t currentTimeMillis) {  // needs to get altitude and calculate velocity
+void Altimeter::update(const uint32_t &currentTimeMillis) {  // needs to get altitude and calculate velocity
     float fakeAltitude = 7; // get altimeter reading here over I2C
     m_previousAltitude = m_currentAltitude;
     m_currentAltitude = fakeAltitude - m_startingAltitude;
@@ -17,12 +21,18 @@ void Altimeter::update(uint32_t currentTimeMillis) {  // needs to get altitude a
     float newVelocity = (m_currentAltitude - m_previousAltitude) / (currentTimeMillis - m_previousTime);
 
     // ok now we need to take a light rolling average
-    m_velocity = rollingAverage(newVelocity);
+    m_avgVelocity = rollingAverage(newVelocity);
 }
 
-float Altimeter::rollingAverage(float newVel) {
+float Altimeter::rollingAverage(const float &newVel) {
+    if(m_stepsSinceLastAvg < 12) {                      // update this value depending on tickrate please so it's roughly m_numValuesToAvg/0.5 seconds (this sucks)
+        m_stepsSinceLastAvg++;
+        return m_avgVelocity;
+    }
+    m_stepsSinceLastAvg = false;
+
     for(uint8_t i = 1; i < m_numValuesToAvg; i++) {
-        m_rollingVelocity[i - 1] = m_rollingVelocity[i];    // DOUBLE CHECK M_ROLLINGVELOCITY GETS INITIALIZED TO ALL ZERO WHEN CREATED
+        m_rollingVelocity[i - 1] = m_rollingVelocity[i];
     }
     m_rollingVelocity[m_numValuesToAvg - 1] = newVel;
 
@@ -40,5 +50,15 @@ float Altimeter::getAltitude() {
 }
 
 float Altimeter::getVelocity() {
-    return m_velocity;
+    return m_rollingVelocity[m_numValuesToAvg - 1];
+}
+
+float Altimeter::getAvgVelocity() {
+    return m_avgVelocity;
+}
+
+void Altimeter::setZero() {
+    delay(10);
+    m_startingAltitude = 7;                 // ------------------------------ get altitude here over I2C
+    delay(10);
 }

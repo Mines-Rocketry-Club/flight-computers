@@ -1,7 +1,8 @@
-#include <Arduino.h>
-
 #ifndef ALTIMETER_H
 #define ALTIMETER_H
+
+#include <Arduino.h>
+
 /**
  * the flight computer will need from this guy:
  * the current altitude AGL
@@ -15,14 +16,19 @@
 class Altimeter {
 public:
     Altimeter();
-    void update(uint32_t currentTimeMillis);
+    void update(const uint32_t &currentTimeMillis);
     float getAltitude();
-    float getVelocity();
+    float getVelocity();    // this should return some exact derived value and we add another function that returns an averaged value
+    float getAvgVelocity();
     //float getAcceleration();
-    void setStartingAltitude();
+    void setZero();
 
 private:
+    float rollingAverage(const float &newVel);
+
     //uint8_t address;
+
+    uint8_t m_stepsSinceLastAvg;
 
     /**
      * @brief meters
@@ -46,14 +52,11 @@ private:
      * @brief meters per second
      * 
      */
-    float m_velocity;   // Needs to be kept in check with a very light rolling average
+    float m_avgVelocity;   // Needs to be kept in check with a very light rolling average
 
     uint32_t m_previousTime;
 
-    //float *m_rollingVelocity = (float*)malloc(m_numValuesToAvg * sizeof(float));
-    float *m_rollingVelocity = new(float[m_numValuesToAvg]); // CHECK THAT THIS INITIALIZES VALUES TO ZERO SO FIRST ROLLING AVG DOESN'T BREAK
-
-    float rollingAverage(float newVel);
+    float *m_rollingVelocity = new float[m_numValuesToAvg];
 
     const uint8_t m_numValuesToAvg = 4;
 };

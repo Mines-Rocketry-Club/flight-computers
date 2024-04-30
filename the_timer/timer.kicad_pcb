@@ -3788,7 +3788,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Socket"
-			(at 0 4.5 270)
+			(at 0 4.5 -90)
 			(layer "F.Fab")
 			(uuid "37939475-a145-47e5-bdca-036231daff9f")
 			(effects
@@ -3990,7 +3990,7 @@
 			(uuid "844d3489-7cac-4587-a925-ef042cbd561c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1 360)
+			(at 0 1 0)
 			(layer "F.Fab")
 			(uuid "de401b0a-1b4c-48f3-a778-6d03113e4881")
 			(effects
@@ -7712,6 +7712,39 @@
 			(at 228.7 90 90)
 			(layer "Dwgs.User")
 			(uuid "69d0ef1f-0789-4267-b402-70bba94b6ea6")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.2)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0.5) keep_text_aligned)
+	)
+	(dimension
+		(type aligned)
+		(layer "Dwgs.User")
+		(uuid "d3c0b6e1-e131-4148-8f86-bb33fcace741")
+		(pts
+			(xy 221.5 106.25) (xy 221.5 71.25)
+		)
+		(height 5.5)
+		(gr_text "35.0000 mm"
+			(at 225.2 88.75 90)
+			(layer "Dwgs.User")
+			(uuid "d3c0b6e1-e131-4148-8f86-bb33fcace741")
 			(effects
 				(font
 					(size 1.5 1.5)

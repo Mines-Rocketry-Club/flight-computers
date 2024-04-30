@@ -9,10 +9,10 @@
  * 
  */
 
-#include <Arduino.h>
-
 #ifndef PYROCHARGE_H
 #define PYROCHARGE_H
+
+#include <Arduino.h>
 
 enum pc_triggerType {
     DELAY,
@@ -23,16 +23,16 @@ class PyroCharge {
 public:
     PyroCharge();
     void setupCharge(int8_t pin, pc_triggerType triggerType, float value);
-    bool canFire(float secondsSinceApogee, float metersAboveGround) const;
-    void fire();
-    //void update(); BAD
+    void update(const float &secondsSinceApogee, const float &metersAboveGround, const uint32_t &currTimeMillis);   // Pass by reference should reduce transfer costs
+    //bool canFire(const float &secondsSinceApogee, const float &metersAboveGround) const;
 private:
+    bool canFire(const float &secondsSinceApogee, const float &metersAboveGround) const;
     bool m_isActive;
     bool m_hasFired;
     uint8_t m_pin;
     pc_triggerType m_triggerType;
     float m_value;
-    uint32_t m_timeOfFiring;   // WHAT UNIT IS THIS NUMBER?? CURRENTLY MILLISECONDS. FASTER TO KEEP IN MILLIS SO WE DON'T NEED DIVISION
+    uint32_t m_timeOfFiring;
 };
 
 #endif
