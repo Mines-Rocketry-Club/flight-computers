@@ -8,11 +8,11 @@ Altimeter::Altimeter() {
     for(int i = 0; i < m_numValuesToAvg; i++) {
         m_rollingVelocity[i] = 0;
     }
-    //set up I2C here
+    //TODO: set up I2C here
 }
 
-void Altimeter::update(const uint32_t &currentTimeMillis) {  // needs to get altitude and calculate velocity
-    float fakeAltitude = 7; // get altimeter reading here over I2C
+void Altimeter::update(const uint32_t &currentTimeMillis) {
+    float fakeAltitude = 7; //TODO: get altimeter reading here over I2C
     m_previousAltitude = m_currentAltitude;
     m_currentAltitude = fakeAltitude - m_startingAltitude;
 
@@ -25,7 +25,7 @@ void Altimeter::update(const uint32_t &currentTimeMillis) {  // needs to get alt
 }
 
 float Altimeter::rollingAverage(const float &newVel) {
-    if(m_stepsSinceLastAvg < 12) {                      // update this value depending on tickrate please so it's roughly m_numValuesToAvg/0.5 seconds (this sucks)
+    if(m_stepsSinceLastAvg < 12) {                      //TODO: update this value depending on tickrate please so it's roughly m_numValuesToAvg/0.5 seconds (this sucks)
         m_stepsSinceLastAvg++;
         return m_avgVelocity;
     }
@@ -59,6 +59,6 @@ float Altimeter::getAvgVelocity() {
 
 void Altimeter::setZero() {
     delay(10);
-    m_startingAltitude = 7;                 // ------------------------------ get altitude here over I2C
+    m_startingAltitude = 7;                 //TODO: ------------------------------ get altitude here over I2C
     delay(10);
 }

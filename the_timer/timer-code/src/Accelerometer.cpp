@@ -3,7 +3,7 @@
 Accelerometer::Accelerometer() {
     m_acceleration = 0;
     m_backgroundAccel = 0;
-    // setup I2C
+    //TODO setup I2C
 }
 
 float Accelerometer::getAcceleration() {
@@ -20,7 +20,7 @@ void Accelerometer::setZero(const uint32_t &startTimeMillis) {
 }
 
 void Accelerometer::update() {  // needs to get altitude and calculate velocity
-    float fakeAccel = 7;    // impliment I2C here ------------------------------------------------
+    float fakeAccel = 7;    //TODO: impliment I2C here ------------------------------------------------
 
     // ok now we need to take a light rolling average
     m_acceleration = rollingAverage(fakeAccel) - m_backgroundAccel;
