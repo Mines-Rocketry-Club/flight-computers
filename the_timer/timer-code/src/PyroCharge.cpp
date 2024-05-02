@@ -15,29 +15,29 @@
 PyroCharge::PyroCharge() {
     m_isActive = false;
     m_hasFired = false;
-    m_pin = 0;                  //TODO: WHAT SHOULD THIS VALUE ACTUALLY BE?
+    m_pin = 0;                  // WHAT SHOULD THIS VALUE ACTUALLY BE?
     m_triggerType = ALTITUDE;
     m_value = -10000;
     m_timeOfFiring = 0;         
 }
 
-void PyroCharge::setupCharge(int8_t pin, pc_triggerType triggerType, uint32_t value) {
+void PyroCharge::setupCharge(int8_t pin, pc_triggerType triggerType, float value) {
     m_isActive = true;
     m_pin = pin;
     m_triggerType = triggerType;
     m_value = value;
 }
 
-bool PyroCharge::canFire(const uint32_t &millisSinceApogee, const uint32_t &metersAboveGround) const {
+bool PyroCharge::canFire(const float &secondsSinceApogee, const float &metersAboveGround) const {
     if(!m_isActive) return false;
     if(m_triggerType == ALTITUDE) {
-        return millisSinceApogee >= m_value;
+        return secondsSinceApogee >= m_value;
     }
     return metersAboveGround <= m_value;
 }
 
-void PyroCharge::update(const uint32_t &millisSinceApogee, const uint32_t &metersAboveGround, const uint32_t &currTimeMillis) {
-    if(canFire(millisSinceApogee, metersAboveGround)) {
+void PyroCharge::update(const float &secondsSinceApogee, const float &metersAboveGround, const uint32_t &currTimeMillis) {
+    if(canFire(secondsSinceApogee, metersAboveGround)) {
         if(!m_hasFired) {
             m_hasFired = true;
             m_timeOfFiring = currTimeMillis;

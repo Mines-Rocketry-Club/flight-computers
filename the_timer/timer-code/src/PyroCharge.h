@@ -22,15 +22,16 @@ enum pc_triggerType {
 class PyroCharge {
 public:
     PyroCharge();
-    void setupCharge(int8_t pin, pc_triggerType triggerType, uint32_t value);
-    void update(const uint32_t &millisSinceApogee, const uint32_t &metersAboveGround, const uint32_t &currTimeMillis);   // Pass by reference should reduce transfer costs
+    void setupCharge(int8_t pin, pc_triggerType triggerType, float value);
+    void update(const float &secondsSinceApogee, const float &metersAboveGround, const uint32_t &currTimeMillis);   // Pass by reference should reduce transfer costs
+    //bool canFire(const float &secondsSinceApogee, const float &metersAboveGround) const;
 private:
-    bool canFire(const uint32_t &millisSinceApogee, const uint32_t &metersAboveGround) const;
+    bool canFire(const float &secondsSinceApogee, const float &metersAboveGround) const;
     bool m_isActive;
     bool m_hasFired;
     uint8_t m_pin;
     pc_triggerType m_triggerType;
-    uint32_t m_value;
+    float m_value;
     uint32_t m_timeOfFiring;
 };
 

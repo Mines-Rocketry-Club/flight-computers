@@ -27,31 +27,27 @@ enum fc_state {
 class FlightComputer {
 public:
     FlightComputer();
-    void createCharge(uint8_t channel, pc_triggerType triggerType, uint32_t value);
+    void createCharge(uint8_t channel, pc_triggerType triggerType, float value);
     void updatePyroCharges();
     void updateReadings();
-    void storeReadings(); //TODO: IMPLIMENT LATER
+    void storeReadings(); // IMPLIMENT LATER
     void setState(fc_state newState);
-    //void update();
+    void update();
     void checkForLaunch();
     void checkForApogee();
-    void checkForGroundHit();
-    fc_state getState() const;
-    void updateTime();
 
 private:
     const uint8_t m_numCharges = 3;
-    const uint8_t m_pyroPins[3] = {0, 1, 2};    //TODO: TRANSLATE "CHANNEL" TO PIN NUMBER ON THE CHIP. MIGHT BE A BAD IDEA
-    uint32_t m_timeSinceApogee;
-    uint32_t m_timeOfApogee;
+    const uint8_t m_pyroPins[3] = {0, 1, 2};    // TRANSLATE "CHANNEL" TO PIN NUMBER ON THE CHIP. MIGHT BE A BAD IDEA
+    float m_metersAboveGround;
+    float m_secondsSinceApogee;
     fc_state m_state;
     PyroCharge m_charges[3];
     Altimeter altimeter;
     Accelerometer accelerometer;
     uint32_t m_currentTime;
     bool m_possibleLaunch;
-    uint32_t m_scheduledCheck;  //TODO: replace this with just running whatever function a set number of ticks pass instead of dealing with an extra int32
-    uint8_t m_ticksSinceLastCheck;
+    uint32_t m_scheduledCheck;
 };
 
 #endif

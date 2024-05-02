@@ -18,7 +18,7 @@ public:
     Altimeter();
     void update(const uint32_t &currentTimeMillis);
     float getAltitude();
-    float getVelocity();
+    float getVelocity();    // this should return some exact derived value and we add another function that returns an averaged value
     float getAvgVelocity();
     //float getAcceleration();
     void setZero();
