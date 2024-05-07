@@ -9,9 +9,7 @@
  * 
  */
 
-#include <Arduino.h>
-#include <PyroCharge.h>
-#include <FlightComputer.h>
+#include "FlightComputer.h" //TODO: might nuke the header files and just do an include on the .cpp files. need to research more if they're actually beneficial at this scale
 
 FlightComputer::FlightComputer() {
     m_state = PREFLIGHT;
@@ -49,7 +47,8 @@ void FlightComputer::setState(fc_state newState) {
     }
 }
 
-void FlightComputer::checkForLaunch() { //TODO: this may false negative if the altimeter isn't perfect. change to be more resistant to sensor error
+//TODO: this may false negative if the altimeter isn't perfect. change to be more resistant to sensor error. As well, may fuck up if the motor has intermittent thrust at first
+void FlightComputer::checkForLaunch() { 
     // If we detect high vel and accel (and we're not waiting to check)
     // check again in 100ish milliseconds
     // if it's still high we launched
@@ -71,7 +70,7 @@ void FlightComputer::checkForLaunch() { //TODO: this may false negative if the a
 }
 
 void FlightComputer::checkForApogee() {
-    if(abs(altimeter.getAvgVelocity()) <= 0.5 && altimeter.getVelocity() < 0) {
+    if(abs(altimeter.getAvgVelocity()) <= 0.5 && altimeter.getVelocity() < 0) { //TODO: After we see an avg velocity <= 0.5, double check that none of the values are erronius
         setState(DESCENDING);
     }
 }

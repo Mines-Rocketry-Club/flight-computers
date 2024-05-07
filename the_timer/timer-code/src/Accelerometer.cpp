@@ -1,4 +1,4 @@
-#include <Accelerometer.h>
+#include "Accelerometer.h"
 
 Accelerometer::Accelerometer() {
     m_acceleration = 0;

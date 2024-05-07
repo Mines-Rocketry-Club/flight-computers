@@ -13,9 +13,9 @@
 #define FLIGHTCOMPUTER_H
 
 #include <Arduino.h>
-#include <PyroCharge.h>
-#include <Accelerometer.h>
-#include <Altimeter.h>
+#include "PyroCharge.h"
+#include "Accelerometer.h"
+#include "Altimeter.h"
 
 enum fc_state {
     PREFLIGHT,
@@ -32,7 +32,6 @@ public:
     void updateReadings();
     void storeReadings(); //TODO: IMPLIMENT LATER
     void setState(fc_state newState);
-    //void update();
     void checkForLaunch();
     void checkForApogee();
     void checkForGroundHit();
@@ -50,7 +49,6 @@ private:
     Accelerometer accelerometer;
     uint32_t m_currentTime;
     bool m_possibleLaunch;
-    uint32_t m_scheduledCheck;  //TODO: replace this with just running whatever function a set number of ticks pass instead of dealing with an extra int32
     uint8_t m_ticksSinceLastCheck;
 };
 

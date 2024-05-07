@@ -2,16 +2,17 @@
 #define ALTIMETER_H
 
 #include <Arduino.h>
+#include <Wire.h>
 
-/**
- * the flight computer will need from this guy:
- * the current altitude AGL
- * roughly the velocity
- * 
- * in order to deal with weird pressure effects around the transonic region, what we'll do is only have the flight computer
- * register apogee if the altimeter has been producing velocity readings close to zero for some timespan
- * 
- */
+// Datasheet: 
+// Address is 111011Cx, where C is the complementary value of the pin CSB [(LOW), and x is any value (?)] Therefore, addr = 11101100 = 0x76
+#define ADDRESS 0x76    
+
+#define CMD_RESET       0x1E
+#define CMD_ADC_READ    0x00
+#define CMD_PROM_READ   0xA0
+#define CMD_CONVERT_D1  0x46    // OSR of 2048
+#define CMD_CONVERT_D2  0x56    // OSR of 2048
 
 class Altimeter {
 public:

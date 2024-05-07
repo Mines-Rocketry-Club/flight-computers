@@ -10,7 +10,7 @@
  */
 
 #include <Arduino.h>
-#include <PyroCharge.h>
+#include "PyroCharge.h"
 
 PyroCharge::PyroCharge() {
     m_isActive = false;

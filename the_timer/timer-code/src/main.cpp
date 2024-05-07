@@ -1,7 +1,9 @@
 #include <Arduino.h>
-#include <FlightComputer.h>
+#include "FlightComputer.h"
 
 int main() {
+    FlightComputer flightComputer;
+
     #ifdef del1 // uint32_t - milliseconds
         flightComputer.createCharge(0, DELAY, del1);
     #endif
@@ -29,9 +31,7 @@ int main() {
         delay(15 * 1000);
     #endif
 
-    FlightComputer flightComputer;
-
-    while(true) {
+    while(true) {   //TODO: Make this run at 100tps
         flightComputer.updateTime();
         switch(flightComputer.getState()) {
             case PREFLIGHT:
