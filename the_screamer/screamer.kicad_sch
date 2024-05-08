@@ -2234,6 +2234,15 @@
 				(hide yes)
 			)
 		)
+		(property "DKPN" "175-MAX2623EUA+TCT-ND"
+			(at 160.02 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "4d2d004d-6b8d-4d98-ba77-7e1ca7880bf5")
 		)
@@ -2388,7 +2397,7 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "490-4781-1-ND"
+		(property "DKPN" "732-7983-1-ND"
 			(at 114.3 43.18 0)
 			(effects
 				(font
@@ -2465,7 +2474,7 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "CONN"
+		(property "DKPN" "A100080CT-ND"
 			(at 34.29 50.8 0)
 			(effects
 				(font
@@ -2543,7 +2552,7 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "311-1446-1-ND"
+		(property "DKPN" "732-885012106030CT-ND"
 			(at 88.9 43.18 0)
 			(effects
 				(font
@@ -2908,6 +2917,15 @@
 				(hide yes)
 			)
 		)
+		(property "DKPN" "RMCF0603FT750RCT-ND"
+			(at 139.7 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1df9f31b-ea51-41d9-8d13-85ffccff48d4")
 		)
@@ -2994,7 +3012,7 @@
 		(at 76.2 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -3176,6 +3194,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 227.33 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "732-7754-1-ND"
 			(at 227.33 46.99 0)
 			(effects
 				(font
@@ -3420,7 +3447,7 @@
 		(at 76.2 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -3609,6 +3636,15 @@
 				(hide yes)
 			)
 		)
+		(property "DKPN" "RMCF0603FT1K20CT-ND"
+			(at 139.7 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "75eedea3-7a00-411c-8d18-3352d2909332")
 		)
@@ -3679,7 +3715,7 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "311-1446-1-ND"
+		(property "DKPN" "732-885012106030CT-ND"
 			(at 127 43.18 0)
 			(effects
 				(font
@@ -3720,7 +3756,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
+		(property "Value" "2PH1-02-UA"
 			(at 33.655 59.69 0)
 			(effects
 				(font
@@ -3755,7 +3791,7 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "STOCK"
+		(property "DKPN" "A100080CT-ND"
 			(at 33.02 62.23 0)
 			(effects
 				(font
@@ -3826,6 +3862,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 234.95 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "732-7754-1-ND"
 			(at 234.95 46.99 0)
 			(effects
 				(font

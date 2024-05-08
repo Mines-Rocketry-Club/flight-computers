@@ -219,7 +219,7 @@
 				)
 			)
 		)
-		(property "DKPN" "CONN"
+		(property "DKPN" "A100080CT-ND"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -506,6 +506,19 @@
 				)
 			)
 		)
+		(property "DKPN" "732-7754-1-ND"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aff269ae-d01f-4916-b791-07c6b4d9ce4c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e07e91ca-f1e8-4751-910b-1dff7ce40c47")
 		(sheetname "Root")
@@ -735,7 +748,7 @@
 		(path "/a94ef21d-bb0d-4a4d-951e-229579226252")
 		(sheetname "Root")
 		(sheetfile "screamer.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -840,6 +853,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DKPN" "732-7754-1-ND"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d98bafe-7f37-439e-b9fd-e47cc682cf7b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1055,6 +1081,19 @@
 				)
 			)
 		)
+		(property "DKPN" "RMCF0603FT750RCT-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "26ad0a76-4518-45f0-875f-034afbe1d3a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/4298391c-61cb-4afc-9b86-094d0c4c3f62")
 		(sheetname "Root")
@@ -1267,7 +1306,7 @@
 				)
 			)
 		)
-		(property "DKPN" "311-1446-1-ND"
+		(property "DKPN" "732-885012106030CT-ND"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1509,7 +1548,7 @@
 		(path "/6b5c4908-c747-4b5d-8cff-e868bfc93420")
 		(sheetname "Root")
 		(sheetfile "screamer.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -1617,7 +1656,7 @@
 				)
 			)
 		)
-		(property "DKPN" "490-4781-1-ND"
+		(property "DKPN" "732-7983-1-ND"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1839,6 +1878,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DKPN" "RMCF0603FT1K20CT-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4eb476ea-b67e-4696-ab4c-4e63cbedcc7f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2209,7 +2261,7 @@
 				)
 			)
 		)
-		(property "DKPN" "311-1446-1-ND"
+		(property "DKPN" "732-885012106030CT-ND"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2433,6 +2485,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "DKPN" "175-MAX2623EUA+TCT-ND"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "58f50477-80db-4041-a37f-b75836f86dfa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -3010,7 +3076,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
+		(property "Value" "2PH1-02-UA"
 			(at 0 2.5 -90)
 			(layer "B.Fab")
 			(uuid "1a94ec0f-7acc-45b3-8de4-09b3fc650b3f")
@@ -3061,7 +3127,7 @@
 				(justify mirror)
 			)
 		)
-		(property "DKPN" "STOCK"
+		(property "DKPN" "A100080CT-ND"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
