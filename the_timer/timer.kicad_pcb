@@ -7,6 +7,13 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "Timer")
+		(date "2024-04-16")
+		(rev "0.0.3")
+		(company "Mines Rocket Club")
+		(comment 1 "William Layne")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(31 "B.Cu" signal)
@@ -4269,7 +4276,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C2"
-			(at 2.505 0 270)
+			(at 2.505 0 -90)
 			(layer "F.SilkS")
 			(uuid "53b4f2a4-9d92-4c6a-91d5-c2599b579811")
 			(effects
@@ -4280,7 +4287,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 1.43 270)
+			(at 0 1.43 -90)
 			(layer "F.Fab")
 			(uuid "4cc006b7-7dc8-4926-bb43-04dcbf9149e4")
 			(effects
@@ -4432,7 +4439,7 @@
 			(uuid "52a13621-5b12-4934-8ee6-4c5df0f312df")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 270)
+			(at 0 0 -90)
 			(layer "F.Fab")
 			(uuid "b56d84d2-b386-4e50-9fa8-dc7da6ae98ab")
 			(effects

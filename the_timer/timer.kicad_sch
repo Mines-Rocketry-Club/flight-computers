@@ -7,7 +7,7 @@
 	(title_block
 		(title "Timer")
 		(date "2024-04-16")
-		(rev "0.0.2")
+		(rev "0.0.3")
 		(company "Mines Rocket Club")
 		(comment 1 "William Layne")
 	)
@@ -5323,6 +5323,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 153.67 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "3372-0603B104J500XDTR-ND"
 			(at 153.67 110.49 0)
 			(effects
 				(font
