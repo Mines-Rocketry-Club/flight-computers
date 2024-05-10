@@ -1,0 +1,9 @@
+These files are measures of voltages across pyro charges as they're being fired.
+All files are in Siglent binary format - an executable converter to CSV is included in the .zip file
+no i will not convert them because it is 2 in the morning right now
+
+A high discharge "60C" 380mAh LiPo was used for all tests.
+
+File 8 is a control where the switch was flipped on with no pyro charge.
+Files 9-13 are regular pyro charges with nothing additional.
+Files 14-16 are pyro charges, but with a 1000uF capacitor in parallel with the battery.
