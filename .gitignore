@@ -43,3 +43,6 @@ target/
 Cargo.lock
 bom/
 
+#drop R history and data files
+*.RData
+*.Rhistory
