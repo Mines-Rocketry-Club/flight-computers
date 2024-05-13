@@ -3861,6 +3861,12 @@
 		(uuid "35693564-b48e-4138-b530-6358f7239690")
 	)
 	(junction
+		(at 107.95 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "673b3989-1d21-4b2a-8d02-4493b5942291")
+	)
+	(junction
 		(at 35.56 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3926,6 +3932,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 85.09) (xy 118.11 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2106fa3e-d2b4-47cf-acab-c4c4b90d5057")
+	)
+	(wire
+		(pts
 			(xy 85.09 62.23) (xy 77.47 62.23)
 		)
 		(stroke
@@ -3933,6 +3949,16 @@
 			(type default)
 		)
 		(uuid "27e52e7a-b924-4940-bb8f-42e0d82767ea")
+	)
+	(wire
+		(pts
+			(xy 118.11 72.39) (xy 118.11 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "298c3352-22b7-42aa-a454-65d80b83fc53")
 	)
 	(wire
 		(pts
@@ -3953,6 +3979,16 @@
 			(type default)
 		)
 		(uuid "2bd35bcc-0913-45fa-b027-0446bf5cf932")
+	)
+	(wire
+		(pts
+			(xy 107.95 87.63) (xy 118.11 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d92232c-96c9-4840-835c-7679506399de")
 	)
 	(wire
 		(pts
@@ -3996,7 +4032,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 72.39) (xy 114.3 72.39)
+			(xy 107.95 72.39) (xy 118.11 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4133,6 +4169,16 @@
 			(type default)
 		)
 		(uuid "9c342f7f-6c7d-4e14-8267-77a5ac3b305a")
+	)
+	(wire
+		(pts
+			(xy 107.95 87.63) (xy 107.95 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a140f359-603c-4c22-9131-11c4fa7b4500")
 	)
 	(wire
 		(pts
@@ -4396,7 +4442,7 @@
 	)
 	(global_label "V_{CC}"
 		(shape input)
-		(at 114.3 72.39 0)
+		(at 118.11 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4406,7 +4452,7 @@
 		)
 		(uuid "1c1bc5ec-8c53-4411-aba7-40d63c7ef4fc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 120.4566 72.39 0)
+			(at 124.2666 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6634,91 +6680,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 49.53 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "630cd3be-f2fc-4e37-95f9-df3a9847bc14")
-		(property "Reference" "C1"
-			(at 52.705 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "User Provided"
-			(at 52.705 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.8mm_D0.9mm_OD2.3mm"
-			(at 50.4952 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 49.53 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "User Provided, ~220u"
-			(at 49.53 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DKPN" ""
-			(at 49.53 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9b41cfc7-3e24-4540-97fb-ad5cf4aed127")
-		)
-		(pin "2"
-			(uuid "d3760909-86c4-470d-8e69-1708b6dba4ed")
-		)
-		(instances
-			(project "timer"
-				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-			(project "Ping"
-				(path "/fd9615be-e2a3-47ef-8586-c415f6857bc8"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
 		(at 139.7 120.65 0)
@@ -7370,6 +7331,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 118.11 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c0fcac4d-9aec-4eea-882b-44ca8f5bdcd6")
+		(property "Reference" "C3"
+			(at 121.92 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 121.92 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 119.0752 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 118.11 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "490-12538-1-ND"
+			(at 118.11 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab7c21a0-f314-42c3-8675-9cc9060a468f")
+		)
+		(pin "2"
+			(uuid "e814c18d-8507-4abd-bb3d-3fc32c2b69df")
+		)
+		(instances
+			(project "timer"
+				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Battery_Cell")
 		(at 34.29 57.15 270)
 		(unit 1)
@@ -7619,7 +7659,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 107.95 86.36 0)
+		(at 107.95 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7627,7 +7667,7 @@
 		(dnp no)
 		(uuid "cf826ff9-e3f4-4bbd-82a1-844625fc450e")
 		(property "Reference" "#PWR010"
-			(at 107.95 92.71 0)
+			(at 107.95 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7636,7 +7676,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 104.648 86.36 0)
+			(at 104.648 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7644,7 +7684,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 86.36 0)
+			(at 107.95 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7653,7 +7693,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 86.36 0)
+			(at 107.95 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7662,7 +7702,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 107.95 86.36 0)
+			(at 107.95 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
