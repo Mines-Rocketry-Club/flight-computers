@@ -4350,31 +4350,9 @@
 			)
 		)
 	)
-	(global_label "V_{B}"
+	(global_label "T_{3}"
 		(shape input)
-		(at 186.055 22.225 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1513d715-f377-4f75-bde1-60ed8d4f3f1a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 186.055 17.0844 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "t2"
-		(shape input)
-		(at 178.435 70.485 180)
+		(at 182.88 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4384,7 +4362,7 @@
 		)
 		(uuid "18cbb7a7-52e5-4f80-89f6-3dcaefece2fe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.5146 70.485 0)
+			(at 177.9088 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4434,28 +4412,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "V_{B}"
-		(shape input)
-		(at 186.055 43.815 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2cff47cf-5247-4660-8ad8-9b2694c68661")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 186.055 38.6744 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -4526,7 +4482,7 @@
 			)
 		)
 	)
-	(global_label "c1"
+	(global_label "C_{2}"
 		(shape input)
 		(at 179.07 92.71 180)
 		(fields_autoplaced yes)
@@ -4538,7 +4494,7 @@
 		)
 		(uuid "51d1f901-2928-432b-89bb-13d4635ff70f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.7867 92.71 0)
+			(at 173.7964 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4570,9 +4526,9 @@
 			)
 		)
 	)
-	(global_label "t1"
+	(global_label "T_{2}"
 		(shape input)
-		(at 178.435 48.895 180)
+		(at 182.88 50.8 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4582,7 +4538,7 @@
 		)
 		(uuid "55470334-ce34-4e64-a11d-9126a1950126")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.5146 48.895 0)
+			(at 177.9088 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4605,6 +4561,28 @@
 		(uuid "57f4693a-421b-435a-b438-c7a3f5460fe5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 77.0853 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V_{B}"
+		(shape input)
+		(at 179.07 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5a8d1af3-7363-4bba-832a-5476b4e6b477")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 173.9294 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4680,31 +4658,31 @@
 			)
 		)
 	)
-	(global_label "c1"
+	(global_label "C_{2}"
 		(shape input)
-		(at 186.055 53.975 270)
+		(at 190.5 45.72 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "6b321a2e-e5cd-463a-93ad-dc3c6ea54d67")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 186.055 59.2583 90)
+			(at 190.5 40.4464 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
-	(global_label "t0"
+	(global_label "T_{1}"
 		(shape input)
-		(at 50.8 151.13 0)
+		(at 50.8 153.67 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4714,7 +4692,7 @@
 		)
 		(uuid "7583bac9-453f-4a37-8e0d-a67d2ad33ea0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.7204 151.13 0)
+			(at 55.7712 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4880,28 +4858,6 @@
 	)
 	(global_label "V_{B}"
 		(shape input)
-		(at 186.055 65.405 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "89758c74-b825-445d-aa3c-8c1c7f6ab4ef")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 186.055 60.2644 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "V_{B}"
-		(shape input)
 		(at 77.47 74.93 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5032,9 +4988,9 @@
 			)
 		)
 	)
-	(global_label "t1"
+	(global_label "T_{2}"
 		(shape input)
-		(at 50.8 153.67 0)
+		(at 50.8 151.13 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5044,7 +5000,7 @@
 		)
 		(uuid "a8bbdac6-1d0f-4588-a6e8-7744a6073910")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.7204 153.67 0)
+			(at 55.7712 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5076,7 +5032,7 @@
 			)
 		)
 	)
-	(global_label "c2"
+	(global_label "C_{3}"
 		(shape input)
 		(at 179.07 95.25 180)
 		(fields_autoplaced yes)
@@ -5088,7 +5044,7 @@
 		)
 		(uuid "aeda6d89-b364-4389-9580-ae95979004cf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.7867 95.25 0)
+			(at 173.7964 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5142,9 +5098,9 @@
 			)
 		)
 	)
-	(global_label "t0"
+	(global_label "T_{1}"
 		(shape input)
-		(at 178.435 27.305 180)
+		(at 182.88 25.4 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5154,7 +5110,7 @@
 		)
 		(uuid "b9765605-9cb6-48b0-8dbf-ee8ab4cb1d6a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.5146 27.305 0)
+			(at 177.9088 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5164,24 +5120,24 @@
 			)
 		)
 	)
-	(global_label "c0"
+	(global_label "C_{1}"
 		(shape input)
-		(at 186.055 32.385 270)
+		(at 190.5 20.32 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "c6bf7b00-0313-4ced-80af-e55339291e3e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 186.055 37.6683 90)
+			(at 190.5 15.0464 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -5208,7 +5164,7 @@
 			)
 		)
 	)
-	(global_label "t2"
+	(global_label "T_{3}"
 		(shape input)
 		(at 50.8 156.21 0)
 		(fields_autoplaced yes)
@@ -5220,7 +5176,7 @@
 		)
 		(uuid "cd0b4f85-5c46-4d67-a938-db87f82de379")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.7204 156.21 0)
+			(at 55.7712 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5274,24 +5230,24 @@
 			)
 		)
 	)
-	(global_label "c2"
+	(global_label "C_{3}"
 		(shape input)
-		(at 186.055 75.565 270)
+		(at 190.5 71.12 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "e400aece-f30a-4e00-8966-8673a2eda5f0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 186.055 80.8483 90)
+			(at 190.5 65.8464 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -5340,7 +5296,7 @@
 			)
 		)
 	)
-	(global_label "c0"
+	(global_label "C_{1}"
 		(shape input)
 		(at 179.07 90.17 180)
 		(fields_autoplaced yes)
@@ -5352,7 +5308,7 @@
 		)
 		(uuid "f1d763d9-1b59-44d4-922e-a8cf2be58885")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.7867 90.17 0)
+			(at 173.7964 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5572,7 +5528,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 183.515 27.305 0)
+		(at 187.96 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5581,7 +5537,7 @@
 		(fields_autoplaced yes)
 		(uuid "1f18bcdc-24b9-4022-80c5-2bccb96f5ceb")
 		(property "Reference" "Q1"
-			(at 189.865 26.035 0)
+			(at 194.31 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5589,8 +5545,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2N7002"
-			(at 189.865 28.575 0)
+		(property "Value" "AS2312"
+			(at 194.31 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5599,7 +5555,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 188.595 29.21 0)
+			(at 193.04 27.305 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5609,8 +5565,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 183.515 27.305 0)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3133/AS2312.pdf"
+			(at 187.96 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5620,7 +5576,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 183.515 27.305 0)
+			(at 187.96 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5628,8 +5584,8 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "2N7002NCT-ND"
-			(at 183.515 27.305 0)
+		(property "DKPN" "4530-AS2312CT-ND"
+			(at 187.96 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6240,6 +6196,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 190.5 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3116c2f7-e2b2-4748-8398-848353b25078")
+		(property "Reference" "#PWR012"
+			(at 190.5 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 190.5 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 190.5 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "34b8fcfc-c1e8-4645-ae3c-8e167fa9ae4d")
+		)
+		(instances
+			(project "timer"
+				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 109.22 149.86 0)
 		(unit 1)
@@ -6307,6 +6329,91 @@
 			(project "timer"
 				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
 					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:2N7002")
+		(at 187.96 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3ea2233d-6158-481a-9c5b-00c18972730d")
+		(property "Reference" "Q2"
+			(at 194.31 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AS2312"
+			(at 194.31 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 193.04 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3133/AS2312.pdf"
+			(at 187.96 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 187.96 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "4530-AS2312CT-ND"
+			(at 187.96 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "44def5a8-c5ac-4f80-829a-c918ede3c626")
+		)
+		(pin "2"
+			(uuid "01849762-1912-4907-9fb0-6df66665bbdf")
+		)
+		(pin "3"
+			(uuid "292379a8-fc93-4b2a-8355-a5947953f255")
+		)
+		(instances
+			(project "timer"
+				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -7027,108 +7134,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 183.515 48.895 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "92f04b25-849c-4a11-bf0c-b8409bb02411")
-		(property "Reference" "Q2"
-			(at 189.865 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2N7002"
-			(at 189.865 50.165 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 188.595 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 183.515 48.895 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 183.515 48.895 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DKPN" "2N7002NCT-ND"
-			(at 183.515 48.895 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a05d3a98-45c8-46eb-9932-78465ba92098")
-		)
-		(pin "2"
-			(uuid "421f9eba-92e3-4df1-aca7-917de32c9402")
-		)
-		(pin "3"
-			(uuid "b6575a06-94e5-488f-b074-5c8aa6139144")
-		)
-		(instances
-			(project "timer"
-				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
-					(reference "Q2")
-					(unit 1)
-				)
-			)
-			(project "Ping"
-				(path "/fd9615be-e2a3-47ef-8586-c415f6857bc8"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 179.07 97.79 0)
+		(at 190.5 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9d1a2a0c-18b6-4fb9-a8fa-71c392f16027")
-		(property "Reference" "#PWR03"
-			(at 179.07 104.14 0)
+		(uuid "93c5e89e-aa59-4fbb-a354-ac039b9fa815")
+		(property "Reference" "#PWR011"
+			(at 190.5 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7137,7 +7153,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 179.07 102.235 0)
+			(at 190.5 34.925 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7145,7 +7161,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 97.79 0)
+			(at 190.5 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7154,7 +7170,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 97.79 0)
+			(at 190.5 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7163,7 +7179,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 179.07 97.79 0)
+			(at 190.5 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7172,18 +7188,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "4671402b-811e-4fa3-955a-960142aef277")
+			(uuid "375c83a3-2db5-4275-9310-6c41aa3a9ba1")
 		)
 		(instances
 			(project "timer"
 				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-			(project "Ping"
-				(path "/fd9615be-e2a3-47ef-8586-c415f6857bc8"
-					(reference "#PWR04")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -7420,97 +7430,6 @@
 			(project "Ping"
 				(path "/fd9615be-e2a3-47ef-8586-c415f6857bc8"
 					(reference "BT1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 183.515 70.485 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c579b81b-86de-407d-9bed-57d1234ee573")
-		(property "Reference" "Q3"
-			(at 189.865 69.215 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2N7002"
-			(at 189.865 71.755 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 188.595 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 183.515 70.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 183.515 70.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DKPN" "2N7002NCT-ND"
-			(at 183.515 70.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f373732f-94ca-4d4c-883a-94b74e373f99")
-		)
-		(pin "2"
-			(uuid "9875ed9e-e765-4a11-8bee-ac43ab431e6e")
-		)
-		(pin "3"
-			(uuid "cb808b66-93ab-49bc-a634-6c90a9fc0b7b")
-		)
-		(instances
-			(project "timer"
-				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
-					(reference "Q3")
-					(unit 1)
-				)
-			)
-			(project "Ping"
-				(path "/fd9615be-e2a3-47ef-8586-c415f6857bc8"
-					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -7799,6 +7718,157 @@
 			(project "Ping"
 				(path "/fd9615be-e2a3-47ef-8586-c415f6857bc8"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 190.5 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e90d9442-605d-465e-9b85-cbda600d3085")
+		(property "Reference" "#PWR014"
+			(at 190.5 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 190.5 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 190.5 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc54475c-4135-4cdc-8062-dde56f1efcdf")
+		)
+		(instances
+			(project "timer"
+				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:2N7002")
+		(at 187.96 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ecd005f4-8b0b-4f9a-bb1d-feff892d52ce")
+		(property "Reference" "Q3"
+			(at 194.31 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AS2312"
+			(at 194.31 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 193.04 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3133/AS2312.pdf"
+			(at 187.96 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 187.96 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "4530-AS2312CT-ND"
+			(at 187.96 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f81ea06-4719-43af-a57c-b2715c876efe")
+		)
+		(pin "2"
+			(uuid "2fdfcb18-7d8a-406c-9e54-2ff92c915fbc")
+		)
+		(pin "3"
+			(uuid "a5bad4ae-77b9-45b4-a938-a09e3b49fd17")
+		)
+		(instances
+			(project "timer"
+				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
+					(reference "Q3")
 					(unit 1)
 				)
 			)
