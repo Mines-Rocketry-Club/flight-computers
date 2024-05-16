@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "The Guesser")
-		(date "2024-04-10")
+		(date "2024-05-16")
 		(rev "0.0.1")
 		(company "Mines Rocket Club")
 		(comment 1 "Tom Powell & Andew Wu")
@@ -7121,6 +7121,44 @@
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR012")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 306.07 13.97)
+		(size 156.21 91.44)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "144203ce-f59d-4228-a9f3-243b499459b2")
+		(property "Sheetname" "Telemetry"
+			(at 306.07 13.2584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Transciever.kicad_sch"
+			(at 306.07 105.9946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(page "2")
 				)
 			)
 		)

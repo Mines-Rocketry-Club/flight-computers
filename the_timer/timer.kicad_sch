@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Timer")
-		(date "2024-05-15")
-		(rev "V0.1.2")
+		(date "2024-05-16")
+		(rev "V0.1.3")
 		(company "Mines Rocket Club")
 		(comment 1 "William Layne")
 	)
@@ -434,7 +434,7 @@
 				)
 			)
 		)
-		(symbol "Connector:Conn_01x04_Socket"
+		(symbol "Custom_Flight_Computer_Symbols:1-2834019-4"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
@@ -448,7 +448,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x04_Socket"
+			(property "Value" "1-2834019-4"
 				(at 0 -7.62 0)
 				(effects
 					(font
@@ -456,7 +456,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "locals_but_working_PLEASE:TE_1-2834019-4"
 				(at 0 0 0)
 				(effects
 					(font
@@ -465,7 +465,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" "https://www.te.com/usa-en/product-1-2834019-4.datasheet.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -474,7 +474,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x04, script generated"
+			(property "Description" "Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -483,15 +483,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
+			(property "ki_keywords" "screw terminal"
 				(at 0 0 0)
 				(effects
 					(font
@@ -500,7 +492,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "TerminalBlock*:*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -509,11 +501,21 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x04_Socket_1_1"
-				(arc
-					(start 0 -4.572)
-					(mid -0.5058 -5.08)
-					(end 0 -5.588)
+			(symbol "1-2834019-4_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center 0 -5.08)
+					(radius 0.635)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -522,22 +524,9 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 0 -2.032)
-					(mid -0.5058 -2.54)
-					(end 0 -3.048)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -5.08) (xy -0.508 -5.08)
-					)
+				(circle
+					(center 0 -2.54)
+					(radius 0.635)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -548,7 +537,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
+						(xy -0.5334 -4.7498) (xy 0.3302 -5.588)
 					)
 					(stroke
 						(width 0.1524)
@@ -560,7 +549,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 0) (xy -0.508 0)
+						(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
 					)
 					(stroke
 						(width 0.1524)
@@ -572,7 +561,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 2.54) (xy -0.508 2.54)
+						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
 					)
 					(stroke
 						(width 0.1524)
@@ -582,10 +571,10 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 0 0.508)
-					(mid -0.5058 0)
-					(end 0 -0.508)
+				(polyline
+					(pts
+						(xy -0.5334 2.8702) (xy 0.3302 2.032)
+					)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -594,10 +583,68 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 0 3.048)
-					(mid -0.5058 2.54)
-					(end 0 2.032)
+				(polyline
+					(pts
+						(xy -0.3556 -4.572) (xy 0.508 -5.4102)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 -2.032) (xy 0.508 -2.8702)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 0.508) (xy 0.508 -0.3302)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 3.048) (xy 0.508 2.2098)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 2.54)
+					(radius 0.635)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -680,50 +727,50 @@
 				)
 			)
 		)
-		(symbol "Device:Battery_Cell"
-			(pin_numbers hide)
+		(symbol "Custom_Flight_Computer_Symbols:1775469-2"
 			(pin_names
-				(offset 0) hide)
+				(offset 0.254)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "BT"
-				(at 2.54 2.54 0)
+			(property "Reference" "J"
+				(at 8.89 6.35 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "Battery_Cell"
-				(at 2.54 0 0)
+			(property "Value" "1775469-2"
+				(at 0 0 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" ""
-				(at 0 1.524 90)
+			(property "Footprint" "locals_but_working_PLEASE:CONN2_1775469-2_TEC"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 1.524 90)
-				(effects
-					(font
-						(size 1.27 1.27)
+						(italic yes)
 					)
 					(hide yes)
 				)
 			)
-			(property "Description" "Single-cell battery"
+			(property "Datasheet" "https://www.te.com/usa-en/product-1775469-2.datasheet.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Right Angle JST Connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -732,7 +779,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "battery cell"
+			(property "ki_keywords" "1775469-2"
 				(at 0 0 0)
 				(effects
 					(font
@@ -741,83 +788,140 @@
 					(hide yes)
 				)
 			)
-			(symbol "Battery_Cell_0_1"
-				(rectangle
-					(start -2.286 1.778)
-					(end 2.286 1.524)
-					(stroke
-						(width 0)
-						(type default)
+			(property "ki_fp_filters" "CONN2_1775469-2_TEC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -1.524 1.016)
-					(end 1.524 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.762) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.778) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 3.048) (xy 1.778 3.048)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 3.556) (xy 1.27 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
+					(hide yes)
 				)
 			)
-			(symbol "Battery_Cell_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "+"
+			(symbol "1775469-2_0_1"
+				(polyline
+					(pts
+						(xy 5.08 -5.08) (xy 12.7 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 5.08 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 8.89 -3.3867)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 8.89 -1.6933)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 8.89 -0.8467)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 8.89 0.8467)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 -5.08) (xy 12.7 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 2.54) (xy 5.08 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -832,10 +936,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "-"
+				(pin unspecified line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3873,10 +3977,10 @@
 		(uuid "673b3989-1d21-4b2a-8d02-4493b5942291")
 	)
 	(junction
-		(at 26.67 57.15)
+		(at 29.21 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "87241f91-4865-4b8b-8516-42fbe34bd58c")
+		(uuid "805f83e9-2f01-4702-ab2d-e3b27f253c15")
 	)
 	(junction
 		(at 180.34 76.2)
@@ -3891,16 +3995,16 @@
 		(uuid "ca9c208b-fb69-4105-bf8e-e35c0f173436")
 	)
 	(junction
+		(at 46.99 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3dc8f38-b65a-4667-ad67-3ab08a7f3cac")
+	)
+	(junction
 		(at 107.95 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e203a6ff-3492-4f59-9e84-aab6f8590d14")
-	)
-	(junction
-		(at 44.45 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f1f62287-0861-49a5-bdc3-19f3896fb8ac")
 	)
 	(wire
 		(pts
@@ -3924,7 +4028,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 57.15) (xy 44.45 68.58)
+			(xy 46.99 45.72) (xy 46.99 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3941,16 +4045,6 @@
 			(type default)
 		)
 		(uuid "0e7e3b50-4075-4add-9310-d9775158a619")
-	)
-	(wire
-		(pts
-			(xy 26.67 57.15) (xy 31.75 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ed4f334-8abb-463e-8a89-3b3b376090d3")
 	)
 	(wire
 		(pts
@@ -3971,6 +4065,16 @@
 			(type default)
 		)
 		(uuid "1d318421-c302-4f05-b1ff-da649300905d")
+	)
+	(wire
+		(pts
+			(xy 39.37 45.72) (xy 46.99 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e831ac4-f7b4-463f-934b-ed91ebff7039")
 	)
 	(wire
 		(pts
@@ -4014,16 +4118,6 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 57.15) (xy 26.67 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2bd35bcc-0913-45fa-b027-0446bf5cf932")
-	)
-	(wire
-		(pts
 			(xy 107.95 87.63) (xy 118.11 87.63)
 		)
 		(stroke
@@ -4034,7 +4128,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 60.96) (xy 40.64 71.12)
+			(xy 43.18 60.96) (xy 43.18 71.12)
 		)
 		(stroke
 			(width 0)
@@ -4074,7 +4168,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 68.58) (xy 44.45 68.58)
+			(xy 40.64 68.58) (xy 46.99 68.58)
 		)
 		(stroke
 			(width 0)
@@ -4084,7 +4178,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 38.1) (xy 27.94 38.1)
+			(xy 29.21 25.4) (xy 30.48 25.4)
 		)
 		(stroke
 			(width 0)
@@ -4104,7 +4198,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 57.15) (xy 26.67 60.96)
+			(xy 29.21 25.4) (xy 29.21 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4134,13 +4228,23 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 71.12) (xy 40.64 71.12)
+			(xy 40.64 71.12) (xy 43.18 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7b3032e0-2960-4f60-9d2f-5f8edc8f70fc")
+	)
+	(wire
+		(pts
+			(xy 29.21 45.72) (xy 29.21 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f96fe05-2e26-4eb3-9e67-d781491d9a7a")
 	)
 	(wire
 		(pts
@@ -4204,17 +4308,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 57.15) (xy 44.45 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1c14764-56e6-4b08-bf94-0408d686ba51")
-	)
-	(wire
-		(pts
-			(xy 44.45 38.1) (xy 44.45 57.15)
+			(xy 46.99 25.4) (xy 46.99 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4234,7 +4328,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 60.96) (xy 40.64 60.96)
+			(xy 29.21 60.96) (xy 43.18 60.96)
 		)
 		(stroke
 			(width 0)
@@ -4324,7 +4418,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 38.1) (xy 43.18 38.1)
+			(xy 46.99 25.4) (xy 45.72 25.4)
 		)
 		(stroke
 			(width 0)
@@ -4341,6 +4435,16 @@
 			(type default)
 		)
 		(uuid "d9e784f4-8f10-4fef-9802-a903f060845c")
+	)
+	(wire
+		(pts
+			(xy 29.21 45.72) (xy 36.83 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df2b6fe2-7938-4bcf-96c2-71712852e5ee")
 	)
 	(wire
 		(pts
@@ -4361,6 +4465,28 @@
 			)
 		)
 		(uuid "e5930658-e2bb-4ab9-a91b-86b5d587b735")
+	)
+	(label "BT+"
+		(at 29.21 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2390dd36-cccf-4125-bc84-7384b129359a")
+	)
+	(label "BT-"
+		(at 46.99 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c07fb69e-5727-4875-863a-be5a8eb358ed")
 	)
 	(global_label "V_{CC}"
 		(shape input)
@@ -4562,7 +4688,7 @@
 	)
 	(global_label "C_{2}"
 		(shape input)
-		(at 179.07 92.71 180)
+		(at 185.42 104.14 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4572,7 +4698,7 @@
 		)
 		(uuid "51d1f901-2928-432b-89bb-13d4635ff70f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.7964 92.71 0)
+			(at 180.1464 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4650,7 +4776,7 @@
 	)
 	(global_label "V_{B}"
 		(shape input)
-		(at 179.07 97.79 180)
+		(at 185.42 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4660,7 +4786,7 @@
 		)
 		(uuid "5a8d1af3-7363-4bba-832a-5476b4e6b477")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.9294 97.79 0)
+			(at 180.2794 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4716,7 +4842,7 @@
 	)
 	(global_label "V_{B}"
 		(shape input)
-		(at 35.56 30.48 90)
+		(at 38.1 17.78 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4726,7 +4852,7 @@
 		)
 		(uuid "683e2d6b-6e07-479f-837f-8b2118b7fc42")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.56 25.3394 90)
+			(at 38.1 12.6394 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5112,7 +5238,7 @@
 	)
 	(global_label "C_{3}"
 		(shape input)
-		(at 179.07 95.25 180)
+		(at 185.42 106.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5122,7 +5248,7 @@
 		)
 		(uuid "aeda6d89-b364-4389-9580-ae95979004cf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.7964 95.25 0)
+			(at 180.1464 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5376,7 +5502,7 @@
 	)
 	(global_label "C_{1}"
 		(shape input)
-		(at 179.07 90.17 180)
+		(at 185.42 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5386,7 +5512,7 @@
 		)
 		(uuid "f1d763d9-1b59-44d4-922e-a8cf2be58885")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.7964 90.17 0)
+			(at 180.1464 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5977,8 +6103,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Socket")
-		(at 184.15 92.71 0)
+		(lib_id "Custom_Flight_Computer_Symbols:1-2834019-4")
+		(at 190.5 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5987,7 +6113,7 @@
 		(fields_autoplaced yes)
 		(uuid "2b029f0c-5282-472b-96a7-c69c9eb47a71")
 		(property "Reference" "J2"
-			(at 185.42 92.7099 0)
+			(at 193.04 104.1399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5996,7 +6122,7 @@
 			)
 		)
 		(property "Value" "1-2834019-4"
-			(at 185.42 95.2499 0)
+			(at 193.04 106.6799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6004,8 +6130,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "locals:TE_1-2834019-4"
-			(at 184.15 92.71 0)
+		(property "Footprint" "locals_but_working_PLEASE:TE_1-2834019-4"
+			(at 190.5 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6014,7 +6140,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.te.com/usa-en/product-1-2834019-4.datasheet.pdf"
-			(at 184.15 92.71 0)
+			(at 190.5 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6022,8 +6148,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 184.15 92.71 0)
+		(property "Description" "Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 190.5 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6032,7 +6158,7 @@
 			)
 		)
 		(property "DKPN" "A123842-ND"
-			(at 184.15 92.71 0)
+			(at 190.5 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6955,7 +7081,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 33.02 71.12 180)
+		(at 35.56 71.12 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6964,7 +7090,7 @@
 		(fields_autoplaced yes)
 		(uuid "61010400-e079-4ea9-a25e-1bd3d25402e8")
 		(property "Reference" "J3"
-			(at 33.655 63.5 0)
+			(at 36.195 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6972,7 +7098,7 @@
 			)
 		)
 		(property "Value" "2RS1-02-G"
-			(at 33.655 66.04 0)
+			(at 36.195 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6980,7 +7106,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.00mm:PinSocket_1x02_P2.00mm_Vertical"
-			(at 33.02 71.12 0)
+			(at 35.56 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6989,7 +7115,7 @@
 			)
 		)
 		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/202413/2rs1-xx-g-data-sheet.pdf"
-			(at 33.02 71.12 0)
+			(at 35.56 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6998,7 +7124,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 33.02 71.12 0)
+			(at 35.56 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7007,7 +7133,7 @@
 			)
 		)
 		(property "DKPN" "2057-2RS1-02-G-ND"
-			(at 33.02 71.12 0)
+			(at 35.56 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7381,7 +7507,7 @@
 	)
 	(symbol
 		(lib_id "Diode_Bridge:MB6S")
-		(at 35.56 38.1 90)
+		(at 38.1 25.4 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7389,7 +7515,7 @@
 		(dnp no)
 		(uuid "82bf4b0c-d162-4270-a127-5d76cea933c8")
 		(property "Reference" "D1"
-			(at 28.956 30.734 90)
+			(at 31.496 18.034 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7397,7 +7523,7 @@
 			)
 		)
 		(property "Value" "MB6S"
-			(at 28.956 33.274 90)
+			(at 31.496 20.574 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7405,7 +7531,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TO-269AA"
-			(at 32.385 34.29 0)
+			(at 34.925 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7415,7 +7541,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/88573/dfs.pdf"
-			(at 35.56 38.1 0)
+			(at 38.1 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7424,7 +7550,7 @@
 			)
 		)
 		(property "Description" "Miniature Glass Passivated Single-Phase Surface Mount Bridge Rectifiers, 700V Vrms, 1.0A If, DFS SMD package"
-			(at 35.56 38.1 0)
+			(at 38.1 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7433,7 +7559,7 @@
 			)
 		)
 		(property "DKPN" "MB6SCT-ND"
-			(at 35.56 38.1 0)
+			(at 38.1 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7442,7 +7568,7 @@
 			)
 		)
 		(property "Field5" ""
-			(at 35.56 38.1 0)
+			(at 38.1 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7832,8 +7958,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Battery_Cell")
-		(at 34.29 57.15 270)
+		(lib_id "Custom_Flight_Computer_Symbols:1775469-2")
+		(at 39.37 45.72 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7841,7 +7967,7 @@
 		(dnp no)
 		(uuid "c5043fdf-1b83-4bf6-a9f2-03d90a4fa6ba")
 		(property "Reference" "BT1"
-			(at 34.036 51.054 90)
+			(at 36.576 43.434 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7850,7 +7976,7 @@
 			)
 		)
 		(property "Value" "Battery Cell"
-			(at 30.226 53.34 90)
+			(at 32.512 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7859,25 +7985,27 @@
 			)
 		)
 		(property "Footprint" "locals_but_working_PLEASE:CONN2_1775469-2_TEC"
-			(at 35.814 57.15 90)
+			(at 39.37 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(italic yes)
 				)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.te.com/usa-en/product-1775469-2.datasheet.pdf"
-			(at 35.814 57.15 90)
+			(at 39.37 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(italic yes)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 34.29 57.15 0)
+		(property "Description" "Right Angle JST Connector"
+			(at 39.37 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7886,7 +8014,7 @@
 			)
 		)
 		(property "DKPN" "A100080CT-ND"
-			(at 34.29 57.15 0)
+			(at 39.37 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8461,7 +8589,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 35.56 45.72 0)
+		(at 38.1 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8470,7 +8598,7 @@
 		(fields_autoplaced yes)
 		(uuid "f294fc58-d111-40b7-ac06-834baa756c4e")
 		(property "Reference" "#PWR01"
-			(at 35.56 52.07 0)
+			(at 38.1 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8479,7 +8607,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 38.1 46.9899 0)
+			(at 40.64 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8488,7 +8616,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 45.72 0)
+			(at 38.1 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8497,7 +8625,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 45.72 0)
+			(at 38.1 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8506,7 +8634,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 35.56 45.72 0)
+			(at 38.1 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)

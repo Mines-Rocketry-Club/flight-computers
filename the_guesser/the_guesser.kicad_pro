@@ -426,8 +426,12 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "locals_but_working_PLEASE"
+    ],
+    "pinned_symbol_libs": [
+      "Custom_Flight_Computer_Symbols"
+    ]
   },
   "meta": {
     "filename": "the_guesser.kicad_pro",
@@ -576,6 +580,10 @@
     [
       "473e3a2e-6c5e-4995-af4a-e4bf1449cab0",
       "Root"
+    ],
+    [
+      "144203ce-f59d-4228-a9f3-243b499459b2",
+      "Telemetry"
     ]
   ],
   "text_variables": {}
