@@ -2391,7 +2391,7 @@
 			)
 		)
 		(property "Value" "MC3416"
-			(at -10.737971 -6.297339 225)
+			(at -10.737971 -6.297339 -135)
 			(layer "F.Fab")
 			(uuid "9be07e66-4305-41bd-bbdb-a218c493e827")
 			(effects
@@ -7635,8 +7635,8 @@
 		(layer "Edge.Cuts")
 		(uuid "cc1c89eb-9389-4ca3-987f-74b925e3f863")
 	)
-	(gr_text "V0.1.2"
-		(at 200.5 75 270)
+	(gr_text "${REVISION}"
+		(at 217.5 86.5 90)
 		(layer "B.SilkS")
 		(uuid "64b24126-bd7b-4847-a557-b59428c005a8")
 		(effects
