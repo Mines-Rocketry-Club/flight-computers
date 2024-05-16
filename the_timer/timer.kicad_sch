@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Timer")
-		(date "2024-04-16")
-		(rev "0.0.3")
+		(date "2024-05-15")
+		(rev "V0.1.2")
 		(company "Mines Rocket Club")
 		(comment 1 "William Layne")
 	)
@@ -3861,6 +3861,12 @@
 		(uuid "35693564-b48e-4138-b530-6358f7239690")
 	)
 	(junction
+		(at 180.34 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e44eb77-687f-4555-bfca-488af51dc72d")
+	)
+	(junction
 		(at 107.95 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3873,6 +3879,18 @@
 		(uuid "87241f91-4865-4b8b-8516-42fbe34bd58c")
 	)
 	(junction
+		(at 180.34 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4d81595-ac57-4591-9051-35b06d92290b")
+	)
+	(junction
+		(at 180.34 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca9c208b-fb69-4105-bf8e-e35c0f173436")
+	)
+	(junction
 		(at 107.95 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3883,6 +3901,26 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f1f62287-0861-49a5-bdc3-19f3896fb8ac")
+	)
+	(wire
+		(pts
+			(xy 180.34 25.4) (xy 182.88 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06d218f0-8208-4da2-897f-5a094f3da1ed")
+	)
+	(wire
+		(pts
+			(xy 177.8 50.8) (xy 180.34 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0876671b-84b3-4515-884b-6d66891375a1")
 	)
 	(wire
 		(pts
@@ -3923,6 +3961,16 @@
 			(type default)
 		)
 		(uuid "11782d34-98ed-4a5d-8965-3470d94d626a")
+	)
+	(wire
+		(pts
+			(xy 180.34 50.8) (xy 182.88 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d318421-c302-4f05-b1ff-da649300905d")
 	)
 	(wire
 		(pts
@@ -4046,6 +4094,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 76.2) (xy 182.88 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6aa007b2-6a4f-4139-8e25-5add2a90dfcc")
+	)
+	(wire
+		(pts
 			(xy 26.67 57.15) (xy 26.67 60.96)
 		)
 		(stroke
@@ -4053,6 +4111,16 @@
 			(type default)
 		)
 		(uuid "72490ed3-8437-43e1-acf2-1156c0651eb7")
+	)
+	(wire
+		(pts
+			(xy 177.8 25.4) (xy 180.34 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76491f1e-8f65-418d-bc8f-93cbdd6700d0")
 	)
 	(wire
 		(pts
@@ -4246,6 +4314,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 76.2) (xy 180.34 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8f2b2d3-3628-418d-b7c2-913f479c2745")
+	)
+	(wire
+		(pts
 			(xy 44.45 38.1) (xy 43.18 38.1)
 		)
 		(stroke
@@ -4352,7 +4430,7 @@
 	)
 	(global_label "T_{3}"
 		(shape input)
-		(at 182.88 76.2 180)
+		(at 177.8 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4362,7 +4440,7 @@
 		)
 		(uuid "18cbb7a7-52e5-4f80-89f6-3dcaefece2fe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 177.9088 76.2 0)
+			(at 172.8288 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4528,7 +4606,7 @@
 	)
 	(global_label "T_{2}"
 		(shape input)
-		(at 182.88 50.8 180)
+		(at 177.8 50.8 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4538,7 +4616,7 @@
 		)
 		(uuid "55470334-ce34-4e64-a11d-9126a1950126")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 177.9088 50.8 0)
+			(at 172.8288 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5100,7 +5178,7 @@
 	)
 	(global_label "T_{1}"
 		(shape input)
-		(at 182.88 25.4 180)
+		(at 177.8 25.4 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5110,7 +5188,7 @@
 		)
 		(uuid "b9765605-9cb6-48b0-8dbf-ee8ab4cb1d6a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 177.9088 25.4 0)
+			(at 172.8288 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5377,7 +5455,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/885012206071.pdf"
 			(at 153.67 110.49 0)
 			(effects
 				(font
@@ -5396,6 +5474,15 @@
 			)
 		)
 		(property "DKPN" "732-7989-1-ND"
+			(at 153.67 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 153.67 110.49 0)
 			(effects
 				(font
@@ -5473,6 +5560,15 @@
 			)
 		)
 		(property "DKPN" "3502-MC3416CT-ND"
+			(at 134.62 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 134.62 35.56 0)
 			(effects
 				(font
@@ -5585,6 +5681,15 @@
 			)
 		)
 		(property "DKPN" "4530-AS2312CT-ND"
+			(at 187.96 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 187.96 25.4 0)
 			(effects
 				(font
@@ -5725,7 +5830,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
 			(at 147.32 64.77 0)
 			(effects
 				(font
@@ -5744,6 +5849,15 @@
 			)
 		)
 		(property "DKPN" "RMCF0603JT10K0CT-ND"
+			(at 147.32 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 147.32 64.77 0)
 			(effects
 				(font
@@ -5820,7 +5934,7 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "CONN"
+		(property "DKPN" ""
 			(at 85.09 33.02 0)
 			(effects
 				(font
@@ -5881,7 +5995,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x04_Socket"
+		(property "Value" "1-2834019-4"
 			(at 185.42 95.2499 0)
 			(effects
 				(font
@@ -5899,7 +6013,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.te.com/usa-en/product-1-2834019-4.datasheet.pdf"
 			(at 184.15 92.71 0)
 			(effects
 				(font
@@ -5917,7 +6031,7 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "CONN"
+		(property "DKPN" "A123842-ND"
 			(at 184.15 92.71 0)
 			(effects
 				(font
@@ -5965,7 +6079,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "ATtiny48-A"
+		(property "Value" "ATTINY88-AU"
 			(at 21.59 132.08 90)
 			(effects
 				(font
@@ -6002,7 +6116,16 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "ATTINY48-AURCT-ND"
+		(property "DKPN" "ATTINY88-AU-ND"
+			(at 35.56 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 35.56 130.81 0)
 			(effects
 				(font
@@ -6316,7 +6439,16 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "CONN"
+		(property "DKPN" ""
+			(at 109.22 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 109.22 149.86 0)
 			(effects
 				(font
@@ -6329,6 +6461,72 @@
 			(project "timer"
 				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
 					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 180.34 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a1c4f14-21ad-4979-a6bb-7cbb86fb7483")
+		(property "Reference" "#PWR015"
+			(at 180.34 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 180.34 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 180.34 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef777ddf-b842-4db7-9525-8ba3016efd82")
+		)
+		(instances
+			(project "timer"
+				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -6401,6 +6599,15 @@
 				(hide yes)
 			)
 		)
+		(property "Field5" ""
+			(at 187.96 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "44def5a8-c5ac-4f80-829a-c918ede3c626")
 		)
@@ -6414,6 +6621,93 @@
 			(project "timer"
 				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
 					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 180.34 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4b0c789e-e0d4-4ad9-92ac-fc5e54748116")
+		(property "Reference" "R6"
+			(at 182.626 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 182.626 55.372 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 180.34 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 180.34 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 180.34 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "RMCF0603JT10K0CT-ND"
+			(at 180.34 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 180.34 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "252a8bad-c3fb-473c-a93c-898a4ac8fc2d")
+		)
+		(pin "1"
+			(uuid "1340561e-82ac-44dc-a10d-1237c934642d")
+		)
+		(instances
+			(project "timer"
+				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -6455,7 +6749,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
 			(at 107.95 83.82 0)
 			(effects
 				(font
@@ -6474,6 +6768,15 @@
 			)
 		)
 		(property "DKPN" "RMCF0603FT1K20CT-ND"
+			(at 107.95 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 107.95 83.82 0)
 			(effects
 				(font
@@ -6533,7 +6836,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
 			(at 138.43 64.77 0)
 			(effects
 				(font
@@ -6552,6 +6855,15 @@
 			)
 		)
 		(property "DKPN" "RMCF0603JT10K0CT-ND"
+			(at 138.43 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 138.43 64.77 0)
 			(effects
 				(font
@@ -6659,7 +6971,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x02_Socket"
+		(property "Value" "2RS1-02-G"
 			(at 33.655 66.04 0)
 			(effects
 				(font
@@ -6676,7 +6988,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/202413/2rs1-xx-g-data-sheet.pdf"
 			(at 33.02 71.12 0)
 			(effects
 				(font
@@ -6694,7 +7006,7 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "CONN"
+		(property "DKPN" "2057-2RS1-02-G-ND"
 			(at 33.02 71.12 0)
 			(effects
 				(font
@@ -6713,6 +7025,72 @@
 			(project "timer"
 				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 180.34 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63ad4a15-b817-4fd9-9134-d142eb535071")
+		(property "Reference" "#PWR03"
+			(at 180.34 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 180.34 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 180.34 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9dc20647-bbc9-4d64-8c26-197e54e451c2")
+		)
+		(instances
+			(project "timer"
+				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -6803,7 +7181,7 @@
 				)
 			)
 		)
-		(property "Value" "TPS61033"
+		(property "Value" "TPS61033DRLR"
 			(at 87.63 68.326 0)
 			(effects
 				(font
@@ -6820,7 +7198,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps610333.pdf?ts=1715812040681"
 			(at 96.52 87.63 0)
 			(effects
 				(font
@@ -6838,8 +7216,17 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "296-TPS610333DRLRCT-ND"
+		(property "DKPN" "296-TPS61033DRLRCT-ND"
 			(at 87.63 91.948 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 87.63 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6950,6 +7337,15 @@
 				(hide yes)
 			)
 		)
+		(property "Field5" ""
+			(at 93.98 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "fc030e85-b82e-4d79-b49c-a7d1c220e8c6")
 		)
@@ -7037,6 +7433,15 @@
 			)
 		)
 		(property "DKPN" "MB6SCT-ND"
+			(at 35.56 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 35.56 38.1 0)
 			(effects
 				(font
@@ -7254,7 +7659,16 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "CONN"
+		(property "DKPN" ""
+			(at 82.55 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 82.55 149.86 0)
 			(effects
 				(font
@@ -7309,7 +7723,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/885012106006.pdf"
 			(at 118.11 81.28 0)
 			(effects
 				(font
@@ -7327,7 +7741,7 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "490-12538-1-ND"
+		(property "DKPN" "732-7903-1-ND"
 			(at 118.11 81.28 0)
 			(effects
 				(font
@@ -7346,6 +7760,72 @@
 			(project "timer"
 				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 180.34 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4dd3308-d17d-4521-b0c4-b8b6f2314407")
+		(property "Reference" "#PWR016"
+			(at 180.34 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 180.34 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 180.34 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "20f12a2f-3a9a-46c8-bbd0-872fc7fc9514")
+		)
+		(instances
+			(project "timer"
+				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -7387,7 +7867,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.te.com/usa-en/product-1775469-2.datasheet.pdf"
 			(at 35.814 57.15 90)
 			(effects
 				(font
@@ -7609,7 +8089,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
 			(at 107.95 76.2 0)
 			(effects
 				(font
@@ -7636,6 +8116,15 @@
 				(hide yes)
 			)
 		)
+		(property "Field5" ""
+			(at 107.95 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3d9def3d-e744-4eaa-8b1f-5854512ba390")
 		)
@@ -7646,6 +8135,93 @@
 			(project "timer"
 				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 180.34 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dc3c884d-7f88-4369-ba74-fd01acbb5022")
+		(property "Reference" "R5"
+			(at 182.626 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 182.626 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 180.34 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 180.34 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 180.34 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "RMCF0603JT10K0CT-ND"
+			(at 180.34 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 180.34 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1c4c3d7a-6a2f-4c8b-945f-b1a5bb666d8a")
+		)
+		(pin "1"
+			(uuid "c35f07ed-35c1-4b52-927a-c23d4962482c")
+		)
+		(instances
+			(project "timer"
+				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -7856,6 +8432,15 @@
 				(hide yes)
 			)
 		)
+		(property "Field5" ""
+			(at 187.96 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9f81ea06-4719-43af-a57c-b2715c876efe")
 		)
@@ -7996,7 +8581,16 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "CONN"
+		(property "DKPN" ""
+			(at 137.16 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 137.16 149.86 0)
 			(effects
 				(font
@@ -8009,6 +8603,93 @@
 			(project "timer"
 				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
 					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 180.34 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f65b51f8-c779-4015-a4d0-3ca87489bba7")
+		(property "Reference" "R7"
+			(at 182.626 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 182.626 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 180.34 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 180.34 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 180.34 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "RMCF0603JT10K0CT-ND"
+			(at 180.34 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 180.34 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0a446e84-f071-41d0-bd31-5bcfc7f1d5f7")
+		)
+		(pin "1"
+			(uuid "8e6a5e2c-b784-4d00-a24c-30c0c91f28cc")
+		)
+		(instances
+			(project "timer"
+				(path "/e2b0a296-fcac-4dcc-93f1-26b3dc1147d1"
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -8069,6 +8750,15 @@
 			)
 		)
 		(property "DKPN" "223-1198-1-ND"
+			(at 139.7 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 139.7 110.49 0)
 			(effects
 				(font
@@ -8145,7 +8835,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/7447860247.pdf"
 			(at 87.63 62.23 0)
 			(effects
 				(font
@@ -8164,6 +8854,15 @@
 			)
 		)
 		(property "DKPN" "732-7447860247CT-ND"
+			(at 87.63 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 87.63 62.23 0)
 			(effects
 				(font

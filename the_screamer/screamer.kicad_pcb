@@ -7,6 +7,13 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "Screamer")
+		(date "2024-05-15")
+		(rev "V0.1.0")
+		(company "Mines Rocket Club")
+		(comment 1 "Andrew Wu")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(1 "In1.Cu" signal)
@@ -3915,7 +3922,7 @@
 		(layer "Edge.Cuts")
 		(uuid "d9ca60cd-9d25-4a8b-814d-1c52ac8c0615")
 	)
-	(gr_text "V0.0.3"
+	(gr_text "V0.1.0"
 		(at 150.5 95 270)
 		(layer "B.SilkS")
 		(uuid "ad4b00ac-40ad-4ebd-b2d1-990329373c29")

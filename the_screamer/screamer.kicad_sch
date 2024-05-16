@@ -5,11 +5,11 @@
 	(uuid "2e60cbe6-be85-4859-bc44-cf74ef803e12")
 	(paper "USLetter")
 	(title_block
-		(title "The Screamer")
-		(date "2024-04-12")
-		(rev "0.0.2")
+		(title "Screamer")
+		(date "2024-05-15")
+		(rev "V0.1.0")
 		(company "Mines Rocket Club")
-		(comment 1 "Tom Powell")
+		(comment 1 "Andrew Wu")
 	)
 	(lib_symbols
 		(symbol "2024-05-01_18-53-16:MAX2623EUA+T"
@@ -2379,7 +2379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/885012206065.pdf"
 			(at 114.3 43.18 0)
 			(effects
 				(font
@@ -2456,7 +2456,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.te.com/usa-en/product-1775469-2.datasheet.pdf"
 			(at 35.814 50.8 90)
 			(effects
 				(font
@@ -2534,7 +2534,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/885012106030.pdf"
 			(at 88.9 43.18 0)
 			(effects
 				(font
@@ -3011,7 +3011,7 @@
 		(lib_id "Mechanical:MountingHole")
 		(at 76.2 63.5 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -3184,7 +3184,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/885012006010.pdf"
 			(at 227.33 46.99 0)
 			(effects
 				(font
@@ -3446,7 +3446,7 @@
 		(lib_id "Mechanical:MountingHole")
 		(at 76.2 76.2 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -3697,7 +3697,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/885012106030.pdf"
 			(at 127 43.18 0)
 			(effects
 				(font
@@ -3773,7 +3773,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/200457/2ph1-xx-ua-data-sheet.pdf"
 			(at 33.02 62.23 0)
 			(effects
 				(font
@@ -3791,7 +3791,7 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "A100080CT-ND"
+		(property "DKPN" "2057-2PH1-02-UA-ND"
 			(at 33.02 62.23 0)
 			(effects
 				(font
@@ -3852,7 +3852,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/885012006010.pdf"
 			(at 234.95 46.99 0)
 			(effects
 				(font
