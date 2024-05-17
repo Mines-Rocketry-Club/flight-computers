@@ -9,7 +9,7 @@
  * 
  */
 
-#include "FlightComputer.h" //TODO: might nuke the header files and just do an include on the .cpp files. need to research more if they're actually beneficial at this scale
+#include "FlightComputer.h"
 
 FlightComputer::FlightComputer() {
     m_state = PREFLIGHT;
@@ -24,7 +24,7 @@ void FlightComputer::createCharge(uint8_t channel, pc_triggerType triggerType, u
 
 void FlightComputer::updatePyroCharges() {
     for(int i = 0; i < m_numCharges; i++) {
-        m_charges[i].update(m_timeSinceApogee, altimeter.getAltitude(), m_currentTime);
+        m_charges[i].update(m_timeSinceApogee, (uint32_t)altimeter.getAltitude(), m_currentTime);
     }
 }
 
