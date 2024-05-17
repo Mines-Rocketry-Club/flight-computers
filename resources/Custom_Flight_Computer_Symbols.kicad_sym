@@ -57,6 +57,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "ki_keywords" "screw terminal"
@@ -361,6 +362,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "ki_keywords" "1775469-2"
@@ -633,10 +635,19 @@
 				(hide yes)
 			)
 		)
+		(property "DKPN" "296-35718-1-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(symbol "CC1101RGPR_0_0"
 			(rectangle
-				(start -17.78 -30.48)
-				(end 17.78 30.48)
+				(start -17.78 30.48)
+				(end 17.78 -30.48)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -1078,6 +1089,15 @@
 				(hide yes)
 			)
 		)
+		(property "DKPN" "296-36922-1-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(symbol "CC1190RGVR_0_0"
 			(rectangle
 				(start -12.7 -27.94)
@@ -1450,12 +1470,13 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" ""
+		(property "DKPN" "175-MAX2623EUA+TCT-ND"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "ki_keywords" "MAX2623EUA+T"

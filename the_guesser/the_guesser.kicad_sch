@@ -5,11 +5,11 @@
 	(uuid "473e3a2e-6c5e-4995-af4a-e4bf1449cab0")
 	(paper "A4")
 	(title_block
-		(title "The Guesser")
+		(title "Guesser")
 		(date "2024-05-16")
-		(rev "0.0.1")
+		(rev "V0.0.1")
 		(company "Mines Rocket Club")
-		(comment 1 "Tom Powell & Andew Wu")
+		(comment 1 "Andrew Wu")
 	)
 	(lib_symbols
 		(symbol "Connector:USB_B_Mini"
@@ -1943,6 +1943,88 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "Memory_Flash:W25Q128JVS"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3708,16 +3790,6 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 115.57) (xy 245.11 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0215080f-99b5-4928-b831-eac4d20cffe4")
-	)
-	(wire
-		(pts
 			(xy 105.41 97.79) (xy 106.68 97.79)
 		)
 		(stroke
@@ -3735,16 +3807,6 @@
 			(type default)
 		)
 		(uuid "16d2e6d5-f249-481a-8670-f3124d2e951e")
-	)
-	(wire
-		(pts
-			(xy 226.06 120.65) (xy 260.35 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "173f0a57-fe71-4ffc-890e-9f44dad638cb")
 	)
 	(wire
 		(pts
@@ -3778,16 +3840,6 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 118.11) (xy 252.73 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34315a76-20a6-49d3-896b-7f75eda0d90a")
-	)
-	(wire
-		(pts
 			(xy 43.18 76.2) (xy 45.72 76.2)
 		)
 		(stroke
@@ -3815,26 +3867,6 @@
 			(type default)
 		)
 		(uuid "4757523d-7d1c-4dd9-a3c2-4dfdea7b9638")
-	)
-	(wire
-		(pts
-			(xy 251.46 106.68) (xy 251.46 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "47868059-f08e-4874-97c2-c159c0ecb28e")
-	)
-	(wire
-		(pts
-			(xy 242.57 106.68) (xy 242.57 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4aa96109-3b5e-4824-8c04-3d29727b8316")
 	)
 	(wire
 		(pts
@@ -3878,16 +3910,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 113.03) (xy 242.57 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a5b864a-ccd2-4f7e-9d83-66e8363e5be8")
-	)
-	(wire
-		(pts
 			(xy 110.49 95.25) (xy 110.49 97.79)
 		)
 		(stroke
@@ -3895,16 +3917,6 @@
 			(type default)
 		)
 		(uuid "7ef27b61-44eb-42b7-bd20-1241d1662598")
-	)
-	(wire
-		(pts
-			(xy 250.19 115.57) (xy 251.46 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83780d6b-bec9-43a0-b05c-51221ca6e986")
 	)
 	(wire
 		(pts
@@ -3935,36 +3947,6 @@
 			(type default)
 		)
 		(uuid "9cba2120-93f7-48ea-ac7d-6aea577bce6b")
-	)
-	(wire
-		(pts
-			(xy 259.08 106.68) (xy 259.08 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a43057ed-ee1e-48fb-b21a-3e2e892b589e")
-	)
-	(wire
-		(pts
-			(xy 265.43 120.65) (xy 266.7 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7493472-21b4-4e4d-81ab-f43fdf9e0607")
-	)
-	(wire
-		(pts
-			(xy 266.7 106.68) (xy 266.7 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b47f5ec2-ee65-4ba6-9603-aed5b743bb3e")
 	)
 	(wire
 		(pts
@@ -4016,26 +3998,6 @@
 		)
 		(uuid "e9e30e74-bdf8-4146-a7bf-f29d5d969e15")
 	)
-	(wire
-		(pts
-			(xy 226.06 113.03) (xy 236.22 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f81a5d65-aee1-429b-bebc-6b546705606f")
-	)
-	(wire
-		(pts
-			(xy 257.81 118.11) (xy 259.08 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa955491-bd5d-4521-89e6-3950c19ea91d")
-	)
 	(text "NOTE:\nR1 (the heater) MUST be near X1\nfor use above 70,000 MSL"
 		(exclude_from_sim no)
 		(at 21.336 97.79 0)
@@ -4068,7 +4030,7 @@
 		)
 		(uuid "f1195e48-3b43-4c75-ae02-3dad0186e5b6")
 	)
-	(global_label "UD+"
+	(global_label "USB_D+"
 		(shape input)
 		(at 133.35 151.13 0)
 		(fields_autoplaced yes)
@@ -4112,7 +4074,7 @@
 			)
 		)
 	)
-	(global_label "UD+"
+	(global_label "USB_D+"
 		(shape input)
 		(at 241.3 35.56 0)
 		(fields_autoplaced yes)
@@ -4156,7 +4118,7 @@
 			)
 		)
 	)
-	(global_label "UD-"
+	(global_label "USB_D-"
 		(shape input)
 		(at 133.35 148.59 0)
 		(fields_autoplaced yes)
@@ -4168,7 +4130,7 @@
 		)
 		(uuid "19a4c4b7-cf26-492b-a614-c95961923a78")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.5081 148.59 0)
+			(at 143.9552 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4200,7 +4162,7 @@
 			)
 		)
 	)
-	(global_label "~{TXCS}"
+	(global_label "~{CS}"
 		(shape input)
 		(at 133.35 135.89 0)
 		(fields_autoplaced yes)
@@ -4212,7 +4174,7 @@
 		)
 		(uuid "1f247c48-2d5c-4390-92ee-4d17948c6034")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.9918 135.89 0)
+			(at 138.8147 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4376,7 +4338,7 @@
 			)
 		)
 	)
-	(global_label "UD-"
+	(global_label "USB_D-"
 		(shape input)
 		(at 241.3 38.1 0)
 		(fields_autoplaced yes)
@@ -4730,6 +4692,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 38.1 146.05 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e736f81-636d-4ccf-a885-b0924a966ca0")
+		(property "Reference" "H2"
+			(at 40.64 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 40.64 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 38.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 38.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 27.94 83.82 270)
 		(unit 1)
@@ -4889,7 +4915,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_Mini-B_Wuerth_65100516121_Horizontal"
 			(at 237.49 36.83 0)
 			(effects
 				(font
@@ -4938,6 +4964,134 @@
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 38.1 152.4 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1fbbc77f-ee5a-4cf9-a71f-9d2b8f59db0c")
+		(property "Reference" "H3"
+			(at 40.64 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 40.64 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 38.1 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 38.1 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 38.1 158.75 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "206b39d1-c051-4e48-8ec8-97d39c87d189")
+		(property "Reference" "H4"
+			(at 40.64 157.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 40.64 160.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 38.1 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 38.1 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -5274,142 +5428,6 @@
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 262.89 120.65 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6db5b40d-030f-43ef-bdf2-7fcb80f7ee59")
-		(property "Reference" "C4"
-			(at 262.8963 114.3 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "C_Small"
-			(at 262.8963 116.84 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 262.89 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 262.89 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 262.89 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fbb814e7-b6b6-40c1-aa8f-c2dad913cba6")
-		)
-		(pin "2"
-			(uuid "64c9f4b0-44ce-4386-bdb0-cb54d7011893")
-		)
-		(instances
-			(project "the_guesser"
-				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 247.65 115.57 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "82b0ab99-4087-4dfb-a158-024f9c4d766b")
-		(property "Reference" "C2"
-			(at 247.6563 109.22 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "C_Small"
-			(at 247.6563 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 247.65 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 247.65 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 247.65 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a91b7357-d806-42da-9cf4-23a828bc36ee")
-		)
-		(pin "2"
-			(uuid "0b58d462-4b29-417b-8b7b-eccb45386de7")
-		)
-		(instances
-			(project "the_guesser"
-				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
-					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -5809,10 +5827,10 @@
 		(lib_id "Transistor_FET:2N7002")
 		(at 134.62 33.02 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "a44dcce8-e9bd-461d-a055-cbbb694b56a4")
 		(property "Reference" "Q1"
@@ -6076,6 +6094,70 @@
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 38.1 139.7 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af6fda49-5182-46d5-a620-b5f01021e98b")
+		(property "Reference" "H1"
+			(at 40.64 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 40.64 140.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 38.1 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 38.1 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -6346,81 +6428,13 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 238.76 113.03 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c6ed1713-8a2a-4566-8df8-8acada1d8f75")
-		(property "Reference" "C1"
-			(at 238.7663 106.68 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "C_Small"
-			(at 238.7663 109.22 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 238.76 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 238.76 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 238.76 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "35df144b-cd19-4156-a2f5-53c248d20068")
-		)
-		(pin "2"
-			(uuid "21f30fe7-3600-46a1-bb70-87cff43bb76d")
-		)
-		(instances
-			(project "the_guesser"
-				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "RF:CC1200")
 		(at 208.28 110.49 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "ca601a00-7fdd-4ab3-b62e-ef9b401a6b34")
 		(property "Reference" "U1"
@@ -6718,7 +6732,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e56769ed-7ca9-4b01-bf18-d07101d527bd")
-		(property "Reference" "X1"
+		(property "Reference" "X2"
 			(at 35.56 69.85 0)
 			(effects
 				(font
@@ -6776,75 +6790,7 @@
 		(instances
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
-					(reference "X1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 255.27 118.11 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e7435d3b-9391-4a53-8a30-bbf5cc8c51d5")
-		(property "Reference" "C3"
-			(at 255.2763 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "C_Small"
-			(at 255.2763 114.3 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 255.27 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 255.27 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 255.27 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "25c3ac52-ba38-42f9-b852-0ca499149998")
-		)
-		(pin "2"
-			(uuid "899189f0-77c0-4b30-8fcb-a47d2134d741")
-		)
-		(instances
-			(project "the_guesser"
-				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
-					(reference "C3")
+					(reference "X2")
 					(unit 1)
 				)
 			)
@@ -6920,10 +6866,10 @@
 		(lib_id "Regulator_Linear:TC2185-3.3VxCTTR")
 		(at 85.09 34.29 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "eec4f24a-5c4d-4992-b3ec-b26ebbdf8e24")
 		(property "Reference" "U4"
@@ -7137,7 +7083,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "144203ce-f59d-4228-a9f3-243b499459b2")
-		(property "Sheetname" "Telemetry"
+		(property "Sheetname" "Transmitter"
 			(at 306.07 13.2584 0)
 			(effects
 				(font
@@ -7146,7 +7092,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Transciever.kicad_sch"
+		(property "Sheetfile" "Guesser_Transciever.kicad_sch"
 			(at 306.07 105.9946 0)
 			(effects
 				(font
