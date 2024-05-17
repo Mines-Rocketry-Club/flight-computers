@@ -4544,6 +4544,28 @@
 		)
 		(uuid "e7840c9a-69a4-4f85-9ab5-f4dfa450b162")
 	)
+	(global_label "VCC_{CC1101}"
+		(shape input)
+		(at 82.55 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "01660d09-0146-4af4-8052-2565e5f144b2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 95.117 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "HGM"
 		(shape input)
 		(at 33.02 60.96 180)
@@ -8444,7 +8466,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "RFShield_TwoPieces"
+		(property "Value" "BMI-S-209-F"
 			(at 270.51 115.5699 0)
 			(effects
 				(font
@@ -8472,6 +8494,15 @@
 			)
 		)
 		(property "Description" "One-piece EMI RF shielding cabinet"
+			(at 254 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "903-1212-1-ND"
 			(at 254 114.3 0)
 			(effects
 				(font
@@ -8908,7 +8939,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a22ba462-8a73-46f2-a795-69602e0728b4")
