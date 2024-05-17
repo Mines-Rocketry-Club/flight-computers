@@ -3,6 +3,7 @@
 
 int main() {
     FlightComputer flightComputer;
+    Wire.begin();
 
     #ifdef del1 // uint32_t - milliseconds
         flightComputer.createCharge(0, DELAY, del1);

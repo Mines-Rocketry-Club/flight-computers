@@ -4,44 +4,70 @@
 #include <Arduino.h>
 #include <Wire.h>
 
-//THE PROCEDURE
-    /**
-     * (on startup only) read calibration data and store it
-     * 
-     * from then on any time we want data, 
-     * read D1 (digital pressure), D2 (digital temperature)
-     * calculate temperature: dT and TEMP
-     * calculate temperature compensated pressure: OFF, SENS, and P
-     * 
-     * next, use these values in whatever they need to be used by
-     */
-// We want a total time to do the entire calculation to be < 10ms. We'll need to read the ADC twice and conversion time at OSR 2048 is 4.54ms max which should work?
-
-// Datasheet: 
 // Address is 111011Cx, where C is the complementary value of the pin CSB [(LOW), and x is any value (?)] Therefore, addr = 11101100 = 0x76
-#define ADDRESS 0x76    
+#define ADDRESS 0x76            // TODO: These might be "better" as variables?
 
 #define CMD_RESET       0x1E
 #define CMD_ADC_READ    0x00
 #define CMD_PROM_READ   0xA0    // Starting prom address. Each subsequent address is 2 bits after the last.
-#define CMD_CONVERT_D1  0x46    // OSR of 2048
-#define CMD_CONVERT_D2  0x56    // OSR of 2048
+#define CMD_CONVERT_D1  0x44    // OSR of 1024
+#define CMD_CONVERT_D2  0x54    // OSR of 1024
 
 class Altimeter {
 public:
     Altimeter();
+
+    /**
+     * @brief Updates the internal altitude and velocity readings of the altimeter. Run every tick.
+     * 
+     * @param currentTimeMillis - Current time in milliseconds
+     */
     void update(const uint32_t &currentTimeMillis);
+
+    /**
+     * @brief Gets the current calculated altitude above GROUND level in meters.
+     * 
+     * @return float - cast to a uint32_t when passing to a pyro charge
+     */
     float getAltitude();
+
+    /**
+     * @brief Gets the current calculated velocity. No averaging is used here.
+     * 
+     * @return float 
+     */
     float getVelocity();
+
+    /**
+     * @brief Gets the rolling average of the velocity across about the past 0.5 seconds.
+     * 
+     * @return float 
+     */
     float getAvgVelocity();
+
+    /**
+     * @brief Zeroes the altitude of the object. Run only during the flight computer's preflight state.
+     * 
+     */
     void setZero();
 
     
 
 private:
-    uint32_t m_calculateAltitude();
+    /**
+     * @brief Calculates the current calculated altitude above GROUND level in meters based off of pressure and temperature.
+     * 
+     * @return float
+     */
+    float m_calculateAltitude();
 
-    float rollingAverage(const float &newVel);
+    /**
+     * @brief Creates a continuous rolling average of velocity across m_numValuesToAvg per roughly 0.5 seconds. Returns the average in meters. 
+     * 
+     * @param newVel 
+     * @return float 
+     */
+    float m_rollingAvgVelocity(const float &newVel);
 
     //TODO: why doesnt the fucking doxygen newline work
     /**
@@ -58,20 +84,8 @@ private:
     uint32_t m_D1;    // Digital pressure. may rename
     uint32_t m_D2;    // Digital temperature. may rename
 
-    // TODO -----------------
-    // these values and the three below are used for doing math and are derived from the constants along with D1 and D2.
-    // these should probably be moved to a function and be declared inside the call...? 
-    // basically, these aren't technically necessary (mostly) and we want to save on as much ram as possible here
-    int32_t m_dT;
-    int32_t m_TEMP;
-
-    // Jesus, int64s 
-    int64_t m_OFF;
-    int64_t m_SENS;
-    int32_t m_P;
-
-    //TODO: does wire even need to be a declared variable.? it can be used statically right but why doesn't the library??
-    TwoWire *m_i2c;
+    //TODO: The library I was referencing used a private TwoWire pointer... I don't know why. I think that just using Wire.doSomething() should be OK for single threaded stuff?
+    //TwoWire *m_i2c;
 
     uint8_t m_stepsSinceLastAvg;
 
@@ -97,7 +111,7 @@ private:
      * @brief meters per second
      * 
      */
-    float m_avgVelocity;   // Needs to be kept in check with a very light rolling average
+    float m_avgVelocity; 
 
     uint32_t m_previousTime;
 
