@@ -641,6 +641,10 @@
     [
       "144203ce-f59d-4228-a9f3-243b499459b2",
       "Transmitter"
+    ],
+    [
+      "a1a58bc4-7e65-411e-974f-12a034070c8b",
+      "Sensors"
     ]
   ],
   "text_variables": {}
