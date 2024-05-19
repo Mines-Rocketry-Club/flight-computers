@@ -645,6 +645,10 @@
     [
       "a1a58bc4-7e65-411e-974f-12a034070c8b",
       "Sensors"
+    ],
+    [
+      "0bcaec57-f6d5-41f0-b678-342e153337b7",
+      "Inputs Outputs"
     ]
   ],
   "text_variables": {}

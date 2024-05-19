@@ -4720,7 +4720,7 @@
 			)
 		)
 	)
-	(global_label "MISO"
+	(global_label "SDO2"
 		(shape input)
 		(at 104.14 78.74 180)
 		(fields_autoplaced yes)
@@ -4808,7 +4808,7 @@
 			)
 		)
 	)
-	(global_label "SCLK"
+	(global_label "SCLK2"
 		(shape input)
 		(at 104.14 73.66 180)
 		(fields_autoplaced yes)
@@ -4984,7 +4984,7 @@
 			)
 		)
 	)
-	(global_label "~{CS}"
+	(global_label "~{CS}_{RF}"
 		(shape input)
 		(at 104.14 71.12 180)
 		(fields_autoplaced yes)
@@ -4996,7 +4996,7 @@
 		)
 		(uuid "7c82cff7-253d-4e68-ae81-2f94eac664f3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 98.6753 71.12 0)
+			(at 96.7376 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5248,7 +5248,7 @@
 			)
 		)
 	)
-	(global_label "MOSI"
+	(global_label "SDI2"
 		(shape input)
 		(at 104.14 76.2 180)
 		(fields_autoplaced yes)
@@ -6486,7 +6486,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 254 124.46 0)
+		(at 254 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6495,7 +6495,7 @@
 		(fields_autoplaced yes)
 		(uuid "21c464d5-0cb1-47c5-9be3-cb9059a38c53")
 		(property "Reference" "#PWR044"
-			(at 254 130.81 0)
+			(at 254 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6504,7 +6504,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 254 129.54 0)
+			(at 254 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6512,7 +6512,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 254 124.46 0)
+			(at 254 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6521,7 +6521,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 254 124.46 0)
+			(at 254 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6530,7 +6530,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 254 124.46 0)
+			(at 254 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6698,7 +6698,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2471114b-aa86-4ff4-96ee-04682f460128")
-		(property "Reference" "U6"
+		(property "Reference" "U3"
 			(at 50.8 43.18 0)
 			(effects
 				(font
@@ -6805,7 +6805,7 @@
 		(instances
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
-					(reference "U6")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -6821,7 +6821,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3586fabf-f2ff-410d-baad-6426121d3894")
-		(property "Reference" "U5"
+		(property "Reference" "U2"
 			(at 127 40.64 0)
 			(effects
 				(font
@@ -6980,7 +6980,7 @@
 		(instances
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
-					(reference "U5")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -7615,7 +7615,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "68f34153-c4ea-4329-b7b9-93b47acf7831")
-		(property "Reference" "U7"
+		(property "Reference" "U4"
 			(at 241.3 85.09 0)
 			(effects
 				(font
@@ -7688,7 +7688,7 @@
 		(instances
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
-					(reference "U7")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -8449,7 +8449,7 @@
 	)
 	(symbol
 		(lib_id "Device:RFShield_OnePiece")
-		(at 254 114.3 0)
+		(at 254 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8458,7 +8458,7 @@
 		(fields_autoplaced yes)
 		(uuid "8d7e7666-9e63-4610-83aa-0adca0658334")
 		(property "Reference" "J3"
-			(at 270.51 113.0299 0)
+			(at 270.51 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8467,7 +8467,7 @@
 			)
 		)
 		(property "Value" "BMI-S-209-F"
-			(at 270.51 115.5699 0)
+			(at 270.51 140.9699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8476,7 +8476,7 @@
 			)
 		)
 		(property "Footprint" "RF_Shielding:Laird_Technologies_BMI-S-209-F_29.36x18.50mm"
-			(at 254 116.84 0)
+			(at 254 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8485,7 +8485,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 254 116.84 0)
+			(at 254 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8494,7 +8494,7 @@
 			)
 		)
 		(property "Description" "One-piece EMI RF shielding cabinet"
-			(at 254 114.3 0)
+			(at 254 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8503,7 +8503,7 @@
 			)
 		)
 		(property "DKPN" "903-1212-1-ND"
-			(at 254 114.3 0)
+			(at 254 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10025,7 +10025,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "d6dd2553-230a-4d96-baa7-deb9450d03d5")
 		(property "Reference" "C28"
