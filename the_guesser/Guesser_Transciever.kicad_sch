@@ -204,7 +204,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "locals_but_working_PLEASE:QFN50P400X400X100-21N"
+			(property "Footprint" "locals_but_working_PLEASE:CC1101RGPR"
 				(at 0 0 0)
 				(effects
 					(font
@@ -698,7 +698,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "locals_but_working_PLEASE:QFN65P400X400X100-17N"
+			(property "Footprint" "locals_but_working_PLEASE:CC1190RGVR"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3354,6 +3354,16 @@
 	)
 	(wire
 		(pts
+			(xy 20.32 76.2) (xy 33.02 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20a74d53-cba4-470d-8c92-ca704d4240be")
+	)
+	(wire
+		(pts
 			(xy 71.12 139.7) (xy 71.12 142.24)
 		)
 		(stroke
@@ -3361,6 +3371,16 @@
 			(type default)
 		)
 		(uuid "2485042e-31d6-4dca-9e6a-d07a4478216e")
+	)
+	(wire
+		(pts
+			(xy 20.32 76.2) (xy 20.32 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25e6e9d1-8a85-49e8-91fb-8686075f9ceb")
 	)
 	(wire
 		(pts
@@ -3651,16 +3671,6 @@
 			(type default)
 		)
 		(uuid "5d16889c-8f5b-4434-9aef-bc323f4a0bb8")
-	)
-	(wire
-		(pts
-			(xy 30.48 76.2) (xy 33.02 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e69a871-98bd-450c-831f-d70a9b6fb716")
 	)
 	(wire
 		(pts
@@ -4720,7 +4730,7 @@
 			)
 		)
 	)
-	(global_label "SDO2"
+	(global_label "SDO3"
 		(shape input)
 		(at 104.14 78.74 180)
 		(fields_autoplaced yes)
@@ -4732,7 +4742,7 @@
 		)
 		(uuid "3dc63cee-569d-4f5a-b30a-a3a650a5ed65")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 96.5586 78.74 0)
+			(at 96.1353 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4808,7 +4818,7 @@
 			)
 		)
 	)
-	(global_label "SCLK2"
+	(global_label "SCLK3"
 		(shape input)
 		(at 104.14 73.66 180)
 		(fields_autoplaced yes)
@@ -4820,7 +4830,7 @@
 		)
 		(uuid "5535073f-e804-46d3-8278-067404e9646f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 96.3772 73.66 0)
+			(at 95.1677 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5248,7 +5258,7 @@
 			)
 		)
 	)
-	(global_label "SDI2"
+	(global_label "SDI3"
 		(shape input)
 		(at 104.14 76.2 180)
 		(fields_autoplaced yes)
@@ -5260,7 +5270,7 @@
 		)
 		(uuid "fb7e80b0-4deb-4d34-a088-3639edf673f3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 96.5586 76.2 0)
+			(at 96.861 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6419,7 +6429,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 25.4 76.2 270)
+		(at 20.32 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6428,7 +6438,7 @@
 		(fields_autoplaced yes)
 		(uuid "1ec624ce-3339-473a-9a39-4c9b61fdd401")
 		(property "Reference" "#PWR021"
-			(at 19.05 76.2 0)
+			(at 20.32 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6437,16 +6447,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 21.59 76.1999 90)
+			(at 20.32 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 76.2 0)
+			(at 20.32 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6455,7 +6464,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 25.4 76.2 0)
+			(at 20.32 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6464,7 +6473,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 25.4 76.2 0)
+			(at 20.32 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6698,7 +6707,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2471114b-aa86-4ff4-96ee-04682f460128")
-		(property "Reference" "U3"
+		(property "Reference" "U4"
 			(at 50.8 43.18 0)
 			(effects
 				(font
@@ -6714,7 +6723,7 @@
 				)
 			)
 		)
-		(property "Footprint" "locals_but_working_PLEASE:QFN65P400X400X100-17N"
+		(property "Footprint" "locals_but_working_PLEASE:CC1190RGVR"
 			(at 50.8 76.2 0)
 			(effects
 				(font
@@ -6805,7 +6814,7 @@
 		(instances
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
-					(reference "U3")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -6821,7 +6830,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3586fabf-f2ff-410d-baad-6426121d3894")
-		(property "Reference" "U2"
+		(property "Reference" "U3"
 			(at 127 40.64 0)
 			(effects
 				(font
@@ -6837,7 +6846,7 @@
 				)
 			)
 		)
-		(property "Footprint" "locals_but_working_PLEASE:QFN50P400X400X100-21N"
+		(property "Footprint" "locals_but_working_PLEASE:CC1101RGPR"
 			(at 127 76.2 0)
 			(effects
 				(font
@@ -6980,7 +6989,7 @@
 		(instances
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
-					(reference "U2")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -7615,7 +7624,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "68f34153-c4ea-4329-b7b9-93b47acf7831")
-		(property "Reference" "U4"
+		(property "Reference" "U5"
 			(at 241.3 85.09 0)
 			(effects
 				(font
@@ -7688,7 +7697,7 @@
 		(instances
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
-					(reference "U4")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -9480,32 +9489,33 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 27.94 76.2 90)
+		(at 20.32 81.28 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "baa86f87-0477-4e77-b40a-6e773016c845")
 		(property "Reference" "R141"
-			(at 27.94 69.85 90)
+			(at 17.78 82.5501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "3.3k"
-			(at 27.94 72.39 90)
+			(at 17.78 80.0101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 27.94 76.2 0)
+			(at 20.32 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9514,7 +9524,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 27.94 76.2 0)
+			(at 20.32 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9523,7 +9533,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 27.94 76.2 0)
+			(at 20.32 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9947,6 +9957,72 @@
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
 					(reference "C151")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 203.2 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0b06d96-78b5-4aba-b1d1-2dd663f45f7c")
+		(property "Reference" "#PWR070"
+			(at 203.2 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 203.2 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 203.2 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 203.2 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "28bed218-d741-4f38-975b-177bcf2a3a2c")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -10708,6 +10784,72 @@
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
 					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 203.2 121.92 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f60243dd-ddbe-41b3-b8f1-6e06eef0762f")
+		(property "Reference" "#PWR071"
+			(at 203.2 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 203.2 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 203.2 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 203.2 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d28f9a54-f4ec-45b9-8b99-53898c24a4dc")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
