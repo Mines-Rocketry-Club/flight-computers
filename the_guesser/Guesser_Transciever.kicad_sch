@@ -3072,6 +3072,14 @@
 		(color 0 0 0 0)
 		(uuid "fe9b9c42-ff4d-4559-813c-05e99455523d")
 	)
+	(no_connect
+		(at 104.14 86.36)
+		(uuid "37f78a3d-6ea8-4e5f-bd92-13fe0e1a2e1e")
+	)
+	(no_connect
+		(at 104.14 83.82)
+		(uuid "3d69b306-9a3d-496d-987e-48c5f0914a82")
+	)
 	(wire
 		(pts
 			(xy 71.12 91.44) (xy 68.58 91.44)
@@ -8948,7 +8956,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a22ba462-8a73-46f2-a795-69602e0728b4")
@@ -8970,7 +8978,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_901-143_Horizontal"
+		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount"
 			(at 124.46 172.72 0)
 			(effects
 				(font
