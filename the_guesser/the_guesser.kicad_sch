@@ -3917,7 +3917,7 @@
 		(uuid "5ea54b97-189c-49a2-b689-07e548776c94")
 	)
 	(junction
-		(at 106.68 95.25)
+		(at 106.68 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "77a59e1a-f9cd-4323-a354-81ad911d12a1")
@@ -3959,10 +3959,16 @@
 		(uuid "e98a8e60-aadd-4fef-9ac3-9d53745fa1ab")
 	)
 	(junction
-		(at 114.3 95.25)
+		(at 114.3 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f53e59e0-6650-425b-9b7a-6eb5fa1e589c")
+	)
+	(junction
+		(at 115.57 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6380e26-c05b-45c0-b3e3-97ff1467c0bf")
 	)
 	(no_connect
 		(at 85.09 110.49)
@@ -4006,13 +4012,23 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 95.25) (xy 106.68 95.25)
+			(xy 105.41 77.47) (xy 106.68 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "09a15b4a-39ab-4415-bbad-3ae06980b308")
+	)
+	(wire
+		(pts
+			(xy 110.49 92.71) (xy 110.49 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b7a316b-463f-4961-b124-f07037e6f36b")
 	)
 	(wire
 		(pts
@@ -4023,6 +4039,16 @@
 			(type default)
 		)
 		(uuid "0e2dfb33-05a7-4820-a26e-f3cf3f08f14e")
+	)
+	(wire
+		(pts
+			(xy 115.57 92.71) (xy 115.57 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1271226e-1c85-4714-8a04-e65d58b7bb19")
 	)
 	(wire
 		(pts
@@ -4066,7 +4092,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 95.25) (xy 107.95 95.25)
+			(xy 106.68 77.47) (xy 107.95 77.47)
 		)
 		(stroke
 			(width 0)
@@ -4076,7 +4102,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 95.25) (xy 114.3 95.25)
+			(xy 113.03 77.47) (xy 114.3 77.47)
 		)
 		(stroke
 			(width 0)
@@ -4216,7 +4242,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 95.25) (xy 115.57 95.25)
+			(xy 114.3 77.47) (xy 115.57 77.47)
 		)
 		(stroke
 			(width 0)
@@ -4233,6 +4259,16 @@
 			(type default)
 		)
 		(uuid "6e7f1e44-6e50-4863-9880-923a7cfd3d76")
+	)
+	(wire
+		(pts
+			(xy 113.03 95.25) (xy 115.57 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7257bd55-e96c-4c7f-bd45-c877d0fc6454")
 	)
 	(wire
 		(pts
@@ -4256,7 +4292,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 92.71) (xy 110.49 95.25)
+			(xy 110.49 74.93) (xy 110.49 77.47)
 		)
 		(stroke
 			(width 0)
@@ -4326,6 +4362,26 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 95.25) (xy 115.57 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a37a1b96-0d9f-46c8-b080-1157bf4c2921")
+	)
+	(wire
+		(pts
+			(xy 113.03 97.79) (xy 113.03 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab018bea-155e-48e8-98e8-14ebae6aabce")
+	)
+	(wire
+		(pts
 			(xy 133.35 105.41) (xy 135.89 105.41)
 		)
 		(stroke
@@ -4383,6 +4439,16 @@
 			(type default)
 		)
 		(uuid "c43771d3-09de-4890-b37f-21fdf1a9169c")
+	)
+	(wire
+		(pts
+			(xy 105.41 92.71) (xy 105.41 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c683d8c7-01c5-47f2-b2c4-9e8440da0bed")
 	)
 	(wire
 		(pts
@@ -4444,6 +4510,16 @@
 		)
 		(uuid "f05f4702-3170-4f18-9380-0aac53f25a76")
 	)
+	(wire
+		(pts
+			(xy 107.95 90.17) (xy 107.95 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd199b7d-4741-45f3-8a54-d1b185f0253f")
+	)
 	(rectangle
 		(start 12.7 12.7)
 		(end 101.6 76.2)
@@ -4458,7 +4534,7 @@
 	)
 	(text "Strapping pin!"
 		(exclude_from_sim no)
-		(at 78.74 158.75 0)
+		(at 64.77 158.75 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4479,7 +4555,7 @@
 	)
 	(text "Strapping pin!"
 		(exclude_from_sim no)
-		(at 78.74 161.544 0)
+		(at 64.77 161.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4496,6 +4572,17 @@
 			)
 		)
 		(uuid "7fb5c54d-992c-4790-a51a-fc7c607a83a7")
+	)
+	(text "Strapping: \nBoot mode: Joint Download Boot \n(GPIO00 = 0, GPIO46 = 0)\nVDD_SPI mode: VDD3P3_RTC\n(EFUSE_VDD_SPI_FORCE = 0, GPIO45 = 0)"
+		(exclude_from_sim no)
+		(at 159.258 95.504 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "82bae7e9-62b4-4dee-a9f9-e4b06a4f7147")
 	)
 	(text "GPIO Strapping Information\n--------------------------\nG00: Boot Mode\nG03: ROM Messages\nG45: VDD_SPI Mode\nG46: JTAG Source"
 		(exclude_from_sim no)
@@ -4780,6 +4867,28 @@
 			)
 		)
 	)
+	(global_label "LED2"
+		(shape input)
+		(at 87.63 130.81 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3aac93ac-a7ca-4196-af23-30c8d7037d6f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 79.9882 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "~{CS}_{MAG}"
 		(shape input)
 		(at 133.35 158.75 0)
@@ -5000,6 +5109,28 @@
 			)
 		)
 	)
+	(global_label "LED3"
+		(shape input)
+		(at 87.63 125.73 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "740da877-b737-4693-a45f-1b0202f687e5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 79.9882 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "T_{2}"
 		(shape input)
 		(at 87.63 151.13 180)
@@ -5198,6 +5329,28 @@
 			)
 		)
 	)
+	(global_label "LED4"
+		(shape input)
+		(at 87.63 128.27 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a27ec222-d8e0-4b64-a1d9-08a5bd09ebba")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 79.9882 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SCLK1"
 		(shape input)
 		(at 116.84 45.72 180)
@@ -5321,6 +5474,28 @@
 		(uuid "c1c74444-d98a-4226-b835-05c3aab06362")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 41.8494 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED1"
+		(shape input)
+		(at 87.63 133.35 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c3e4456b-8cf9-4ec6-95eb-c12ed34d2d64")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 79.9882 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6027,7 +6202,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 106.68 95.25 0)
+		(at 106.68 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6036,7 +6211,7 @@
 		(fields_autoplaced yes)
 		(uuid "2685eb69-74fe-4d80-a1fb-ab909c0399ea")
 		(property "Reference" "#PWR07"
-			(at 106.68 99.06 0)
+			(at 106.68 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6045,7 +6220,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 106.68 90.17 0)
+			(at 106.68 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6053,7 +6228,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 106.68 95.25 0)
+			(at 106.68 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6062,7 +6237,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 95.25 0)
+			(at 106.68 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6071,7 +6246,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 106.68 95.25 0)
+			(at 106.68 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6171,6 +6346,226 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 138.43 105.41 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3c7423e3-63d0-453c-ad6d-19c79116a5bf")
+		(property "Reference" "R10"
+			(at 138.43 103.124 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 140.462 103.124 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 138.43 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 138.43 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 138.43 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "RMCF0603JT10K0CT-ND"
+			(at 138.43 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 138.43 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d14f6646-f524-465f-b701-5b71f0a0975b")
+		)
+		(pin "1"
+			(uuid "7e2ba8da-11dc-4630-a0b7-2b3e4c2c883f")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 105.41 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c31edde-4ec7-4dc9-8e00-3483fcc8bfb3")
+		(property "Reference" "#PWR087"
+			(at 105.41 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 105.41 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 105.41 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "233923d5-4909-4540-9060-f04fb2beede7")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "#PWR087")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 80.01 158.75 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c6d0771-f262-44dd-9670-2598ba8f3781")
+		(property "Reference" "#PWR093"
+			(at 73.66 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 158.7499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 80.01 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b52cf65-289e-47b0-9ddd-c7b09478b5f3")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "#PWR093")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 87.63 40.64 270)
 		(unit 1)
@@ -6232,6 +6627,160 @@
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 80.01 161.29 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5604f4b7-6b13-4574-ab64-265a556c3c56")
+		(property "Reference" "#PWR091"
+			(at 73.66 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 161.2899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 80.01 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "af69cd9c-0d1d-4377-a7b9-95e65be23d40")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "#PWR091")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 82.55 161.29 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "61e8c6e3-98da-4035-93fa-21a2b64ee777")
+		(property "Reference" "R12"
+			(at 82.55 163.576 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 80.518 163.576 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 82.55 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 82.55 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 82.55 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "RMCF0603JT10K0CT-ND"
+			(at 82.55 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 82.55 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "00ad2619-b9c5-430f-b54b-28b08c2c6962")
+		)
+		(pin "1"
+			(uuid "9c50e2f3-c795-419e-8deb-60d2760b5856")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -6319,6 +6868,72 @@
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 107.95 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "728b6386-bc3b-4194-9ae0-02b60c9b6b10")
+		(property "Reference" "#PWR086"
+			(at 107.95 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 107.95 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 107.95 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0de3f267-4854-4c30-8e9f-dbcde540438e")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -7754,7 +8369,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 110.49 92.71 0)
+		(at 110.49 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7763,7 +8378,7 @@
 		(fields_autoplaced yes)
 		(uuid "afb7dba2-1a28-4b40-ae2e-2a6284f7b940")
 		(property "Reference" "#PWR08"
-			(at 110.49 96.52 0)
+			(at 110.49 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7772,7 +8387,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 110.49 87.63 0)
+			(at 110.49 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7780,7 +8395,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 92.71 0)
+			(at 110.49 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7789,7 +8404,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 92.71 0)
+			(at 110.49 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7798,7 +8413,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 110.49 92.71 0)
+			(at 110.49 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7885,6 +8500,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 110.49 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd208e7e-3423-41af-9374-9b896f6aebeb")
+		(property "Reference" "#PWR088"
+			(at 110.49 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 110.49 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 110.49 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e2aeb394-2b0e-4530-a5be-526ddacb979b")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "#PWR088")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 209.55 144.78 180)
 		(unit 1)
@@ -7949,6 +8630,93 @@
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 82.55 158.75 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c723d92c-5a51-4df3-9c5c-361710e9d7b0")
+		(property "Reference" "R13"
+			(at 82.55 161.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 80.518 161.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 82.55 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 82.55 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 82.55 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "RMCF0603JT10K0CT-ND"
+			(at 82.55 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 82.55 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f4e5d340-fa33-401f-a4aa-482c0d4b7d16")
+		)
+		(pin "1"
+			(uuid "1d7b9ba4-7dcf-4ff0-8625-12e2391c320d")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -8157,6 +8925,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 115.57 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3499696-f21d-486b-96e6-d0deea1f1981")
+		(property "Reference" "#PWR089"
+			(at 115.57 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 115.57 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.57 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 115.57 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 115.57 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88790bb0-b093-4b4a-a17e-2228ab69c01b")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "#PWR089")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L_Small")
 		(at 57.15 30.48 270)
 		(mirror x)
@@ -8237,6 +9071,160 @@
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "L3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 140.97 105.41 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dcb5470a-f634-428e-9806-db57d76349d8")
+		(property "Reference" "#PWR090"
+			(at 147.32 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 144.78 105.4099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 140.97 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d30367e9-5b60-45f3-917a-8976af498a60")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "#PWR090")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 138.43 113.03 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e53534ff-87fb-4781-ada1-e56159aaac4a")
+		(property "Reference" "R11"
+			(at 138.43 110.744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 140.462 110.744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 138.43 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 138.43 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 138.43 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "RMCF0603JT10K0CT-ND"
+			(at 138.43 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 138.43 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ce70c927-8c09-40e1-b800-18b9ba2ee25d")
+		)
+		(pin "1"
+			(uuid "803435b5-c08b-4528-9897-52374ba735c5")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -8384,7 +9372,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 114.3 95.25 0)
+		(at 114.3 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8393,7 +9381,7 @@
 		(fields_autoplaced yes)
 		(uuid "e96afef8-f95f-4ce6-9139-de5c026caeca")
 		(property "Reference" "#PWR06"
-			(at 114.3 99.06 0)
+			(at 114.3 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8402,7 +9390,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 114.3 90.17 0)
+			(at 114.3 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8410,7 +9398,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 95.25 0)
+			(at 114.3 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8419,7 +9407,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 95.25 0)
+			(at 114.3 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8428,7 +9416,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 114.3 95.25 0)
+			(at 114.3 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
