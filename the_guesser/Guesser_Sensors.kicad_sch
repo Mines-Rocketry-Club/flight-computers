@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Guesser")
-		(date "2024-05-17")
-		(rev "V0.0.3")
+		(date "2024-05-22")
+		(rev "V0.0.8")
 		(company "Mines Rocket Club")
 		(comment 1 "Andrew Wu")
 	)
@@ -1752,6 +1752,139 @@
 				)
 			)
 		)
+		(symbol "Device:R_Small_US"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small_US"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "r resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_US_1_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.016)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.016)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "RF_GPS:SAM-M8Q"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2774,6 +2907,12 @@
 		(uuid "e1562934-ad21-431e-ace5-07fd479132dc")
 	)
 	(junction
+		(at 231.14 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec609350-0024-40da-8520-177c3fb0c48a")
+	)
+	(junction
 		(at 154.94 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2875,6 +3014,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 38.1) (xy 231.14 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c042eb6-924c-411f-96b1-c2f8ce032881")
+	)
+	(wire
+		(pts
 			(xy 147.32 139.7) (xy 144.78 139.7)
 		)
 		(stroke
@@ -2945,6 +3094,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 38.1) (xy 231.14 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35482ff9-1b17-4411-b352-8bac986ad44f")
+	)
+	(wire
+		(pts
 			(xy 200.66 34.29) (xy 200.66 36.83)
 		)
 		(stroke
@@ -2972,6 +3131,16 @@
 			(type default)
 		)
 		(uuid "3f7f0c08-2355-4b71-93dd-51716410152d")
+	)
+	(wire
+		(pts
+			(xy 241.3 38.1) (xy 241.3 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4136e836-41cb-4c84-b8a9-a2f58dbfc1fb")
 	)
 	(wire
 		(pts
@@ -3095,6 +3264,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 45.72) (xy 241.3 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "729716b1-a6f5-4a23-bf10-6f9164b3acf3")
+	)
+	(wire
+		(pts
 			(xy 38.1 45.72) (xy 40.64 45.72)
 		)
 		(stroke
@@ -3122,6 +3301,16 @@
 			(type default)
 		)
 		(uuid "828ad4d5-def0-42db-919f-e6cbcb07d0eb")
+	)
+	(wire
+		(pts
+			(xy 231.14 38.1) (xy 241.3 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82b4bcb2-f99a-447e-abf0-965b811f7d2b")
 	)
 	(wire
 		(pts
@@ -3255,6 +3444,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 35.56) (xy 228.6 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d75eb7b2-2224-42e4-9c0d-fbc85e0e30e6")
+	)
+	(wire
+		(pts
 			(xy 154.94 111.76) (xy 144.78 111.76)
 		)
 		(stroke
@@ -3292,6 +3491,16 @@
 			(type default)
 		)
 		(uuid "dc94659e-d623-4648-b45a-3ee4720ce9ce")
+	)
+	(wire
+		(pts
+			(xy 231.14 45.72) (xy 231.14 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de8517ec-efaf-4cc8-8bb7-944abc06c4ba")
 	)
 	(wire
 		(pts
@@ -3656,6 +3865,28 @@
 			)
 		)
 	)
+	(global_label "SCL1"
+		(shape input)
+		(at 241.3 48.26 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8055619f-48dc-4c38-94c9-8b379722bc04")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 241.3 55.9623 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "~{CS}_{HI_ACC}"
 		(shape input)
 		(at 109.22 45.72 180)
@@ -3691,6 +3922,28 @@
 		(uuid "a073b0b0-d9b4-42f6-8f5b-80f1998b914b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 96.4473 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SDA1"
+		(shape input)
+		(at 231.14 48.26 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a25249fa-4ffd-4d79-ba3b-4e00d7765575")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 231.14 56.0228 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4463,6 +4716,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 228.6 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3636b81f-4d6b-4ce1-a939-fe7b44a6ba14")
+		(property "Reference" "#PWR098"
+			(at 228.6 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 228.6 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 228.6 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f935f1c5-615e-425e-8eb3-4f883a95ee5e")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
+					(reference "#PWR098")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:Earth")
 		(at 106.68 139.7 0)
 		(unit 1)
@@ -4856,6 +5175,93 @@
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
 					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 241.3 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6ebe6244-5d93-4ae2-b45a-25cd6b66537a")
+		(property "Reference" "R19"
+			(at 243.586 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 243.586 45.212 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 241.3 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 241.3 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 241.3 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "RMCF0603JT10K0CT-ND"
+			(at 241.3 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 241.3 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bc3cbf43-a3c4-4104-bce1-7915893cd34d")
+		)
+		(pin "1"
+			(uuid "cbbbe73d-52ba-42dd-ac5d-6adfcb0b494f")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -5437,6 +5843,93 @@
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
 					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 231.14 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "99e5fc09-157b-4808-8640-fc8bcf4704fe")
+		(property "Reference" "R18"
+			(at 233.426 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 233.426 45.212 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 231.14 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 231.14 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 231.14 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "RMCF0603JT10K0CT-ND"
+			(at 231.14 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 231.14 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6c66b94b-97ea-43b2-9186-1fee2716f03d")
+		)
+		(pin "1"
+			(uuid "e30bc786-e35c-4a63-a929-502039b43679")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
+					(reference "R18")
 					(unit 1)
 				)
 			)

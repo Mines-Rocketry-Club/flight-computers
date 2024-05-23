@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Guesser")
-		(date "2024-05-17")
-		(rev "V0.0.3")
+		(date "2024-05-22")
+		(rev "V0.0.8")
 		(company "Mines Rocket Club")
 		(comment 1 "Andrew Wu")
 	)
