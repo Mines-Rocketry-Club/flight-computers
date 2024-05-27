@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Timer")
-		(date "2024-05-16")
-		(rev "V0.1.4")
+		(date "2024-05-26")
+		(rev "V0.1.5")
 		(company "Mines Rocket Club")
 		(comment 1 "William Layne")
 	)
@@ -6060,7 +6060,7 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" ""
+		(property "DKPN" "2057-HPH2-A-06-UA-ND"
 			(at 85.09 33.02 0)
 			(effects
 				(font

@@ -9,8 +9,8 @@
 	(paper "A4")
 	(title_block
 		(title "Timer")
-		(date "2024-05-16")
-		(rev "V0.1.4")
+		(date "2024-05-26")
+		(rev "V0.1.5")
 		(company "Mines Rocket Club")
 		(comment 1 "William Layne")
 	)
