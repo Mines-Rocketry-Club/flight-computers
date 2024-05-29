@@ -7,7 +7,7 @@
 	(title_block
 		(title "Pointer")
 		(date "2024-05-28")
-		(rev "V0.0.2")
+		(rev "V0.0.3")
 		(company "Mines Rocket Club")
 		(comment 1 "Andrew Wu")
 	)
@@ -4563,6 +4563,17 @@
 		)
 		(uuid "af504d92-ed57-4a80-a963-596b42f96d82")
 	)
+	(text "For TX High Gain Mode:\nPA_EN = 1\nLNA_EN = 0\nHGM = 1"
+		(exclude_from_sim no)
+		(at 44.45 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c4a7b4fa-c4b5-4509-8aab-5e63e204ad55")
+	)
 	(text "The one very specific component:\nhttps://www.digikey.com/en/products/detail/murata-electronics/BLM18HE102SN1D/1948320"
 		(exclude_from_sim no)
 		(at 85.09 24.13 0)
@@ -4607,9 +4618,31 @@
 			)
 		)
 	)
+	(global_label "LNA_EN"
+		(shape input)
+		(at 25.4 31.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "07d8991b-3737-4165-ab0a-03c037a80228")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 15.5205 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "HGM"
 		(shape input)
-		(at 30.48 60.96 180)
+		(at 33.02 60.96 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4619,7 +4652,7 @@
 		)
 		(uuid "0a7cc794-e0a3-4dc1-b9c6-d83e911b017f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 23.4429 60.96 0)
+			(at 25.9829 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4807,7 +4840,7 @@
 	)
 	(global_label "PA_EN"
 		(shape input)
-		(at 30.48 68.58 180)
+		(at 33.02 68.58 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4817,7 +4850,7 @@
 		)
 		(uuid "4217da50-7b69-44e6-90b7-2b91b14dd2f9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.6891 68.58 0)
+			(at 24.2291 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4915,6 +4948,28 @@
 			)
 		)
 	)
+	(global_label "HGM"
+		(shape input)
+		(at 25.4 38.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5db717ec-1459-47a6-a896-c659e82586ce")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.3629 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VCC_LNA"
 		(shape input)
 		(at 35.56 175.26 180)
@@ -4961,7 +5016,7 @@
 	)
 	(global_label "LNA_EN"
 		(shape input)
-		(at 30.48 63.5 180)
+		(at 33.02 63.5 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4971,7 +5026,7 @@
 		)
 		(uuid "648fb81c-ab9b-4ff5-a426-e5bc9c569426")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 20.6005 63.5 0)
+			(at 23.1405 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5219,6 +5274,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PA_EN"
+		(shape input)
+		(at 25.4 25.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f3d49e86-9b2b-494c-b11d-f16e9dc3ddce")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 16.6091 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -6852,6 +6929,140 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 30.48 25.4 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "28555495-4d74-459d-a489-a29a7f60aabc")
+		(property "Reference" "#PWR07"
+			(at 26.67 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 34.29 25.3999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 30.48 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "312bf04b-0f27-486b-85d5-74e73e9d495c")
+		)
+		(instances
+			(project "the_pointer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 30.48 38.1 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33bc9642-0163-4a9a-8631-2594c035af2a")
+		(property "Reference" "#PWR08"
+			(at 26.67 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 34.29 38.0999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 30.48 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97de54e2-9c3c-4995-a478-c6897c886c0d")
+		)
+		(instances
+			(project "the_pointer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Custom_Flight_Computer_Symbols:CC1101RGPR")
 		(at 127 76.2 0)
 		(unit 1)
@@ -8001,6 +8212,93 @@
 			(project "the_pointer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
 					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 27.94 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76d6cb6a-85e1-4e50-8e85-1717393bb3d6")
+		(property "Reference" "R61"
+			(at 27.94 35.814 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 29.972 35.814 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 27.94 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 27.94 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 27.94 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "RMCF0603JT10K0CT-ND"
+			(at 27.94 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 27.94 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ebc880e5-a796-4ee5-9bb0-b58381003e22")
+		)
+		(pin "1"
+			(uuid "a4135648-54a5-4848-b127-f72103b4b770")
+		)
+		(instances
+			(project "the_pointer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
+					(reference "R61")
 					(unit 1)
 				)
 			)
@@ -9382,6 +9680,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 27.94 25.4 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b26f5284-4554-43da-a912-3f649f023ba0")
+		(property "Reference" "R81"
+			(at 27.94 23.114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 29.972 23.114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 27.94 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 27.94 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 27.94 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "RMCF0603JT10K0CT-ND"
+			(at 27.94 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 27.94 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b9b5252a-fd10-4a18-82e1-7d01bed92185")
+		)
+		(pin "1"
+			(uuid "f7f91ddb-99db-4348-9b2f-e43c5cad06ff")
+		)
+		(instances
+			(project "the_pointer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
+					(reference "R81")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:Earth")
 		(at 96.52 91.44 270)
 		(unit 1)
@@ -9443,6 +9828,73 @@
 			(project "the_pointer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 30.48 31.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b5a36459-c1f2-40f2-a45a-649aea06b7d1")
+		(property "Reference" "#PWR06"
+			(at 36.83 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 34.29 31.7499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 30.48 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "031e0e90-a267-42cc-8582-befca8af942a")
+		)
+		(instances
+			(project "the_pointer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -10815,6 +11267,93 @@
 			(project "the_pointer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
 					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 27.94 31.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f312f1e8-8997-4f42-a972-26cd930bf485")
+		(property "Reference" "R71"
+			(at 27.94 29.464 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 29.972 29.464 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 27.94 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 27.94 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 27.94 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "RMCF0603JT10K0CT-ND"
+			(at 27.94 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 27.94 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d4b4d2cf-b5a5-4971-b108-a15611ed9c0d")
+		)
+		(pin "1"
+			(uuid "1fd57684-9198-4ac4-9191-cef82c164e26")
+		)
+		(instances
+			(project "the_pointer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
+					(reference "R71")
 					(unit 1)
 				)
 			)
