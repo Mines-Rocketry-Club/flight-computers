@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Guesser")
-		(date "2024-05-26")
-		(rev "V0.0.10")
+		(date "2024-05-30")
+		(rev "V0.0.12")
 		(company "Mines Rocket Club")
 		(comment 1 "Andrew Wu")
 	)
@@ -4540,6 +4540,17 @@
 		)
 		(uuid "fc4cba1c-9c66-4fa5-956d-dfc5024d98d3")
 	)
+	(text "For TX High Gain Mode:\nPA_EN = 1\nLNA_EN = 0\nHGM = 1"
+		(exclude_from_sim no)
+		(at 44.45 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6a9f3f67-e861-4bf1-8a32-6274f6526ec7")
+	)
 	(text "Application note on using the CC1101-CC1190 on 915 MHz band: \nhttps://www.ti.com/lit/an/swra361a/swra361a.pdf?ts=1715884500982"
 		(exclude_from_sim no)
 		(at 88.9 114.3 0)
@@ -4597,7 +4608,7 @@
 	)
 	(global_label "HGM"
 		(shape input)
-		(at 30.48 60.96 180)
+		(at 33.02 60.96 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4607,7 +4618,7 @@
 		)
 		(uuid "0a7cc794-e0a3-4dc1-b9c6-d83e911b017f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 23.4429 60.96 0)
+			(at 25.9829 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4635,6 +4646,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LNA_EN"
+		(shape input)
+		(at 25.4 31.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0c26c188-c389-4300-a671-4ea320e1212d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 15.5205 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -4795,7 +4828,7 @@
 	)
 	(global_label "PA_EN"
 		(shape input)
-		(at 30.48 68.58 180)
+		(at 33.02 68.58 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4805,7 +4838,7 @@
 		)
 		(uuid "4217da50-7b69-44e6-90b7-2b91b14dd2f9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.6891 68.58 0)
+			(at 24.2291 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4949,7 +4982,7 @@
 	)
 	(global_label "LNA_EN"
 		(shape input)
-		(at 30.48 63.5 180)
+		(at 33.02 63.5 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4959,7 +4992,7 @@
 		)
 		(uuid "648fb81c-ab9b-4ff5-a426-e5bc9c569426")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 20.6005 63.5 0)
+			(at 23.1405 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4987,6 +5020,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "HGM"
+		(shape input)
+		(at 25.4 38.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "71f12129-d52a-440e-933b-6d572c55ec32")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.3629 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -5026,6 +5081,28 @@
 		(uuid "7c82cff7-253d-4e68-ae81-2f94eac664f3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 96.7376 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PA_EN"
+		(shape input)
+		(at 25.4 25.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7e9f68c7-1c3f-4746-8dd5-4f1a8f4f1b06")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 16.6091 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7363,6 +7440,180 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 27.94 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "48d4ebec-7c41-4422-bb91-af24499504e9")
+		(property "Reference" "R21"
+			(at 27.94 35.814 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 29.972 35.814 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 27.94 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 27.94 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 27.94 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "RMCF0603JT10K0CT-ND"
+			(at 27.94 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 27.94 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "32850bc8-105f-4b38-bfdd-336d0c0634b3")
+		)
+		(pin "1"
+			(uuid "f67d82cf-3729-45e6-a780-d4ef9471ad32")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 27.94 25.4 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4ce1b849-2e95-43c7-80e9-193d68985d1b")
+		(property "Reference" "R1"
+			(at 27.94 23.114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 29.972 23.114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 27.94 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 27.94 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 27.94 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "RMCF0603JT10K0CT-ND"
+			(at 27.94 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 27.94 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a97b1a81-e560-4405-81da-ad7c5090d448")
+		)
+		(pin "1"
+			(uuid "3454f7c7-dad5-45c8-b670-b9589d6cdb2e")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L_Small")
 		(at 259.08 76.2 90)
 		(unit 1)
@@ -8406,6 +8657,140 @@
 		)
 	)
 	(symbol
+		(lib_id "power:Earth")
+		(at 30.48 31.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86c7d2a6-f430-4ccf-a2d5-4cd0e9dd56e0")
+		(property "Reference" "#PWR06"
+			(at 36.83 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 34.29 31.7499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 30.48 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a47c43d4-0f33-44db-a9cd-147cfc882d7e")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 30.48 25.4 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "887b5c33-74f8-47f3-bd1f-92ce8398a9f4")
+		(property "Reference" "#PWR05"
+			(at 26.67 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 34.29 25.3999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 30.48 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7d1b4068-d318-4f64-9afd-562458b7ab05")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 86.36 144.78 180)
 		(unit 1)
@@ -8971,7 +9356,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a22ba462-8a73-46f2-a795-69602e0728b4")
-		(property "Reference" "J2"
+		(property "Reference" "AE1"
 			(at 128.27 171.7431 0)
 			(effects
 				(font
@@ -9025,7 +9410,7 @@
 		(instances
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
-					(reference "J2")
+					(reference "AE1")
 					(unit 1)
 				)
 			)
@@ -9296,6 +9681,73 @@
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 30.48 38.1 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1be7af0-f348-43e0-a1f3-8b992c136d53")
+		(property "Reference" "#PWR07"
+			(at 26.67 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 34.29 38.0999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 30.48 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea6f5f4d-409d-40e3-8b6a-69785a24518b")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -10869,6 +11321,93 @@
 			(project "the_guesser"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
 					(reference "#PWR071")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 27.94 31.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f6e81685-44fc-4b4a-8b5b-3181729742bb")
+		(property "Reference" "R20"
+			(at 27.94 29.464 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 29.972 29.464 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 27.94 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 27.94 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 27.94 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "RMCF0603JT10K0CT-ND"
+			(at 27.94 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 27.94 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "11739e05-2b51-41c2-885c-f74a41dc5d6f")
+		)
+		(pin "1"
+			(uuid "6cf0cb53-639a-47d2-8f8e-3049e8be201e")
+		)
+		(instances
+			(project "the_guesser"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/144203ce-f59d-4228-a9f3-243b499459b2"
+					(reference "R20")
 					(unit 1)
 				)
 			)

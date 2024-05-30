@@ -2372,6 +2372,16 @@
 		)
 		(uuid f5095964-4192-4fec-a893-f43f0231a141)
 	)
+	(text "Pad 11 is a heat sink, \nconnect to ground with \nlarge pad"
+		(exclude_from_sim no)
+		(at 138.684 65.786 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0b7454ad-b347-4736-8181-3bde51f0f35d")
+	)
 	(text "USB-C Connector"
 		(exclude_from_sim no)
 		(at 76.2 19.558 0)
@@ -3722,6 +3732,73 @@
 			(project "the_pointer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 137.16 55.88 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6eaeb291-284e-40ed-b419-102c17b2cc3f")
+		(property "Reference" "#PWR052"
+			(at 143.51 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 140.97 55.8799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 137.16 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab97d662-91fc-4c8f-b449-ab39ed59c1fd")
+		)
+		(instances
+			(project "the_pointer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
