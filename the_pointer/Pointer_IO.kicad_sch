@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Pointer")
-		(date "2024-05-28")
-		(rev "V0.0.3")
+		(date "2024-05-29")
+		(rev "V0.0.4")
 		(company "Mines Rocket Club")
 		(comment 1 "Andrew Wu")
 	)
