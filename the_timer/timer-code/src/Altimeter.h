@@ -4,8 +4,8 @@
 #include <Arduino.h>
 #include <Wire.h>
 
-// Address is 111011Cx, where C is the complementary value of the pin CSB [(LOW), and x is any value (?)] Therefore, addr = 11101100 = 0x76
-#define ADDRESS 0x76            // TODO: These might be "better" as variables?
+// 7-bit address is 111011C, where C is the complementary value of the pin CSB (LOW) therefore, addr = 1110110 = 0x76
+#define ADDRESS 0x76
 
 #define CMD_RESET       0x1E
 #define CMD_ADC_READ    0x00
@@ -15,10 +15,11 @@
 
 class Altimeter {
 public:
-    Altimeter();
+    Altimeter();  
 
+    // TODO: polling speed should just be limited automatically instead of relying on user to run it at an appropriate speed (?)
     /**
-     * @brief Updates the internal altitude and velocity readings of the altimeter. Run every tick.
+     * @brief Updates the internal altitude and velocity readings of the altimeter. Run every tick. Max speed: ~100Hz
      * 
      * @param currentTimeMillis - Current time in milliseconds
      */

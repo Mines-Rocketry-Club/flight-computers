@@ -1568,7 +1568,7 @@
 		(uuid "86872142-ae6d-4264-a63f-69bfec32601a")
 		(at 201.65 75.15)
 		(property "Reference" "J2"
-			(at 7.5 1.5 0)
+			(at 2.22 0.84 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "ad497579-8554-48a8-92f6-863d4b298f76")
@@ -2380,7 +2380,7 @@
 		(descr "Kionix  LGA, 12 Pin (http://kionixfs.kionix.com/en/document/TN008-PCB-Design-Guidelines-for-2x2-LGA-Sensors.pdf#page=4), generated with kicad-footprint-generator ipc_noLead_generator.py")
 		(tags "Kionix LGA NoLead")
 		(property "Reference" "U3"
-			(at 0.141421 2.305168 180)
+			(at 0.299966 2.251581 180)
 			(layer "F.SilkS")
 			(uuid "ca92fa7f-394e-4054-a252-6d7b15ca97e2")
 			(effects
@@ -7645,6 +7645,31 @@
 				(thickness 0.15)
 			)
 			(justify left bottom mirror)
+		)
+	)
+	(gr_text "+X"
+		(at 205.49 78.58 0)
+		(layer "F.SilkS")
+		(uuid "9a4bce7a-c2b7-4451-8462-340030eadab7")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "+Z"
+		(at 208.12 76.31 0)
+		(layer "F.SilkS")
+		(uuid "f426c187-c39f-44f9-ab8f-78bcdbe83a0b")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.15)
+				(bold yes)
+			)
+			(justify left bottom)
 		)
 	)
 	(gr_text "Color"

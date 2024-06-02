@@ -12,7 +12,7 @@ Altimeter::Altimeter() {
     // need to connect then read in factory calibration data to coeficcients array
     // send reset command
     // next send command to see each subsequent prom address and store value
-    Wire.begin();
+    //Wire.begin(); this is already covered in main.cpp
     Wire.beginTransmission(ADDRESS);
     Wire.write(CMD_RESET);
     Wire.endTransmission(true);
@@ -27,9 +27,8 @@ Altimeter::Altimeter() {
         Wire.write(CMD_ADC_READ + i * 2);
         Wire.endTransmission(true);
 
-        Wire.requestFrom(ADDRESS, 2);             // Request 2 bytes from chip
-        m_coefficients[i] = Wire.read() << 8;     // Store first byte of coefficient
-        m_coefficients[i] += Wire.read();         // Store 2nd byte of coefficient
+        Wire.requestFrom(ADDRESS, 2);                           // Request 2 bytes from chip
+        m_coefficients[i] = (Wire.read() << 8) | Wire.read();   // Store 1st and 2nd byte of coefficient
     }
 }
 
