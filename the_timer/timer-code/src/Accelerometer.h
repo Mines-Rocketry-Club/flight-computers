@@ -48,8 +48,7 @@ class Accelerometer {
 public:
     Accelerometer();
     void update();
-    float getAcceleration();
-    void setZero(const uint32_t &startTimeMillis);
+    float getAccelMagnitude();
     float rollingAverage(float newAccel);   // Does acceleration actually need to be averaged?
 private:
     float m_accelMagnitude; // TODO: should just be calculated on the fly

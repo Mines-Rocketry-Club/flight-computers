@@ -1,9 +1,6 @@
 #include "Accelerometer.h"
 
 Accelerometer::Accelerometer() {
-    m_acceleration = 0;
-    m_backgroundAccel = 0;
-    
     // Set sample rate to 128/s (we don't need any faster)
     Wire.beginTransmission(ADDRESS);    
     Wire.write(REG_SR);
@@ -23,17 +20,8 @@ Accelerometer::Accelerometer() {
     Wire.endTransmission();
 }
 
-float Accelerometer::getAcceleration() {
-    return m_acceleration;
-}
-
-void Accelerometer::setZero(const uint32_t &startTimeMillis) {
-    for(int i = 0; i < m_numValuesToAvg * 2; i++) {
-        delay(10);
-        update();
-        delay(10);
-    }
-    m_backgroundAccel = m_acceleration;
+float Accelerometer::getAccelMagnitude() {
+    return sqrt(pow(m_xAccel, 2) + pow(m_yAccel, 2) + pow(m_zAccel, 2));
 }
 
 void Accelerometer::update() {  // needs to get altitude and calculate velocity
@@ -53,8 +41,6 @@ void Accelerometer::update() {  // needs to get altitude and calculate velocity
     m_xAccel = (-xVal - yVal)/(sqrt(2) * 2048 * 9.81);  // TODO: How much precision does this provide? What does this compile to? Make sure we're not wasting space on a double
     m_yAccel = zVal / (2048 * 9.81);
     m_zAccel = (-xVal + yVal)/(sqrt(2) * 2048 * 9.81);
-
-    m_accelMagnitude = sqrt(pow(xVal, 2) + pow(yVal, 2) + pow(zVal, 2));
 }
 
 float Accelerometer::rollingAverage(float newAccel) {

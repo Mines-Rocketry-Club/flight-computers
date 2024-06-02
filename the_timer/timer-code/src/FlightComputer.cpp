@@ -37,7 +37,7 @@ void FlightComputer::setState(fc_state newState) {
     switch(newState) {
         case PREFLIGHT:
             altimeter.setZero();
-            accelerometer.setZero(m_currentTime);
+            //accelerometer.setZero(m_currentTime);
             m_state = PREFLIGHT;
             break;
         case DESCENDING:
@@ -53,17 +53,21 @@ void FlightComputer::checkForLaunch() {
     // check again in 100ish milliseconds
     // if it's still high we launched
 
-    if(!m_possibleLaunch && altimeter.getVelocity() > 8 && accelerometer.getAcceleration() > 4) {   //TODO: update this value if accelerometer doesn't report in gees
+    if(!m_possibleLaunch && (altimeter.getVelocity() > 8 || accelerometer.getAccelMagnitude() > 50)) { // must be > 5 gees 
         m_possibleLaunch = true;
-        //m_scheduledCheck = m_currentTime + 100;
     }
 
     m_ticksSinceLastCheck += m_possibleLaunch;
 
-    if(m_ticksSinceLastCheck > 12) {
+    // Check again about 10 milliseconds later
+    // TODO: slight problem: the altimeter can only actually record new data about ever 10 milliseconds. (At an OSR of 1024)
+    // If this SINGLE data point is off for some reason, we delay detection another 10 milliseconds.
+    // This sucks. 
+    // Just check over a timespan of like 20 milliseconds and have the accelerometer do some averaging, check it has no erronius values
+    if(m_ticksSinceLastCheck > 12) {    
         m_possibleLaunch = false;
         m_ticksSinceLastCheck = 0;
-        if(altimeter.getVelocity() > 8 && accelerometer.getAcceleration() > 4) {
+        if(altimeter.getVelocity() > 8 && accelerometer.getAccelMagnitude() > 50) {
             setState(ASCENDING);
         }
     }

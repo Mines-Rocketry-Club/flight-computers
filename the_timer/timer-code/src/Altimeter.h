@@ -17,7 +17,7 @@ class Altimeter {
 public:
     Altimeter();  
 
-    // TODO: polling speed should just be limited automatically instead of relying on user to run it at an appropriate speed (?)
+    // TODO: Polling speed needs to automatically limit itself based on OSR or something so we can run main at like 1kHz and not have this bottleneck everything
     /**
      * @brief Updates the internal altitude and velocity readings of the altimeter. Run every tick. Max speed: ~100Hz
      * 
