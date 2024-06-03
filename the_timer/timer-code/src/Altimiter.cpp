@@ -3,11 +3,13 @@
 Altimeter::Altimeter() {
     m_startingAltitude = 0;
     m_currentAltitude = 0;
-    m_avgVelocity = 0;
-    m_stepsSinceLastAvg = 0;
+    //m_avgVelocity = 0;
+    //m_stepsSinceLastAvg = 0;
+    /*
     for(int i = 0; i < m_numValuesToAvg; i++) {
         m_rollingVelocity[i] = 0;
     }
+    */
 
     // need to connect then read in factory calibration data to coeficcients array
     // send reset command
@@ -18,7 +20,7 @@ Altimeter::Altimeter() {
     Wire.endTransmission(true);
     delay(3);
 
-    for(uint8_t i = 0; i < 8; i++) {
+    for(uint8_t i = 0; i < 6; i++) {
         //get value from prom address
             //this looks like: send command
             //request bits
@@ -40,13 +42,11 @@ float Altimeter::m_calculateAltitude() {
     Wire.endTransmission(true);
 
     delay(3);                           // This delay is only enough if you're using an OSR of 1024 or less
+    // TODO: fucking. this thing. fix it
 
     Wire.requestFrom(ALT_ADDRESS, 3);
-    m_D1 = Wire.read() << 16;
-    m_D1 += Wire.read() << 8;
-    m_D1 += Wire.read();
+    m_D1 = (Wire.read() << 16) | (Wire.read() << 8) | Wire.read();
 
-    
     Wire.beginTransmission(ALT_ADDRESS);  // Get D2
     Wire.write(CMD_CONVERT_D2);
     Wire.endTransmission(true);
@@ -54,9 +54,7 @@ float Altimeter::m_calculateAltitude() {
     delay(3);
 
     Wire.requestFrom(ALT_ADDRESS, 3);
-    m_D2 = Wire.read() << 16;
-    m_D2 += Wire.read() << 8;
-    m_D2 += Wire.read();
+    m_D2 = (Wire.read() << 16) | (Wire.read() << 8) | Wire.read();
 
     // Start calculations
 
@@ -82,8 +80,8 @@ float Altimeter::m_calculateAltitude() {
 
     // Calculate temperature compensated pressure
     // TODO: double check that these bit shifts don't cause data to fall off (where we don't want)
-    int64_t OFF = (m_coefficients[1] << 17) + ((m_coefficients[3] * dT) >> 6) /*- OFF2*/;
-    int64_t SENS = (m_coefficients[0] << 16) + ((m_coefficients[2] * dT) >> 7) /*- SENS2*/;
+    int64_t OFF = (m_coefficients[1] << 17) + ((m_coefficients[3] * dT) >> 6) - T2;
+    int64_t SENS = (m_coefficients[0] << 16) + ((m_coefficients[2] * dT) >> 7) - OFF2;
     int32_t P = (m_D1 * (SENS >> 21) - OFF) >> 15;
 
     float finalPressure = (float)P / 100;
@@ -104,10 +102,12 @@ void Altimeter::update(const uint32_t &currentTimeMillis) {
     // velocity = (altitude - previousAltitude) / timestep
     float newVelocity = (m_currentAltitude - m_previousAltitude) / (currentTimeMillis - m_previousTime);
 
+    m_velocity = newVelocity;
     // ok now we need to take a light rolling average
-    m_avgVelocity = m_rollingAvgVelocity(newVelocity);
+    //m_avgVelocity = m_rollingAvgVelocity(newVelocity);
 }
 
+/*
 float Altimeter::m_rollingAvgVelocity(const float &newVel) {
     if(m_stepsSinceLastAvg < 12) {      // TODO: update this value depending on tickrate please so it's roughly m_numValuesToAvg/0.5 seconds (this sucks)
         m_stepsSinceLastAvg++;
@@ -128,18 +128,22 @@ float Altimeter::m_rollingAvgVelocity(const float &newVel) {
     sum /= m_numValuesToAvg;
     return sum;
 }
+*/
 
 float Altimeter::getAltitude() {
     return m_currentAltitude;
 }
 
+
 float Altimeter::getVelocity() {
-    return m_rollingVelocity[m_numValuesToAvg - 1];
+    return m_velocity;
 }
 
+/*
 float Altimeter::getAvgVelocity() {
     return m_avgVelocity;
 }
+*/
 
 // TODO: this should REALLY average over a few values across a couple seconds or something just in case there is a gust of wind while measuring
 void Altimeter::setZero() {

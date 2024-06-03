@@ -2,3 +2,5 @@ Original:                       90.5% - 7414 B
 No pyro charges:                86.5% - 7088 B
 No altimeter update function:   61.9% - 5070 B
 No IMU update function:         54.2% - 4442 B
+
+Everything but data collection gutted: 28.6%

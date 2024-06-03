@@ -14,9 +14,9 @@
 FlightComputer::FlightComputer() {
     m_state = PREFLIGHT;
     //m_metersAboveGround = 0;
-    m_timeSinceApogee = 0;
+    //m_timeSinceApogee = 0;
 }
-
+/*
 void FlightComputer::createCharge(uint8_t channel, pc_triggerType triggerType, uint32_t value) {
     m_charges[channel].setupCharge(m_pyroPins[channel], triggerType, value);    //TODO: PLEASE DOUBLE TRIPLE CHECK THAT THE THING TRANSLATING PYRO CHANNEL TO PIN NUMBER WORKS
                                                                                 // DO WE EVEN NEED IT? SHOULD WE JUST SPECIFY IT DIRECTLY IN THE IFDEFS?
@@ -27,12 +27,14 @@ void FlightComputer::updatePyroCharges() {
         m_charges[i].update(m_timeSinceApogee, (uint32_t)m_altimeter.getAltitude(), m_currentTime);
     }
 }
+*/
 
 void FlightComputer::updateReadings() {
     m_altimeter.update(m_currentTime);
     m_accelerometer.update();
 }
 
+/*
 void FlightComputer::setState(fc_state newState) {
     switch(newState) {
         case PREFLIGHT:
@@ -41,7 +43,7 @@ void FlightComputer::setState(fc_state newState) {
             m_state = PREFLIGHT;
             break;
         case DESCENDING:
-            m_timeOfApogee = m_currentTime;
+            //m_timeOfApogee = m_currentTime;
             m_state = DESCENDING;
             break;
     }
@@ -89,10 +91,13 @@ void FlightComputer::checkForGroundHit() {
 fc_state FlightComputer::getState() const {
     return m_state;
 }
+*/
 
 void FlightComputer::updateTime() {
     m_currentTime = millis();
+    /*
     if(m_state == DESCENDING) {
         m_timeSinceApogee = m_currentTime - m_timeOfApogee;   // it may be better to prioritize memory over clock cycles and get rid of timeSinceApogee
     }
+    */
 }

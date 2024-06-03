@@ -34,6 +34,9 @@ int main() {
 
     while(true) {
         flightComputer.updateTime();
+        flightComputer.updateReadings();
+        //flightComputer.storeReadings();
+        /*
         switch(flightComputer.getState()) {
             case PREFLIGHT:
                 flightComputer.updateReadings();
@@ -53,6 +56,7 @@ int main() {
             case POSTFLIGHT:
                 break;
         }
+        */
     }
 
     return 0;

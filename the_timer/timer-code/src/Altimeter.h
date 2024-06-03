@@ -46,7 +46,7 @@ public:
      * 
      * @return float 
      */
-    float getAvgVelocity();
+    //float getAvgVelocity();
 
     /**
      * @brief Zeroes the altitude of the object. Run only during the flight computer's preflight state.
@@ -70,7 +70,7 @@ private:
      * @param newVel 
      * @return float 
      */
-    float m_rollingAvgVelocity(const float &newVel);
+    //float m_rollingAvgVelocity(const float &newVel);
 
     //TODO: why doesnt the fucking doxygen newline work
     /**
@@ -90,7 +90,7 @@ private:
     //TODO: The library I was referencing used a private TwoWire pointer... I don't know why. I think that just using Wire.doSomething() should be OK for single threaded stuff?
     //TwoWire *m_i2c;
 
-    uint8_t m_stepsSinceLastAvg;
+    //uint8_t m_stepsSinceLastAvg;
 
     /**
      * @brief meters
@@ -110,17 +110,13 @@ private:
      */
     float m_previousAltitude;
 
-    /**
-     * @brief meters per second
-     * 
-     */
-    float m_avgVelocity; 
+    float m_velocity;
 
     uint32_t m_previousTime;
 
-    float *m_rollingVelocity = new float[m_numValuesToAvg];
+    //float *m_rollingVelocity = new float[m_numValuesToAvg];
 
-    const uint8_t m_numValuesToAvg = 4;
+    //const uint8_t m_numValuesToAvg = 4;
 };
 
 #endif
