@@ -24,19 +24,19 @@ void FlightComputer::createCharge(uint8_t channel, pc_triggerType triggerType, u
 
 void FlightComputer::updatePyroCharges() {
     for(int i = 0; i < m_numCharges; i++) {
-        m_charges[i].update(m_timeSinceApogee, (uint32_t)altimeter.getAltitude(), m_currentTime);
+        m_charges[i].update(m_timeSinceApogee, (uint32_t)m_altimeter.getAltitude(), m_currentTime);
     }
 }
 
 void FlightComputer::updateReadings() {
-    altimeter.update(m_currentTime);
-    accelerometer.update();
+    m_altimeter.update(m_currentTime);
+    m_accelerometer.update();
 }
 
 void FlightComputer::setState(fc_state newState) {
     switch(newState) {
         case PREFLIGHT:
-            altimeter.setZero();
+            m_altimeter.setZero();
             //accelerometer.setZero(m_currentTime);
             m_state = PREFLIGHT;
             break;
@@ -48,12 +48,13 @@ void FlightComputer::setState(fc_state newState) {
 }
 
 //TODO: this may false negative if the altimeter isn't perfect. change to be more resistant to sensor error. As well, may fuck up if the motor has intermittent thrust at first
+// A good way to tackle this may be to have a continuous shift register of sorts going. We keep looking through the register until we see several consecutive values we like.
 void FlightComputer::checkForLaunch() { 
     // If we detect high vel and accel (and we're not waiting to check)
     // check again in 100ish milliseconds
     // if it's still high we launched
 
-    if(!m_possibleLaunch && (altimeter.getVelocity() > 8 || accelerometer.getAccelMagnitude() > 50)) { // must be > 5 gees 
+    if(!m_possibleLaunch && (m_altimeter.getVelocity() > 8 || m_accelerometer.getAccelMagnitude() > 50)) { // must be > 5 gees 
         m_possibleLaunch = true;
     }
 
@@ -67,20 +68,20 @@ void FlightComputer::checkForLaunch() {
     if(m_ticksSinceLastCheck > 12) {    
         m_possibleLaunch = false;
         m_ticksSinceLastCheck = 0;
-        if(altimeter.getVelocity() > 8 && accelerometer.getAccelMagnitude() > 50) {
+        if(m_altimeter.getVelocity() > 8 && m_accelerometer.getAccelMagnitude() > 50) {
             setState(ASCENDING);
         }
     }
 }
 
 void FlightComputer::checkForApogee() {
-    if(abs(altimeter.getAvgVelocity()) <= 0.5 && altimeter.getVelocity() < 0) { //TODO: After we see an avg velocity <= 0.5, double check that none of the values are erronius
+    if(abs(m_altimeter.getAvgVelocity()) <= 0.5 && m_altimeter.getVelocity() < 0) { //TODO: After we see an avg velocity <= 0.5, double check that none of the values are erronius
         setState(DESCENDING);
     }
 }
 
 void FlightComputer::checkForGroundHit() {
-    if(altimeter.getAvgVelocity() <= 0.1 && m_timeSinceApogee > 3000) {
+    if(m_altimeter.getAvgVelocity() <= 0.1 && m_timeSinceApogee > 3000) {
         setState(POSTFLIGHT);
     }
 }

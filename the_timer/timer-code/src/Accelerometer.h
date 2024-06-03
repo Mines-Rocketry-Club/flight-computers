@@ -27,7 +27,7 @@
  * 
  */
 
-#define ADDRESS 0x4C
+#define IMU_ADDRESS 0x4C
 #define REG_MODE 0x07
 #define REG_SR 0x08
 #define REG_RANGE 0x20
@@ -50,6 +50,8 @@ public:
     void update();
     float getAccelMagnitude();
     float rollingAverage(float newAccel);   // Does acceleration actually need to be averaged?
+    // it probably should be. In a specific way, though. We should really be trying to filter out short lived peaks... this would hopefully prevent false positives from
+    // being bumped or dropped
 private:
     float m_accelMagnitude; // TODO: should just be calculated on the fly
     float m_backgroundAccel; // TODO: we don't need this

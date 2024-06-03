@@ -13,24 +13,23 @@
 #include "PyroCharge.h"
 
 PyroCharge::PyroCharge() {
-    m_isActive = false;
-    m_hasFired = false;
+    m_state = DISABLED;
     m_pin = 0;                  //TODO: WHAT SHOULD THIS VALUE ACTUALLY BE?
-    m_triggerType = ALTITUDE;
+    m_triggerType = DELAY;
     m_value = -10000;
     m_timeOfFiring = 0;         
 }
 
 void PyroCharge::setupCharge(int8_t pin, pc_triggerType triggerType, uint32_t value) {
-    m_isActive = true;
+    m_state = ARMED;
     m_pin = pin;
     m_triggerType = triggerType;
     m_value = value;
 }
 
 bool PyroCharge::canFire(const uint32_t &millisSinceApogee, const uint32_t &metersAboveGround) const {
-    if(!m_isActive) return false;
-    if(m_triggerType == ALTITUDE) {
+    if(m_state == DISABLED) return false;
+    if(m_triggerType == DELAY) {
         return millisSinceApogee >= m_value;
     }
     return metersAboveGround <= m_value;
@@ -38,15 +37,19 @@ bool PyroCharge::canFire(const uint32_t &millisSinceApogee, const uint32_t &mete
 
 void PyroCharge::update(const uint32_t &millisSinceApogee, const uint32_t &metersAboveGround, const uint32_t &currTimeMillis) {
     if(canFire(millisSinceApogee, metersAboveGround)) {
-        if(!m_hasFired) {
-            m_hasFired = true;
+        if(m_state != FIRING) {
+            m_state = FIRING;
             m_timeOfFiring = currTimeMillis;
         }
-        if(currTimeMillis < m_timeOfFiring + 1000) {
+        if(currTimeMillis < m_timeOfFiring + 1000) { // TODO: The charge remains active but only for 1 second here. Find an appropriate value based on pyro charge oscope data
             digitalWrite(m_pin, HIGH);
         } else {
             digitalWrite(m_pin, LOW);
-            m_isActive = false;
-        }        
+            m_state = DISABLED;
+        }
     }
+}
+
+pc_state PyroCharge::getState() const {
+    return m_state;
 }

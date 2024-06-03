@@ -19,11 +19,18 @@ enum pc_triggerType {
     ALTITUDE
 };
 
+enum pc_state {
+    DISABLED,
+    ARMED,
+    FIRING
+};
+
 class PyroCharge {
 public:
     PyroCharge();
     void setupCharge(int8_t pin, pc_triggerType triggerType, uint32_t value);
     void update(const uint32_t &millisSinceApogee, const uint32_t &metersAboveGround, const uint32_t &currTimeMillis);   // Pass by reference should reduce transfer costs
+    pc_state getState() const;
 private:
     bool canFire(const uint32_t &millisSinceApogee, const uint32_t &metersAboveGround) const;
     bool m_isActive;
@@ -32,6 +39,7 @@ private:
     pc_triggerType m_triggerType;
     uint32_t m_value;
     uint32_t m_timeOfFiring;
+    pc_state m_state;
 };
 
 #endif

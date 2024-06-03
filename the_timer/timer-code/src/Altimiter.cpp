@@ -13,7 +13,7 @@ Altimeter::Altimeter() {
     // send reset command
     // next send command to see each subsequent prom address and store value
     //Wire.begin(); this is already covered in main.cpp
-    Wire.beginTransmission(ADDRESS);
+    Wire.beginTransmission(ALT_ADDRESS);
     Wire.write(CMD_RESET);
     Wire.endTransmission(true);
     delay(3);
@@ -23,11 +23,11 @@ Altimeter::Altimeter() {
             //this looks like: send command
             //request bits
             //read bits
-        Wire.beginTransmission(ADDRESS);
+        Wire.beginTransmission(ALT_ADDRESS);
         Wire.write(CMD_ADC_READ + i * 2);
         Wire.endTransmission(true);
 
-        Wire.requestFrom(ADDRESS, 2);                           // Request 2 bytes from chip
+        Wire.requestFrom(ALT_ADDRESS, 2);                           // Request 2 bytes from chip
         m_coefficients[i] = (Wire.read() << 8) | Wire.read();   // Store 1st and 2nd byte of coefficient
     }
 }
@@ -35,25 +35,25 @@ Altimeter::Altimeter() {
 float Altimeter::m_calculateAltitude() {
     // Read digital pressure and temperature data
     
-    Wire.beginTransmission(ADDRESS);  // Get D1
+    Wire.beginTransmission(ALT_ADDRESS);  // Get D1
     Wire.write(CMD_CONVERT_D1);
     Wire.endTransmission(true);
 
     delay(3);                           // This delay is only enough if you're using an OSR of 1024 or less
 
-    Wire.requestFrom(ADDRESS, 3);
+    Wire.requestFrom(ALT_ADDRESS, 3);
     m_D1 = Wire.read() << 16;
     m_D1 += Wire.read() << 8;
     m_D1 += Wire.read();
 
     
-    Wire.beginTransmission(ADDRESS);  // Get D2
+    Wire.beginTransmission(ALT_ADDRESS);  // Get D2
     Wire.write(CMD_CONVERT_D2);
     Wire.endTransmission(true);
 
     delay(3);
 
-    Wire.requestFrom(ADDRESS, 3);
+    Wire.requestFrom(ALT_ADDRESS, 3);
     m_D2 = Wire.read() << 16;
     m_D2 += Wire.read() << 8;
     m_D2 += Wire.read();
@@ -82,15 +82,15 @@ float Altimeter::m_calculateAltitude() {
 
     // Calculate temperature compensated pressure
     // TODO: double check that these bit shifts don't cause data to fall off (where we don't want)
-    int64_t OFF = (m_coefficients[1] << 17) + ((m_coefficients[3] * dT) >> 6) - OFF2;
-    int64_t SENS = (m_coefficients[0] << 16) + ((m_coefficients[2] * dT) >> 7) - SENS2;
+    int64_t OFF = (m_coefficients[1] << 17) + ((m_coefficients[3] * dT) >> 6) /*- OFF2*/;
+    int64_t SENS = (m_coefficients[0] << 16) + ((m_coefficients[2] * dT) >> 7) /*- SENS2*/;
     int32_t P = (m_D1 * (SENS >> 21) - OFF) >> 15;
 
     float finalPressure = (float)P / 100;
 
     // Convert pressure to altitude using barometric formula
     float P_ref = 1013.25;
-    float finalAltitude = 44307.69396 * (1 - pow(P/P_ref, 0.190284)) - m_startingAltitude;  // TODO: please cross-check that this formula outputs the correct values
+    float finalAltitude = 44307.69396 * (1 - pow(finalPressure/P_ref, 0.190284)) - m_startingAltitude;  // TODO: please cross-check that this formula outputs the correct values
 
     return finalAltitude;
 }

@@ -2,19 +2,19 @@
 
 Accelerometer::Accelerometer() {
     // Set sample rate to 128/s (we don't need any faster)
-    Wire.beginTransmission(ADDRESS);    
+    Wire.beginTransmission(IMU_ADDRESS);    
     Wire.write(REG_SR);
     Wire.write(0b000);  //TODO: find a readable to specify these values because just randomly using 0b000 is incomprehensible and requires datasheet knowledge
     Wire.endTransmission();
 
     // Set range select to +- 16 gees
-    Wire.beginTransmission(ADDRESS);
+    Wire.beginTransmission(IMU_ADDRESS);
     Wire.write(REG_RANGE);
     Wire.write(0b011);
     Wire.endTransmission();
 
     // Set mode from STANDBY to WAKE
-    Wire.beginTransmission(ADDRESS);
+    Wire.beginTransmission(IMU_ADDRESS);
     Wire.write(REG_MODE);
     Wire.write(0b01);
     Wire.endTransmission();
@@ -25,10 +25,10 @@ float Accelerometer::getAccelMagnitude() {
 }
 
 void Accelerometer::update() {  // needs to get altitude and calculate velocity
-    Wire.beginTransmission(ADDRESS);
+    Wire.beginTransmission(IMU_ADDRESS);
     Wire.write(XOUT_LSB);
     Wire.endTransmission();
-    Wire.requestFrom(ADDRESS, 2);
+    Wire.requestFrom(IMU_ADDRESS, 2);
 
     // Get the values for X, Y, and Z.
     // This code only (probably) works because each of these registers is consecutive in memory, and the chip is specifically meant to increment registers on consecutive reads.

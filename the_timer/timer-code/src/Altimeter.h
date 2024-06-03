@@ -5,13 +5,15 @@
 #include <Wire.h>
 
 // 7-bit address is 111011C, where C is the complementary value of the pin CSB (LOW) therefore, addr = 1110110 = 0x76
-#define ADDRESS 0x76
+#define ALT_ADDRESS 0x76
 
 #define CMD_RESET       0x1E
 #define CMD_ADC_READ    0x00
 #define CMD_PROM_READ   0xA0    // Starting prom address. Each subsequent address is 2 bits after the last.
 #define CMD_CONVERT_D1  0x44    // OSR of 1024
 #define CMD_CONVERT_D2  0x54    // OSR of 1024
+
+// TODO: autozero in datasheet??? what's that?
 
 class Altimeter {
 public:
