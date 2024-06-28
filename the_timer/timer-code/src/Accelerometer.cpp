@@ -20,9 +20,11 @@ Accelerometer::Accelerometer() {
     Wire.endTransmission();
 }
 
+/*
 float Accelerometer::getAccelMagnitude() {
     return sqrt(pow(m_xAccel, 2) + pow(m_yAccel, 2) + pow(m_zAccel, 2));
 }
+*/
 
 void Accelerometer::update() {  // needs to get altitude and calculate velocity
     Wire.beginTransmission(IMU_ADDRESS);

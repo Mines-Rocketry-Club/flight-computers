@@ -53,8 +53,8 @@ public:
     // it probably should be. In a specific way, though. We should really be trying to filter out short lived peaks... this would hopefully prevent false positives from
     // being bumped or dropped
 private:
-    float m_accelMagnitude; // TODO: should just be calculated on the fly
-    float m_backgroundAccel; // TODO: we don't need this
+    //float m_accelMagnitude; // TODO: should just be calculated on the fly
+    //float m_backgroundAccel; // TODO: we don't need this
     float *m_rollingAccel = new float[m_numValuesToAvg];
     const uint8_t m_numValuesToAvg = 4;
     float m_xAccel;
