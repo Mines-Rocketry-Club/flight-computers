@@ -2581,22 +2581,28 @@
 		)
 	)
 	(junction
-		(at 116.84 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0522035b-f28d-4955-8020-ed14b8a6dd17")
-	)
-	(junction
 		(at 133.35 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1bf7b7dc-9275-4092-a3e8-fec726281872")
 	)
 	(junction
+		(at 40.64 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4571d6d1-5c5f-488a-82c3-c4b23572ab8b")
+	)
+	(junction
 		(at 78.74 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5045c094-3381-406d-a2d1-2be27b473144")
+		(uuid "66e9cf50-e03a-47eb-a6db-7193129a1340")
+	)
+	(junction
+		(at 40.64 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ba9afb0-0ad0-453a-bfbd-ea54ed364b80")
 	)
 	(junction
 		(at 82.55 30.48)
@@ -2609,12 +2615,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "957d7a94-fa1b-426e-b86e-489831d4d8d9")
-	)
-	(junction
-		(at 40.64 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f834e7cf-8e6d-40ba-80ce-3a25532efb14")
 	)
 	(no_connect
 		(at 50.8 60.96)
@@ -2665,16 +2665,6 @@
 			(type default)
 		)
 		(uuid "00a882dd-312e-4c64-8d30-862eb63e7004")
-	)
-	(wire
-		(pts
-			(xy 114.3 139.7) (xy 116.84 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ebbe998-35f9-4611-b15c-92b669d01459")
 	)
 	(wire
 		(pts
@@ -2768,16 +2758,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 139.7) (xy 119.38 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e94bf1c-3ee6-418c-b652-19727efe9e85")
-	)
-	(wire
-		(pts
 			(xy 130.81 30.48) (xy 133.35 30.48)
 		)
 		(stroke
@@ -2785,6 +2765,16 @@
 			(type default)
 		)
 		(uuid "5fd61dc4-98b6-44d0-a8eb-2e183c9fad99")
+	)
+	(wire
+		(pts
+			(xy 40.64 165.1) (xy 43.18 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d775b36-c860-478b-ab71-5e3e867058dc")
 	)
 	(wire
 		(pts
@@ -2808,6 +2798,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 165.1) (xy 40.64 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "742ac12a-e84d-4f6b-b8aa-e9a851f335ab")
+	)
+	(wire
+		(pts
 			(xy 80.01 30.48) (xy 82.55 30.48)
 		)
 		(stroke
@@ -2828,6 +2828,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 139.7) (xy 78.74 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9252dcc6-f791-4682-b5f0-a396b7e04d66")
+	)
+	(wire
+		(pts
 			(xy 133.35 33.02) (xy 133.35 30.48)
 		)
 		(stroke
@@ -2835,36 +2845,6 @@
 			(type default)
 		)
 		(uuid "9f9a7e9c-fef0-4b5a-b9ec-46efccf0c8f1")
-	)
-	(wire
-		(pts
-			(xy 76.2 139.7) (xy 78.74 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ffdead1-269d-4a9a-9d29-1fb1be816e48")
-	)
-	(wire
-		(pts
-			(xy 40.64 139.7) (xy 43.18 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1eff3e5-ccf2-4725-8d2a-c7b8a8c3241c")
-	)
-	(wire
-		(pts
-			(xy 38.1 139.7) (xy 40.64 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2b4a676-6a79-4896-9b70-47dc9f6b1f54")
 	)
 	(wire
 		(pts
@@ -2894,7 +2874,17 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c028f0e3-c5a4-4846-a0b2-b2b56e34a73a")
+		(uuid "bdbc688c-d7fd-413c-94f8-abdc366d6901")
+	)
+	(wire
+		(pts
+			(xy 38.1 139.7) (xy 40.64 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c82c78c1-b370-4417-8fc8-e66d9344aae5")
 	)
 	(wire
 		(pts
@@ -2905,6 +2895,16 @@
 			(type default)
 		)
 		(uuid "c854b001-652c-4f71-9cd5-1f8113aabeb6")
+	)
+	(wire
+		(pts
+			(xy 40.64 139.7) (xy 43.18 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cddb7125-d8b7-4b0a-a452-8a5460e48265")
 	)
 	(wire
 		(pts
@@ -2978,7 +2978,7 @@
 		)
 		(uuid "92bd97fe-f0f4-41a3-a3b4-88d1381bd0fb")
 	)
-	(text "Pad 11 is a heat sink, \nconnect to ground with \nlarge pad"
+	(text "Pad 11 is a heat sink, \nconnect to ground with \nLARGE pad"
 		(exclude_from_sim no)
 		(at 139.192 66.294 0)
 		(effects
@@ -2999,28 +2999,6 @@
 		)
 		(uuid "31be952c-0ced-42a7-a973-b23db7298db1")
 	)
-	(global_label "C_{1}"
-		(shape input)
-		(at 50.8 134.62 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "029631e3-7ec4-447e-97e7-b1e4e9cb21be")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 50.8 129.3464 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "USB_ID"
 		(shape input)
 		(at 85.09 45.72 180)
@@ -3034,6 +3012,28 @@
 		(uuid "0a7acc63-6b74-46a7-8c0d-aa5e6be59c18")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 75.4524 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "T_{2}"
+		(shape input)
+		(at 38.1 165.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0bc509e8-8a8d-49a4-9bf9-b38e616040a0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 33.1288 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3087,24 +3087,46 @@
 			)
 		)
 	)
-	(global_label "T_{3}"
+	(global_label "C_{1}"
 		(shape input)
-		(at 76.2 139.7 180)
+		(at 50.8 134.62 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "166301a6-2238-499e-a024-ef03c6f7afe5")
+		(uuid "1579f912-e431-4c28-83a2-e40b4f3890e0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.2288 139.7 0)
+			(at 50.8 129.3464 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "C_{3}"
+		(shape input)
+		(at 88.9 134.62 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1766780e-2e17-4296-bf6d-ced81b2b6956")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.9 129.3464 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -3131,24 +3153,24 @@
 			)
 		)
 	)
-	(global_label "T_{1}"
+	(global_label "C_{2}"
 		(shape input)
-		(at 38.1 139.7 180)
+		(at 50.8 160.02 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "2bf7d392-284c-40fe-8aed-8a803ca56d18")
+		(uuid "28aad26a-59f1-46f0-9e1a-4b4965310837")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 33.1288 139.7 0)
+			(at 50.8 154.7464 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -3417,28 +3439,6 @@
 			)
 		)
 	)
-	(global_label "C_{5}"
-		(shape input)
-		(at 127 134.62 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9d233afc-fc29-4a90-a25b-1ffd0ee0e2fc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127 129.3464 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "LED2"
 		(shape input)
 		(at 215.9 88.9 180)
@@ -3457,28 +3457,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "C_{3}"
-		(shape input)
-		(at 88.9 134.62 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c73239b4-26ad-4bd8-ac74-667be6c65936")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.9 129.3464 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -3505,9 +3483,9 @@
 			)
 		)
 	)
-	(global_label "T_{5}"
+	(global_label "T_{3}"
 		(shape input)
-		(at 114.3 139.7 180)
+		(at 76.2 139.7 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3515,9 +3493,31 @@
 			)
 			(justify right)
 		)
-		(uuid "ecdfcee0-dfbb-49b3-9025-5bfc129dbcbf")
+		(uuid "d423e715-7ed2-4fb5-8f7d-1ea341d8c58e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 109.3288 139.7 0)
+			(at 71.2288 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "T_{1}"
+		(shape input)
+		(at 38.1 139.7 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e81a5f0b-8dcb-45e5-a8ed-416cb07a68c9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 33.1288 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3546,6 +3546,72 @@
 				)
 				(justify right)
 				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 88.9 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0128a1b5-eacd-41b7-8b87-12cb99de2f39")
+		(property "Reference" "#PWR030"
+			(at 88.9 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 88.9 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 88.9 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 88.9 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5eaeed9-7210-4538-b15c-a455f46e16fd")
+		)
+		(instances
+			(project "timer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
+					(reference "#PWR030")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -3628,9 +3694,75 @@
 			(uuid "535e7d0f-d986-4032-9fc9-44bc9a73324e")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 50.8 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0d748ab3-f705-4995-b536-590109bb8656")
+		(property "Reference" "#PWR026"
+			(at 50.8 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 50.8 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 50.8 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a90fe457-f3f3-46ec-8840-bcbf8ea7cd3b")
+		)
+		(instances
+			(project "timer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -3694,7 +3826,7 @@
 			(uuid "6f4b3c19-6cac-4405-9e71-1e28816ee952")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "#PWR045")
 					(unit 1)
@@ -3781,103 +3913,9 @@
 			(uuid "d54e0d73-8895-450c-ac3f-cf4d0e7edc32")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 86.36 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "25ee216e-01be-43c4-bec9-4348dff529fe")
-		(property "Reference" "Q3"
-			(at 92.71 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "AS2312"
-			(at 92.71 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 91.44 141.605 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3133/AS2312.pdf"
-			(at 86.36 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 86.36 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DKPN" "4530-AS2312CT-ND"
-			(at 86.36 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field5" ""
-			(at 86.36 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "481d9929-0771-4be0-99b0-1d90124b73ae")
-		)
-		(pin "2"
-			(uuid "2e3d825a-7bd3-418d-a2db-730c5d5e03f0")
-		)
-		(pin "3"
-			(uuid "4dfe1246-5630-437c-a8f5-dd3af093116f")
-		)
-		(instances
-			(project "the_timer_2"
-				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
-					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -3942,7 +3980,7 @@
 			(uuid "9cd766b6-9578-42e0-abb8-717b9b3af31d")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "#PWR093")
 					(unit 1)
@@ -4010,7 +4048,7 @@
 			(uuid "4f1e8787-33b8-4f44-91b4-d0f175365f32")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "D3")
 					(unit 1)
@@ -4020,16 +4058,16 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 78.74 144.78 0)
+		(at 40.64 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2aac5771-f363-4832-b111-cbccfc0ee751")
-		(property "Reference" "#PWR078"
-			(at 78.74 151.13 0)
+		(uuid "3234d59e-7375-474f-bf8c-9ad95c02d3ac")
+		(property "Reference" "#PWR025"
+			(at 40.64 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4038,7 +4076,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 78.74 149.86 0)
+			(at 40.64 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4046,7 +4084,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 144.78 0)
+			(at 40.64 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4055,7 +4093,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 78.74 144.78 0)
+			(at 40.64 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4064,7 +4102,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 78.74 144.78 0)
+			(at 40.64 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4073,12 +4111,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "2525961e-eaff-477c-9a73-5a809dd40d07")
+			(uuid "ee0df6d6-221a-4805-b899-f1c9b445cece")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
-					(reference "#PWR078")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -4143,9 +4181,75 @@
 			(uuid "17c00f35-b0c8-423d-abd2-667df978a71a")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "#PWR073")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 50.8 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3529fe6d-58cf-41cd-87e5-7fa2716d74c6")
+		(property "Reference" "#PWR027"
+			(at 50.8 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 50.8 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 50.8 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aed1d153-b391-4fcf-b0fb-ff2cfe974a08")
+		)
+		(instances
+			(project "timer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -4288,103 +4392,9 @@
 			(uuid "bc6982a4-c34b-4cc0-ab2b-b3c2a1e32366")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "U13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 124.46 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "400fc9ec-fb08-40ae-8fa6-cd467054979e")
-		(property "Reference" "Q5"
-			(at 130.81 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "AS2312"
-			(at 130.81 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 129.54 141.605 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3133/AS2312.pdf"
-			(at 124.46 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 124.46 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DKPN" "4530-AS2312CT-ND"
-			(at 124.46 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field5" ""
-			(at 124.46 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "58cdd2f4-f3d6-419d-925a-92378aff7839")
-		)
-		(pin "2"
-			(uuid "24c5345a-21f9-4da5-a2ce-f6afef640c45")
-		)
-		(pin "3"
-			(uuid "8fcbc586-8dd7-47da-b7a8-0e87d60b2937")
-		)
-		(instances
-			(project "the_timer_2"
-				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
-					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -4469,7 +4479,7 @@
 			(uuid "778df397-c8a6-44c6-a24f-de20d4d2e819")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "R28")
 					(unit 1)
@@ -4486,7 +4496,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "43b2e205-e8f7-49f2-a08b-71e16ecf1309")
+		(uuid "42055b44-68d1-4780-ae01-855b8a1ab83a")
 		(property "Reference" "Q1"
 			(at 54.61 138.43 0)
 			(effects
@@ -4554,16 +4564,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "a1c291cd-1630-4369-8ade-8671e10a3232")
+			(uuid "d3074118-789c-4250-b53b-3445d7091b55")
 		)
 		(pin "2"
-			(uuid "4686b3f4-d983-4c9e-8393-78f0d5b9e8ad")
+			(uuid "3d7fdde6-2e88-48a3-b41a-95755a9e9480")
 		)
 		(pin "3"
-			(uuid "13b0937f-91b5-4f64-afdd-6cdfdbab83c7")
+			(uuid "72433fa0-142e-445e-a278-810b98adc8e8")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "Q1")
 					(unit 1)
@@ -4630,7 +4640,7 @@
 			(uuid "c2f0111d-ed52-4ce5-94e2-57f3b4a6bbc7")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "#PWR096")
 					(unit 1)
@@ -4708,7 +4718,7 @@
 			(uuid "d3abc124-3ab2-49c8-8e52-3ec66a52429f")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "R25")
 					(unit 1)
@@ -4775,9 +4785,75 @@
 			(uuid "d38dcace-561a-4215-9979-8c31d17a955f")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 40.64 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5913275a-d499-45db-85d9-663b7dc24074")
+		(property "Reference" "#PWR024"
+			(at 40.64 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 40.64 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 40.64 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 40.64 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "24d3ee74-3074-4e4a-ad7b-cdd436ea7359")
+		)
+		(instances
+			(project "timer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -4843,7 +4919,7 @@
 			(uuid "18a6e26b-5731-4abf-b2cf-0434d84124b4")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "D2")
 					(unit 1)
@@ -4921,7 +4997,7 @@
 			(uuid "a80d0edd-cfa0-4f04-8b9d-8275001109b8")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "R24")
 					(unit 1)
@@ -4989,7 +5065,7 @@
 			(uuid "d14514a4-fc71-4deb-a91a-28e0fcb68824")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "D4")
 					(unit 1)
@@ -5076,96 +5152,9 @@
 			(uuid "35b155a3-e421-4322-95bd-4f174fc9716c")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 78.74 142.24 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "73293a9e-ec0b-4143-85be-70093b014000")
-		(property "Reference" "R6"
-			(at 81.026 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 81.026 144.272 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 78.74 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
-			(at 78.74 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 78.74 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DKPN" "RMCF0603JT10K0CT-ND"
-			(at 78.74 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field5" ""
-			(at 78.74 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "91587848-8bf5-4f8c-a1de-494e6cc20b75")
-		)
-		(pin "1"
-			(uuid "b3d0d97f-b3d1-4dd0-bcca-672c17858079")
-		)
-		(instances
-			(project "the_timer_2"
-				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
-					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -5230,7 +5219,7 @@
 			(uuid "e09e4901-fd47-41eb-9c13-36da60fda25a")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "#PWR010")
 					(unit 1)
@@ -5317,7 +5306,7 @@
 			(uuid "3b90ff8c-1a9f-4f09-b9ab-a3a1d9dc2251")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "R23")
 					(unit 1)
@@ -5392,229 +5381,9 @@
 			(uuid "24da420b-cb5b-4848-aada-4fd7f80a8702")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 40.64 144.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "96e150e9-46cc-43dd-9eb8-f366dec3f115")
-		(property "Reference" "#PWR074"
-			(at 40.64 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 40.64 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 40.64 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.64 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 40.64 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "58962af8-452c-4234-ba1f-dbc6784ac961")
-		)
-		(instances
-			(project "the_timer_2"
-				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
-					(reference "#PWR074")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 116.84 142.24 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a8e19501-f036-4454-9922-40af7450fac0")
-		(property "Reference" "R8"
-			(at 119.126 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 119.126 144.272 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 116.84 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
-			(at 116.84 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 116.84 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DKPN" "RMCF0603JT10K0CT-ND"
-			(at 116.84 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field5" ""
-			(at 116.84 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "54ee43ad-02f2-493a-bce4-bc718ab1ae9b")
-		)
-		(pin "1"
-			(uuid "eab0d346-b6d6-47b7-b42f-07a2a81c4fb1")
-		)
-		(instances
-			(project "the_timer_2"
-				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 130.81 58.42 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ab76628a-2ae9-4824-b957-2ddf2bcf251b")
-		(property "Reference" "#PWR047"
-			(at 137.16 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 134.62 58.4199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 130.81 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 130.81 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c8edcb97-410f-4a0a-8dbe-f7bc45d2904e")
-		)
-		(instances
-			(project "the_timer_2"
-				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
-					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -5628,7 +5397,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ae64c7f2-5579-4a74-b7e2-4756b538c6aa")
+		(uuid "8fe97f9a-1c01-48e7-89e4-40185e2b7eec")
 		(property "Reference" "R4"
 			(at 42.926 142.24 0)
 			(effects
@@ -5693,15 +5462,148 @@
 			)
 		)
 		(pin "2"
-			(uuid "d2ec3d49-f9b6-42f2-bee1-362da0ef0dd8")
+			(uuid "63d396bf-c6c7-4a0a-958c-a6f786de647a")
 		)
 		(pin "1"
-			(uuid "bcbb537e-d725-4146-8099-b7fda4946796")
+			(uuid "689e7e14-a173-4f3b-bf21-55a0e0090efa")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 78.74 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9121b166-fdb7-4991-b2e6-84b502fcebf1")
+		(property "Reference" "#PWR028"
+			(at 78.74 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 78.74 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 78.74 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b5b8be7-b586-4eb2-b6a2-2863ff625d1f")
+		)
+		(instances
+			(project "timer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 130.81 58.42 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab76628a-2ae9-4824-b957-2ddf2bcf251b")
+		(property "Reference" "#PWR047"
+			(at 137.16 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 134.62 58.4199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 130.81 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c8edcb97-410f-4a0a-8dbe-f7bc45d2904e")
+		)
+		(instances
+			(project "timer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -5845,9 +5747,96 @@
 			(uuid "5c1a1277-d48d-41c2-ad80-8d348a2ad942")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 40.64 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b4bc645b-15d3-4b80-b46a-189ade76df4b")
+		(property "Reference" "R6"
+			(at 42.926 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 42.926 169.672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 40.64 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 40.64 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 40.64 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "RMCF0603JT10K0CT-ND"
+			(at 40.64 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 40.64 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ab156c65-448d-49ab-82f7-a54215be5abc")
+		)
+		(pin "1"
+			(uuid "c84ec7f7-922a-44ac-9bf1-8e479a5f7307")
+		)
+		(instances
+			(project "timer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -5913,7 +5902,7 @@
 			(uuid "e6764847-1f7c-4f9c-9bd1-0cf67d5ebc04")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "D5")
 					(unit 1)
@@ -5979,7 +5968,7 @@
 			(uuid "197d465a-31f1-4237-974e-54a51654c7c2")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "#PWR046")
 					(unit 1)
@@ -6046,7 +6035,7 @@
 			(uuid "2ed47b67-f588-4217-aa6d-cb54aabb80c1")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "#PWR015")
 					(unit 1)
@@ -6055,17 +6044,56 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 50.8 144.78 0)
+		(lib_id "Transistor_FET:2N7002")
+		(at 48.26 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bec4431f-c1ee-4814-aee3-c530a9f6687d")
-		(property "Reference" "#PWR075"
-			(at 50.8 151.13 0)
+		(uuid "bfd20d32-f99a-4b0c-aab7-97bb116c676c")
+		(property "Reference" "Q2"
+			(at 54.61 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AS2312"
+			(at 54.61 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 53.34 167.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3133/AS2312.pdf"
+			(at 48.26 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 48.26 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6073,16 +6101,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 50.8 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 144.78 0)
+		(property "DKPN" "4530-AS2312CT-ND"
+			(at 48.26 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6090,17 +6110,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 50.8 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 50.8 144.78 0)
+		(property "Field5" ""
+			(at 48.26 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6109,12 +6120,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "34e207ec-0e93-42d6-b535-4eed3f26ae71")
+			(uuid "4f7011f3-ac2d-4d1b-bf9a-4e1c3d077794")
+		)
+		(pin "2"
+			(uuid "03ccd6f1-3431-4207-85f3-1586ae2f9563")
+		)
+		(pin "3"
+			(uuid "35e39708-7080-44ce-ad4a-5186090e29f6")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
-					(reference "#PWR075")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -6179,7 +6196,7 @@
 			(uuid "79209fa2-25ed-4449-9c41-f6a4d9cb1036")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "#PWR094")
 					(unit 1)
@@ -6266,7 +6283,7 @@
 			(uuid "c538cc36-3fed-4634-9bd3-b1e7e6dacd43")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "R14")
 					(unit 1)
@@ -6336,7 +6353,7 @@
 			(uuid "c033a3dc-7a93-405e-aa99-35f42cffbf48")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "J7")
 					(unit 1)
@@ -6403,75 +6420,9 @@
 			(uuid "4bdac00f-c818-4d8b-96dc-81b076118c78")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "#PWR097")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 88.9 144.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d049e902-e715-4445-bc7d-7cbdcab41bc1")
-		(property "Reference" "#PWR079"
-			(at 88.9 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 88.9 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 88.9 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 88.9 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 88.9 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "409d21fd-4817-492d-a4b3-f9d41d636ff7")
-		)
-		(instances
-			(project "the_timer_2"
-				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
-					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -6536,7 +6487,7 @@
 			(uuid "9c95d432-33c7-41bd-998a-43bf6fdf2aa4")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "#PWR095")
 					(unit 1)
@@ -6623,7 +6574,7 @@
 			(uuid "c33b2b6d-a3cf-4d80-9861-0bfc238e9cfc")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
 					(reference "R17")
 					(unit 1)
@@ -6632,17 +6583,34 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 116.84 144.78 0)
+		(lib_id "Device:R_Small_US")
+		(at 78.74 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f1c1ad4a-7183-4e0e-835e-351956ff0c38")
-		(property "Reference" "#PWR082"
-			(at 116.84 151.13 0)
+		(uuid "f1ebb9eb-4a87-43f5-8077-4b430595dcbf")
+		(property "Reference" "R8"
+			(at 81.026 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 81.026 144.272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 78.74 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6650,16 +6618,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 116.84 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 116.84 144.78 0)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 78.74 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6667,8 +6627,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 116.84 144.78 0)
+		(property "Description" "Resistor, small US symbol"
+			(at 78.74 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6676,39 +6636,90 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 116.84 144.78 0)
+		(property "DKPN" "RMCF0603JT10K0CT-ND"
+			(at 78.74 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(property "Field5" ""
+			(at 78.74 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d103dd7e-279e-4d93-aeec-2ea64025e5d6")
 		)
 		(pin "1"
-			(uuid "a3975e70-aba9-49a9-9ec0-555095fb456d")
+			(uuid "c4f35136-beb5-4b80-8489-be1a819b2427")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
-					(reference "#PWR082")
+					(reference "R8")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 127 144.78 0)
+		(lib_id "Transistor_FET:2N7002")
+		(at 86.36 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fb9e5cb6-5c75-4ca5-827c-82fc9297cb8e")
-		(property "Reference" "#PWR083"
-			(at 127 151.13 0)
+		(uuid "ff065bec-f572-40ed-8e85-24cf06d28657")
+		(property "Reference" "Q3"
+			(at 92.71 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AS2312"
+			(at 92.71 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 91.44 141.605 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3133/AS2312.pdf"
+			(at 86.36 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 86.36 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6716,16 +6727,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 127 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 127 144.78 0)
+		(property "DKPN" "4530-AS2312CT-ND"
+			(at 86.36 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6733,17 +6736,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 127 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 127 144.78 0)
+		(property "Field5" ""
+			(at 86.36 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6752,12 +6746,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "a7ee66e8-3980-40bc-8c1e-2f3c73d840a5")
+			(uuid "46051451-0ae6-4f50-a294-c289c8329c12")
+		)
+		(pin "2"
+			(uuid "891c63c7-5d8c-45e4-a96a-beb4903a36b1")
+		)
+		(pin "3"
+			(uuid "4e7b9fe9-0ff7-47ad-840e-c871fc21ef1c")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/0bcaec57-f6d5-41f0-b678-342e153337b7"
-					(reference "#PWR083")
+					(reference "Q3")
 					(unit 1)
 				)
 			)

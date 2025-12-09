@@ -1926,7 +1926,7 @@
 			(uuid "fc5971bc-2a75-4ff8-94da-b4acb9f5c237")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
 					(reference "C11")
 					(unit 1)
@@ -1992,7 +1992,7 @@
 			(uuid "b3505bc2-5e33-462e-9dfb-316620036fa2")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
 					(reference "#PWR065")
 					(unit 1)
@@ -2058,7 +2058,7 @@
 			(uuid "c16ce9ab-d331-4358-abfe-9ede40814c61")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
 					(reference "#PWR062")
 					(unit 1)
@@ -2128,7 +2128,7 @@
 			(uuid "3be8e6a8-6422-4674-9445-6d31e6a7e2bf")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
 					(reference "C6")
 					(unit 1)
@@ -2195,7 +2195,7 @@
 			(uuid "17e86a42-5089-4b6f-8ab1-8aa5524057a2")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
 					(reference "#PWR061")
 					(unit 1)
@@ -2261,7 +2261,7 @@
 			(uuid "b772e102-531f-43c5-9329-cb9edf422335")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
 					(reference "#PWR060")
 					(unit 1)
@@ -2327,7 +2327,7 @@
 			(uuid "f7f71ef4-7a20-46ff-be00-f8df2f9b64a0")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
 					(reference "#PWR063")
 					(unit 1)
@@ -2393,7 +2393,7 @@
 			(uuid "687df958-004e-479d-8695-b8d50f0f56e2")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
 					(reference "#PWR064")
 					(unit 1)
@@ -2462,7 +2462,7 @@
 			(uuid "151196ee-80a6-4677-92c6-7b742d861c74")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
 					(reference "C12")
 					(unit 1)
@@ -2528,7 +2528,7 @@
 			(uuid "62dd30ff-2d18-466b-bf33-f0c9834c083a")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
 					(reference "#PWR052")
 					(unit 1)
@@ -2594,7 +2594,7 @@
 			(uuid "4ec3ec54-c573-459c-85e1-96f395f69271")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
 					(reference "#PWR049")
 					(unit 1)
@@ -2775,7 +2775,7 @@
 			(uuid "668bbdc4-f57d-40ee-9ecb-dfb193f0ca41")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
 					(reference "U8")
 					(unit 1)
@@ -2863,7 +2863,7 @@
 			(uuid "5fe8290a-5500-4184-abfc-6d3fd0d8d21e")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
 					(reference "U6")
 					(unit 1)
@@ -2875,10 +2875,10 @@
 		(lib_id "Device:RFShield_OnePiece")
 		(at 254 139.7 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "9f8189cd-6acf-4903-83da-7bf6aec0ccf0")
 		(property "Reference" "J6"
@@ -2939,7 +2939,7 @@
 			(uuid "692f85c4-9c0f-4642-a41c-66d2e7a017a8")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
 					(reference "J6")
 					(unit 1)
@@ -3005,7 +3005,7 @@
 			(uuid "b1f16dd1-f77b-4933-bce6-692923179b0a")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
 					(reference "#PWR03")
 					(unit 1)
@@ -3071,7 +3071,7 @@
 			(uuid "d6657083-a542-4710-bed9-9542d3c08b56")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
 					(reference "#PWR01")
 					(unit 1)
@@ -3138,7 +3138,7 @@
 			(uuid "ec130b99-761f-4d32-a4d8-6bf73831d526")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0/a1a58bc4-7e65-411e-974f-12a034070c8b"
 					(reference "#PWR053")
 					(unit 1)

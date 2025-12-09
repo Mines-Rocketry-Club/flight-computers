@@ -2105,6 +2105,108 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Memory_Flash:W25Q128JVS"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2825,13 +2927,13 @@
 		(at 209.55 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "80b4c491-48d0-45e7-805d-7ddb033c4c57")
+		(uuid "9470802d-c83d-4d1a-a9a0-44b8bfc35ac7")
 	)
 	(junction
 		(at 196.85 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a11b3325-142a-4481-9b29-8bf2f00f79f6")
+		(uuid "99dad30b-164d-459f-9be9-0b9b8120e747")
 	)
 	(junction
 		(at 77.47 40.64)
@@ -2870,16 +2972,6 @@
 	(no_connect
 		(at 53.34 149.86)
 		(uuid "f30b32e2-87f0-4476-8271-bbc28c5192be")
-	)
-	(wire
-		(pts
-			(xy 196.85 139.7) (xy 199.39 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00684df6-bb17-424b-a964-873016e5aa45")
 	)
 	(wire
 		(pts
@@ -2933,6 +3025,16 @@
 	)
 	(wire
 		(pts
+			(xy 209.55 139.7) (xy 207.01 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21195ce3-633a-49f1-9146-272c79969544")
+	)
+	(wire
+		(pts
 			(xy 77.47 55.88) (xy 87.63 55.88)
 		)
 		(stroke
@@ -2960,6 +3062,16 @@
 			(type default)
 		)
 		(uuid "2bdd1a77-4835-47a2-8c0a-6ed1ffb6465b")
+	)
+	(wire
+		(pts
+			(xy 196.85 132.08) (xy 196.85 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dcee7a9-1045-4631-a77e-97d5b6be1cdb")
 	)
 	(wire
 		(pts
@@ -3019,7 +3131,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4d0d6ddf-c9a0-44c2-96fe-e9f8844624c3")
+		(uuid "4bd159b0-0555-41ae-9e29-076bec3d30d0")
 	)
 	(wire
 		(pts
@@ -3083,16 +3195,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 139.7) (xy 209.55 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e7f1e44-6e50-4863-9880-923a7cfd3d76")
-	)
-	(wire
-		(pts
 			(xy 104.14 124.46) (xy 101.6 124.46)
 		)
 		(stroke
@@ -3120,16 +3222,6 @@
 			(type default)
 		)
 		(uuid "79647700-f4e5-4b13-8d99-a99587d8e098")
-	)
-	(wire
-		(pts
-			(xy 209.55 139.7) (xy 207.01 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85865ee7-3405-45c4-a87d-4652afcbf688")
 	)
 	(wire
 		(pts
@@ -3163,16 +3255,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 132.08) (xy 209.55 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "981d5152-1d96-4b92-87d3-7547cff6877a")
-	)
-	(wire
-		(pts
 			(xy 99.06 114.3) (xy 101.6 114.3)
 		)
 		(stroke
@@ -3193,16 +3275,6 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 132.08) (xy 196.85 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "baa9c850-4738-43aa-9393-92546018d5c1")
-	)
-	(wire
-		(pts
 			(xy 77.47 40.64) (xy 87.63 40.64)
 		)
 		(stroke
@@ -3210,6 +3282,16 @@
 			(type default)
 		)
 		(uuid "bf56411b-1451-441f-aaa2-d3c0739359d7")
+	)
+	(wire
+		(pts
+			(xy 196.85 139.7) (xy 199.39 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0eb2cd1-bd91-4682-a814-627f25625a33")
 	)
 	(wire
 		(pts
@@ -3263,6 +3345,16 @@
 	)
 	(wire
 		(pts
+			(xy 209.55 132.08) (xy 209.55 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d793c8b7-3707-47f2-8a29-f299347362b8")
+	)
+	(wire
+		(pts
 			(xy 101.6 160.02) (xy 99.06 160.02)
 		)
 		(stroke
@@ -3310,6 +3402,16 @@
 			(type default)
 		)
 		(uuid "f05f4702-3170-4f18-9380-0aac53f25a76")
+	)
+	(wire
+		(pts
+			(xy 209.55 139.7) (xy 209.55 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff725739-265c-418b-91c8-737a6d90da26")
 	)
 	(rectangle
 		(start 12.7 12.7)
@@ -3506,6 +3608,50 @@
 			)
 		)
 	)
+	(global_label "T_{1}"
+		(shape input)
+		(at 53.34 137.16 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3402801d-38e5-4f2b-b3cf-256ec70d059f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 48.3688 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "XTAL_N"
+		(shape input)
+		(at 209.55 132.08 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "34ea3bd3-9677-4e0c-9393-641be31ab8f6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 209.55 122.5029 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "USB_D-"
 		(shape input)
 		(at 99.06 167.64 0)
@@ -3519,6 +3665,28 @@
 		(uuid "3583bdf2-c45b-4fde-a4e6-0166a7bec860")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 109.6652 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "XTAL_P"
+		(shape input)
+		(at 196.85 132.08 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3767d206-d963-4baa-9faa-f19c19500478")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 196.85 122.5634 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3572,28 +3740,6 @@
 			)
 		)
 	)
-	(global_label "XTAL_N"
-		(shape input)
-		(at 209.55 132.08 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "57722fbf-7fa1-4c3f-bf28-0eef31b304b5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 209.55 122.5029 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SDI1"
 		(shape input)
 		(at 53.34 154.94 180)
@@ -3638,7 +3784,7 @@
 			)
 		)
 	)
-	(global_label "SDI3"
+	(global_label "SDI2"
 		(shape input)
 		(at 99.06 137.16 0)
 		(fields_autoplaced yes)
@@ -3682,9 +3828,9 @@
 			)
 		)
 	)
-	(global_label "XTAL_P"
+	(global_label "~{CS}_{GYRO}"
 		(shape input)
-		(at 196.85 132.08 90)
+		(at 99.06 149.86 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3692,9 +3838,9 @@
 			)
 			(justify left)
 		)
-		(uuid "92256ac0-187d-4ee0-9052-7c1ee083952b")
+		(uuid "861a9d55-5e89-410c-9eed-45c45ff0814e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 196.85 122.5634 90)
+			(at 108.5428 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3704,7 +3850,29 @@
 			)
 		)
 	)
-	(global_label "SCLK3"
+	(global_label "~{CS}_{MAIN_ACC}"
+		(shape input)
+		(at 99.06 165.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8fa807c5-4859-4ea4-a579-d4cc0185ed6e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 111.8327 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCLK2"
 		(shape input)
 		(at 99.06 134.62 0)
 		(fields_autoplaced yes)
@@ -3717,28 +3885,6 @@
 		(uuid "93762905-18f0-403e-aaac-e1b6da4e8e23")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 108.0323 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "~{CS}_{RF}"
-		(shape input)
-		(at 99.06 165.1 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "93aaf42b-60a1-449c-99da-780b690ba6ce")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 106.4624 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3788,6 +3934,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "~{CS}_{BARO}"
+		(shape input)
+		(at 99.06 144.78 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9e7d3859-20e9-4e02-9e9c-40438c5a2b5d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 108.5428 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -3902,7 +4070,29 @@
 			)
 		)
 	)
-	(global_label "SDO3"
+	(global_label "T_{2}"
+		(shape input)
+		(at 53.34 139.7 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d0b31873-fe1c-4e4f-8dd6-33a89d52e69d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 48.3688 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SDO2"
 		(shape input)
 		(at 99.06 157.48 0)
 		(fields_autoplaced yes)
@@ -3969,35 +4159,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 165.1 133.35 0)
+		(lib_id "power:Earth")
+		(at 165.1 130.81 0)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0e736f81-636d-4ccf-a885-b0924a966ca0")
-		(property "Reference" "H2"
-			(at 167.64 132.0799 0)
+		(uuid "0a86931e-a056-41db-b732-118d28f90f19")
+		(property "Reference" "#PWR029"
+			(at 165.1 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 167.64 134.6199 0)
+		(property "Value" "GND"
+			(at 165.1 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 165.1 133.35 0)
+		(property "Footprint" ""
+			(at 165.1 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4006,7 +4195,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 133.35 0)
+			(at 165.1 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4014,19 +4203,92 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 165.1 133.35 0)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 165.1 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "82ea83e2-5f3f-426d-be47-c8b193eba0e9")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
-					(reference "H2")
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 196.85 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0aa28acf-bade-4ba2-9acd-220223220dce")
+		(property "Reference" "C13"
+			(at 194.31 146.0565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "???"
+			(at 194.31 143.5165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 196.85 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 196.85 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 196.85 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "29b56058-08bd-459d-a819-a1589532a5c8")
+		)
+		(pin "2"
+			(uuid "8991c807-4013-41c1-b4ba-c58bcdcdd637")
+		)
+		(instances
+			(project "timer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -4091,7 +4353,7 @@
 			(uuid "5af2b962-a22f-422b-80a5-bd6054d81143")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR013")
 					(unit 1)
@@ -4170,7 +4432,7 @@
 			(uuid "f5288a5d-e5a5-40d5-b272-fea5c565505d")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "C4")
 					(unit 1)
@@ -4237,7 +4499,7 @@
 			(uuid "6651575e-e37e-4f41-bf39-5d9c251ccc44")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR02")
 					(unit 1)
@@ -4247,7 +4509,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 165.1 139.7 0)
+		(at 165.1 152.4 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -4256,7 +4518,7 @@
 		(fields_autoplaced yes)
 		(uuid "1fbbc77f-ee5a-4cf9-a71f-9d2b8f59db0c")
 		(property "Reference" "H3"
-			(at 167.64 138.4299 0)
+			(at 167.64 151.1299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4265,7 +4527,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 167.64 140.9699 0)
+			(at 167.64 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4274,7 +4536,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 165.1 139.7 0)
+			(at 165.1 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4283,7 +4545,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 139.7 0)
+			(at 165.1 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4292,7 +4554,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 165.1 139.7 0)
+			(at 165.1 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4301,7 +4563,7 @@
 			)
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "H3")
 					(unit 1)
@@ -4310,79 +4572,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 196.85 144.78 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "200543c1-a952-45d0-a657-9d1d79824f28")
-		(property "Reference" "C13"
-			(at 199.39 143.5162 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "???"
-			(at 199.39 146.0562 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 196.85 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 196.85 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 196.85 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e3ec248b-4038-4668-b6aa-5ebb02de9758")
-		)
-		(pin "2"
-			(uuid "b28a1471-6974-46d4-a01c-eca9b3f9be5f")
-		)
-		(instances
-			(project "the_timer_2"
-				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
-					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 165.1 146.05 0)
+		(at 165.1 158.75 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -4391,7 +4582,7 @@
 		(fields_autoplaced yes)
 		(uuid "206b39d1-c051-4e48-8ec8-97d39c87d189")
 		(property "Reference" "H4"
-			(at 167.64 144.7799 0)
+			(at 167.64 157.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4400,7 +4591,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 167.64 147.3199 0)
+			(at 167.64 160.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4409,7 +4600,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 165.1 146.05 0)
+			(at 165.1 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4418,7 +4609,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 146.05 0)
+			(at 165.1 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4427,7 +4618,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 165.1 146.05 0)
+			(at 165.1 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4436,9 +4627,145 @@
 			)
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 209.55 144.78 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24671b85-b643-48d6-bbda-57aa1ca8983c")
+		(property "Reference" "C14"
+			(at 212.09 143.5035 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "???"
+			(at 212.09 146.0435 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 209.55 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 209.55 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 209.55 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f0d3e308-c991-40e3-85e2-56be132b92d7")
+		)
+		(pin "2"
+			(uuid "7e5db29f-02a1-498a-950f-e00589ed6e1a")
+		)
+		(instances
+			(project "timer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 209.55 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2b920d44-4189-457a-a9d0-5fe08f5b6377")
+		(property "Reference" "#PWR023"
+			(at 209.55 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 209.55 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 209.55 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 209.55 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bd703efa-22c9-4cc0-8126-fb9745b1d635")
+		)
+		(instances
+			(project "timer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -4515,9 +4842,75 @@
 			(uuid "234e0a45-3086-44a6-b4b3-84e1261d161b")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 165.1 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37c9a280-312d-45eb-877a-71e947b5c505")
+		(property "Reference" "#PWR031"
+			(at 165.1 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 165.1 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a5a20748-d7de-4dc0-bc62-a5340ed7fee9")
+		)
+		(instances
+			(project "timer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -4582,7 +4975,7 @@
 			(uuid "2936137f-0e7b-4613-a719-ec63d95438d1")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR016")
 					(unit 1)
@@ -4648,7 +5041,7 @@
 			(uuid "bfe21b8a-844f-44bc-87d2-536980f6b326")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR06")
 					(unit 1)
@@ -4859,9 +5252,142 @@
 			(uuid "76fdf099-59fe-47f8-a4bb-a43533f2a00f")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 196.85 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66136aff-de59-41de-94a3-535784c38888")
+		(property "Reference" "#PWR08"
+			(at 196.85 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 196.85 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 196.85 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 196.85 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6addbcf0-3f19-4c46-afc6-2e40c9dc72cf")
+		)
+		(instances
+			(project "timer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 165.1 140.97 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "66796da7-988c-4048-90ae-bca75eb8f174")
+		(property "Reference" "H2"
+			(at 167.64 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 167.64 140.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+			(at 165.1 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 165.1 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f46cd04b-877c-4377-a5b5-e8608290c43e")
+		)
+		(instances
+			(project "timer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -4925,7 +5451,7 @@
 			(uuid "87d0649f-9e68-4f81-b1f8-9c5278d77b0f")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR011")
 					(unit 1)
@@ -5012,93 +5538,9 @@
 			(uuid "915f0ab6-67dd-4470-bb17-e863a18349fe")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Crystal_GND24")
-		(at 203.2 139.7 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "753c6544-4aa7-4693-b2d2-5d0f38098cd6")
-		(property "Reference" "X2"
-			(at 187.96 134.7468 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XRCGB40M000F1S2GR0"
-			(at 187.96 137.2868 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm"
-			(at 203.2 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.murata.com/products/productdata/8818105581598/SPEC-XRCGB40M000F1S2GR0.pdf"
-			(at 203.2 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Four pin crystal, GND on pins 2 and 4"
-			(at 203.2 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DKPN" "490-XRCGB40M000F1S2GR0CT-ND"
-			(at 203.2 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bad81df8-639d-4385-9f54-795a5041bcae")
-		)
-		(pin "2"
-			(uuid "f26a5481-ba54-4157-a642-ec539f424c6f")
-		)
-		(pin "3"
-			(uuid "aea8c91e-8b9e-4720-aecd-90894275c1f2")
-		)
-		(pin "4"
-			(uuid "bc3a3640-94c8-440e-8749-95044c095d0d")
-		)
-		(instances
-			(project "the_timer_2"
-				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
-					(reference "X2")
 					(unit 1)
 				)
 			)
@@ -5162,75 +5604,9 @@
 			(uuid "9fb035ab-0127-4ca1-82f4-fb907152a4b2")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 203.2 144.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "78ebdb94-cb56-47ad-895b-3dcb3bb9a2e6")
-		(property "Reference" "#PWR068"
-			(at 203.2 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 203.2 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 203.2 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 203.2 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 203.2 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "59dc1ae7-cbc1-463b-bd88-16f2fb0e3590")
-		)
-		(instances
-			(project "the_timer_2"
-				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
-					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -5294,7 +5670,7 @@
 			(uuid "8c7bca98-263a-4fdd-bedf-c5c75e697520")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR04")
 					(unit 1)
@@ -5311,8 +5687,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8471fad6-e205-4646-a4b4-b6834e79a460")
-		(property "Reference" "#PWR069"
+		(uuid "8907c3dd-33c6-425f-acbb-31ea7f6f1cdf")
+		(property "Reference" "#PWR09"
 			(at 203.2 128.27 0)
 			(effects
 				(font
@@ -5357,12 +5733,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "7ccbf5ee-4041-4537-a60a-d624d3438fdd")
+			(uuid "d34f5709-066f-4a4b-9ad8-46beb610fa4b")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
-					(reference "#PWR069")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -5448,9 +5824,92 @@
 			(uuid "0d9f08eb-bc7b-47a5-95a0-acceec9fae59")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Crystal_GND24")
+		(at 203.2 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9073802e-6f0f-4888-b9b6-91c757b14daf")
+		(property "Reference" "X1"
+			(at 210.82 133.3814 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XRCGB40M000F1S2GR0"
+			(at 210.82 135.9214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm"
+			(at 203.2 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/products/productdata/8818105581598/SPEC-XRCGB40M000F1S2GR0.pdf"
+			(at 203.2 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Four pin crystal, GND on pins 2 and 4"
+			(at 203.2 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "490-XRCGB40M000F1S2GR0CT-ND"
+			(at 203.2 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef2f378b-1fd6-4db5-84a3-110984257e1c")
+		)
+		(pin "2"
+			(uuid "6c7ccfb0-c0b4-48f5-8cb3-be4a22cf9870")
+		)
+		(pin "3"
+			(uuid "0675283f-e740-4d99-90c1-94bfcd612415")
+		)
+		(pin "4"
+			(uuid "4f00124a-0a5e-4da7-88e2-2c28d8c01300")
+		)
+		(instances
+			(project "timer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "X1")
 					(unit 1)
 				)
 			)
@@ -5515,7 +5974,7 @@
 			(uuid "493ca445-d211-4255-9d03-ae09c0ec92d2")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR022")
 					(unit 1)
@@ -5602,7 +6061,7 @@
 			(uuid "92551d45-c165-48b8-8e89-019964d5ff9c")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "R3")
 					(unit 1)
@@ -5669,7 +6128,7 @@
 			(uuid "7853d4bb-b0a5-4570-94ea-5cc7e011a126")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR017")
 					(unit 1)
@@ -5753,7 +6212,7 @@
 			(uuid "1149dcd9-dd99-4cae-84f1-b3c547ff3abb")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "D1")
 					(unit 1)
@@ -5820,7 +6279,7 @@
 			(uuid "29d1309d-e43c-4fc5-a5e4-85e9c293ca51")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR021")
 					(unit 1)
@@ -5907,75 +6366,9 @@
 			(uuid "b5beeaad-0ae2-4e73-a993-0a5f1c0ab6b9")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 196.85 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aa66a83b-1de6-4ecb-b069-694dee68f052")
-		(property "Reference" "#PWR066"
-			(at 196.85 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 196.85 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 196.85 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 196.85 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 196.85 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5fcdeaff-0a6c-44b9-8f3c-5f8bda802b4f")
-		)
-		(instances
-			(project "the_timer_2"
-				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
-					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -6039,7 +6432,7 @@
 			(uuid "91650993-3b35-44d4-a199-c1a79b76007e")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR050")
 					(unit 1)
@@ -6143,73 +6536,9 @@
 			(uuid "0e76bcd2-dc1b-4362-ab7e-677313206ca3")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "U10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 165.1 127 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "af6fda49-5182-46d5-a620-b5f01021e98b")
-		(property "Reference" "H1"
-			(at 167.64 125.7299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 167.64 128.2699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 165.1 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 165.1 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 165.1 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "the_timer_2"
-				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
-					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -6294,7 +6623,7 @@
 			(uuid "a9edf29c-ebdc-49de-9515-ba51bcb62250")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "R7")
 					(unit 1)
@@ -6381,7 +6710,7 @@
 			(uuid "49d3e054-f51c-48ff-a05d-656bf6380397")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "R1")
 					(unit 1)
@@ -6447,7 +6776,7 @@
 			(uuid "afcef0e4-5ee1-4ff3-9854-ba809c811d83")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR019")
 					(unit 1)
@@ -6456,36 +6785,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 209.55 144.78 0)
-		(mirror x)
+		(lib_id "power:Earth")
+		(at 203.2 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c66a3710-5a0e-4ad7-8446-343492efe397")
-		(property "Reference" "C14"
-			(at 207.01 143.5035 0)
+		(uuid "b9d3964f-6a58-4882-8aaa-2be4ea6cd75b")
+		(property "Reference" "#PWR018"
+			(at 203.2 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(hide yes)
 			)
 		)
-		(property "Value" "???"
-			(at 207.01 146.0435 0)
+		(property "Value" "GND"
+			(at 203.2 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 209.55 144.78 0)
+		(property "Footprint" ""
+			(at 203.2 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6494,7 +6821,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 209.55 144.78 0)
+			(at 203.2 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6502,8 +6829,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 209.55 144.78 0)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 203.2 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6512,15 +6839,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "397efc52-e744-4828-a771-c93025be0251")
-		)
-		(pin "2"
-			(uuid "480bd905-dfe2-4230-a209-5f1d54d1d32e")
+			(uuid "ca7c575c-3ca4-46ca-b69d-ca0e60b0302a")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
-					(reference "C14")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -6584,7 +6908,7 @@
 			(uuid "5cbb979c-64d7-4cb4-ad4c-79f81576cebe")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR014")
 					(unit 1)
@@ -6650,9 +6974,76 @@
 			(uuid "e40e4083-a6b9-487c-98c3-884f3b8a745d")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 165.1 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d58dc231-5bde-4781-becb-d1f77b8be821")
+		(property "Reference" "H1"
+			(at 167.64 125.7299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 167.64 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+			(at 165.1 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 165.1 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2786ef26-5610-4b15-98a2-0e6d776a76d0")
+		)
+		(instances
+			(project "timer"
+				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -6737,7 +7128,7 @@
 			(uuid "e18936b5-9cac-48a9-8942-e485a9633c6c")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "R9")
 					(unit 1)
@@ -6804,7 +7195,7 @@
 			(uuid "0de2e11b-b659-44ce-af4a-4fab3847b91f")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR020")
 					(unit 1)
@@ -6890,75 +7281,9 @@
 			(uuid "1c1dba6f-66c3-46b0-8687-24e826faa7b6")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "L3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 209.55 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e65491fc-4fb9-42da-8057-644bb80364e2")
-		(property "Reference" "#PWR067"
-			(at 209.55 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 209.55 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 209.55 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 209.55 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 209.55 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "477f4986-f2d6-404a-b2a1-58446f431a45")
-		)
-		(instances
-			(project "the_timer_2"
-				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
-					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -7022,7 +7347,7 @@
 			(uuid "76138e30-6a3b-4af3-bbfc-9be2c71e4c01")
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(reference "#PWR07")
 					(unit 1)
@@ -7061,7 +7386,7 @@
 			)
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(page "4")
 				)
@@ -7099,7 +7424,7 @@
 			)
 		)
 		(instances
-			(project "the_timer_2"
+			(project "timer"
 				(path "/473e3a2e-6c5e-4995-af4a-e4bf1449cab0"
 					(page "3")
 				)
